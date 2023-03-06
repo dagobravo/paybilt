@@ -1,0 +1,23 @@
+header {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 138px;
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 75px;
+
+      a,
+      a:visited {
+        text-decoration: none;
+        color: #000;
+      }
+    }
+  }
+}

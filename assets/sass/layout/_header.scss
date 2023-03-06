@@ -12,11 +12,26 @@ header {
       justify-content: space-between;
       align-items: center;
       gap: 75px;
+      font-size: 20px;
 
       a,
       a:visited {
         text-decoration: none;
         color: #000;
+      }
+
+      .login-button {
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        background-color: #000;
+        color: #fff !important;
+        line-height: 86px;
+        text-align: center;
+
+        &:after {
+          content: "Login";
+        }
       }
     }
   }

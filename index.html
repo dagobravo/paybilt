@@ -10,6 +10,10 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:b">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:i">
+
+  <!-- owlcarousel -->
+  <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -63,10 +67,28 @@
           </div>
 
           <div class="gradient-container">
-            <div class="text3">
-              PERKS
+            <div>
+              <img src="assets/images/shoe.svg" alt="">
             </div>
-            <img src="assets/images/shoe.svg" alt="">
+            <div>
+              <div class="text3">
+                PERKS
+              </div>
+              <div class="text4">
+                of Partnering with Paybilt
+              </div>
+
+              <!-- carousel -->
+              <div class="owl-carousel">
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+                <div> Your Content </div>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -85,6 +107,14 @@
       </div>
     </div>
   </footer>
+
+  <script src="assets/js/jquery-3.6.3.min.js"></script>
+  <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
+  </script>
 </body>
 
 </html>

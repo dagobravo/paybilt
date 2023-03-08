@@ -81,17 +81,18 @@ main.homepage {
           align-items: flex-start;
 
           div:first-child {
-            flex: 0 0 50%;
+            flex: 0 0 60%;
 
             img {
               width: 100%;
-              object-fit: none;
-              object-position: 60% 60%;
+              object-fit: cover;
+              transform: scale(1.8);
+              object-position: -55px -60px;
             }
           }
 
           div:nth-child(2) {
-            flex: 0 0 50%;
+            flex: 0 0 40%;
 
             .text3 {
               text-align: left;

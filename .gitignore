@@ -1,2 +1,5 @@
-.DS_*
+.DS_Store
+assets/.DS_Store
 node_modules
+assets/images/.DS_Store
+assets/sass/.DS_Store

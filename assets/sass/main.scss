@@ -7,7 +7,11 @@ Author URI: http://github.com/dagomx
 @import './base/breakpoints';
 @import './base/variables';
 
-@import './pages/index';
+@import './pages/home';
+@import './pages/payment-solution';
+@import './pages/products';
+@import './pages/use-cases';
+@import './pages/why-paybilt';
 
 @import './layout/header';
 @import './layout/footer';

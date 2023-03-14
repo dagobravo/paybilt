@@ -87,14 +87,14 @@ main.homepage {
           background: transparent linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
           border-radius: 129px 129px 0px 0px;
           opacity: 1;
-
           margin: 0 58px;
-          padding: 0 132px 0 111px;
+          // padding: 0 132px 0 111px;
 
           .grid {
             display: flex;
             flex-direction: row;
             align-items: flex-start;
+            padding: 0 132px 0 111px;
 
             div:first-child {
               flex: 0 0 60%;

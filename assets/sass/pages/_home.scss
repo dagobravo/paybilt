@@ -364,6 +364,45 @@ main.homepage {
       .section-content {
         padding-bottom: 70px;
 
+        @keyframes scroll {
+          0% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+
+          100% {
+            -webkit-transform: translateX(calc(-20% * 4));
+            transform: translateX(calc(-20% * 4));
+          }
+        }
+
+        .slider {
+          width: 100vw;
+          height: auto;
+          margin: auto;
+          overflow: hidden;
+
+          .slider-track {
+            display: flex;
+            flex-direction: row;
+            animation: scroll 2s linear infinite;
+            -webkit-animation: scroll 40s linear infinite;
+            width: calc(20% * 14);
+
+            &:hover {
+              animation-play-state: paused;
+            }
+
+            .slide {
+              width: calc(20% - 1px);
+
+              img {
+                width: 100%;
+              }
+            }
+          }
+        }
+
         .grid-container {
           width: 100%;
           display: flex;

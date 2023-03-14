@@ -1,8 +1,9 @@
 main.homepage {
+  background: transparent linear-gradient(180deg, #FFFFFF 0%, #EEEEEE 30%, #E4E4E4 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
 
   section.section1 {
     border-top: 1px solid #707070;
-    // border-bottom: 1px solid #707070;
 
     .content-wrapper {
       position: relative;
@@ -40,12 +41,18 @@ main.homepage {
           width: 731px;
           text-align: left;
           font-size: 30px;
-          line-height: 37px;
+          line-height: 38px;
           font-weight: normal;
           letter-spacing: 0px;
           color: #000;
           opacity: 1;
           margin-top: 13px;
+        }
+
+        .text3 {
+          font-size: 30px;
+          line-height: 38px;
+          margin-top: 150px;
         }
       }
 
@@ -81,57 +88,58 @@ main.homepage {
         }
 
         .gradient-container {
-          background:
-            transparent
-            linear-gradient(180deg, #F5F5F5 0%, #fff 100%)
-            0% 0%
-            no-repeat
-            padding-box;
+          background: transparent linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
           border-radius: 129px 129px 0px 0px;
-          margin: 0 58px 200px;
-          padding-top: 132px;
+          opacity: 1;
 
-          display: flex;
-          flex-direction: row;
-          align-items: flex-start;
+          margin: 0 58px;
+          padding: 0 132px 0 111px;
 
-          div:first-child {
-            flex: 0 0 60%;
+          .grid {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
 
-            img {
-              width: 100%;
-              object-fit: cover;
-              transform: scale(1.8);
-              object-position: -55px -60px;
+            div:first-child {
+              flex: 0 0 60%;
+
+              img {
+                width: 768px;
+                height: auto;
+              }
+            }
+
+            div:nth-child(2) {
+              flex: 0 0 40%;
+
+              .gradient-header {
+                text-align: left;
+                font-size: 120px;
+                line-height: 120px;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+                margin-top: 27px;
+              }
+
+              .gradient-text {
+                text-align: left;
+                font-size: 40px;
+                letter-spacing: 0px;
+                color: #000000;
+                opacity: 1;
+              }
+
+              .owl-carowsel {
+                width: 100%;
+              }
             }
           }
 
-          div:nth-child(2) {
-            flex: 0 0 40%;
-
-            .text3 {
-              text-align: left;
-              font: normal normal bold 120px/43px Montserrat;
-              font-size: 120px;
-              line-height: 120px;
-              letter-spacing: 0px;
-              color: #000000;
-              text-transform: uppercase;
-              opacity: 1;
-              margin-top: 27px;
-            }
-
-            .text4 {
-              text-align: left;
-              font-size: 40px;
-              letter-spacing: 0px;
-              color: #000000;
-              opacity: 1;
-            }
-
-            .owl-carowsel {
-              width: 100%;
-            }
+          .gradient-background {
+            min-height: 1105px;
+            background: rgb(245,152,169);
+            background: linear-gradient(0deg, rgba(245,152,169,1) 30%, rgba(236,201,181,1) 55%, rgba(249,249,249,1) 100%);
           }
         }
       }
@@ -143,64 +151,75 @@ main.homepage {
 
     .content-wrapper {
       .section-content {
-        padding: 45px 118px 118px;
+        padding-top: 444px;
 
-        .text1 {
-          text-align: left;
-          font-size: 80px;
-          line-height: 76px;
+        .text1,
+        .text3 {
+          text-align: center;
           font-weight: bold;
+          font-size: 72px;
+          line-height: 74px;
           letter-spacing: 0px;
-          color: #fff;
-          max-width: 923px;
-          margin-bottom: 116px;
+          color: #FFFFFF;
         }
 
-        .grid1 {
-          display: flex;
-          flex-direction: row;
-          gap: 122px;
+        .text2 {
+          text-align: center;
+          font-weight: 600;
+          font-size: 333px;
+          line-height: 342px;
+          letter-spacing: -6.66px;
+          color: #FFFF15;
+        }
 
-          .col1 {
-            flex: 0 0 calc(50% - 61px);
+        .text4 {
+          text-align: center;
+          font-weight: 600;
+          font-size: 267px;
+          line-height: 275px;
+          letter-spacing: -5.34px;
+          color: #FFFF00;
+          opacity: 1;
+          margin-bottom: 117px;
+        }
 
-            img {
-              width: 100%;
-            }
-          }
+        .text5 {
+          background: #2B2A2B 0% 0% no-repeat padding-box;
+          border-radius: 183px;
+          opacity: 1;
+          width: 1000px;
+          padding: 45px 83px;
+          margin: 0 auto;
 
-          .col2 {
-            flex: 0 0 calc(50% - 61px);
+          text-align: left;
+          font-size: 30px;
+          line-height: 38px;
+          letter-spacing: 0.63px;
+          color: #FFFFFF;
+          opacity: 1;
+          margin-bottom: 136px;
+        }
 
-            .row1 {
-              background: #2B2A2B 0% 0% no-repeat padding-box;
-              border-radius: 183px;
-              opacity: 1;
-              color: #fff;
-              padding: 58px 89px;
-              margin-bottom: 56px;
-            }
+        .text6 {
+          margin: 0 auto;
+          text-align: center;
+          font-weight: 500;
+          font-size: 70px;
+          letter-spacing: 0px;
+          color: #FFFFFF;
+          opacity: 1;
+          width: 748px;
+          margin-bottom: 25px;
+        }
 
-            .row2 {
-              text-align: left;
-              font-weight: bold;
-              font-size: 70px;
-              line-height: 66px;
-              letter-spacing: 0px;
-              color: #FFFFFF;
-              opacity: 1;
-              margin-bottom: 35px;
-            }
-
-            .row3 {
-              text-align: left;
-              font-size: 40px;
-              line-height: 60px;
-              letter-spacing: 0px;
-              color: #FFFD38;
-              opacity: 1;
-            }
-          }
+        .text7 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 40px;
+          line-height: 60px;
+          letter-spacing: 0px;
+          color: #FFFD38;
+          opacity: 1;
         }
       }
     }

@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 26px 138px;
+    color: #333333;
 
     .links {
       display: flex;
@@ -17,7 +18,7 @@ header {
       a,
       a:visited {
         text-decoration: none;
-        color: #000;
+        color: #333;
       }
 
       .login-button {

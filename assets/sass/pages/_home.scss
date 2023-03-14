@@ -88,7 +88,6 @@ main.homepage {
           border-radius: 129px 129px 0px 0px;
           opacity: 1;
           margin: 0 58px;
-          // padding: 0 132px 0 111px;
 
           .grid {
             display: flex;
@@ -402,8 +401,57 @@ main.homepage {
           }
         }
 
+        .text-container {
+          padding: 0 192px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: end;
+
+          .text1 {
+            position: relative;
+
+            >div:nth-child(1) {
+              text-align: left;
+              font-weight: bold;
+              font-size: 60px;
+              line-height: 66px;
+              letter-spacing: -3px;
+              color: #000000;
+              opacity: 1;
+            }
+
+            >div:nth-child(2) {
+              text-align: left;
+              font-weight: 600;
+              font-size: 227px;
+              line-height: 220px;
+              letter-spacing: -15.89px;
+              color: #000000;
+              opacity: 1;
+            }
+
+            .asterisc {
+              position: absolute;
+              top: 90px;
+              right: -85px;
+            }
+          }
+
+          .text2 {
+            text-align: left;
+            font-weight: 600;
+            font-size: 227px;
+            line-height: 220px;
+            letter-spacing: -15.89px;
+            color: #000000;
+            opacity: 1;
+          }
+        }
+
         .text3 {
           width: 520px;
+          margin-top: 30px;
           margin-left: auto;
           margin-right: 192px;
 

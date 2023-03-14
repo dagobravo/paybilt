@@ -405,8 +405,14 @@ main.homepage {
           padding: 0 192px;
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
+          justify-content: center;
           align-items: end;
+          gap: 100px;
+
+          @media #{$lt-xl} {
+            flex-direction: column;
+            gap: unset;
+          }
 
           .text1 {
             position: relative;

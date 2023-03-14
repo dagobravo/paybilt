@@ -470,4 +470,118 @@ main.homepage {
       }
     }
   }
+
+  section.section5 {
+    background-color: #000;
+
+    .content-wrapper {
+      .section-content {
+
+        padding: 150px;
+
+        img {
+          width: 207px;
+          height: auto;
+          margin-bottom: 28px;
+        }
+
+        .text1 {
+          font-weight: bold;
+          font-size: 70px;
+          line-height: 89px;
+          letter-spacing: 0px;
+          color: #FFFFFF;
+          opacity: 1;
+          margin-bottom: 31px;
+        }
+
+        .text2 {
+          font-weight: bold;
+          font-size: 46px;
+          line-height: 59px;
+          letter-spacing: 0px;
+          color: #FFFD38;
+          opacity: 1;
+          margin-bottom: 150px;
+        }
+      }
+
+      .form-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 100px;
+
+        img {
+          width: 600px;
+          height: auto;
+        }
+
+        .form {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          padding-top: 85px;
+          gap: 24px;
+          width: 542px;
+
+          input {
+            border: none;
+            background: none;
+            width: 539px;
+            height: 54px;
+            border-bottom: 1px solid #707070;
+
+            text-align: left;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 41px;
+            letter-spacing: 0.67px;
+            color: #FFFFFF;
+            opacity: 1;
+
+            &::placeholder {
+              color: #fff;
+            }
+          }
+
+          .form-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 77px;
+
+            .submit-button {
+              background: #FFFD38 0% 0% no-repeat padding-box;
+              border-radius: 32px;
+              opacity: 1;
+              width: 152px;
+              height: 50px;
+              cursor: pointer;
+
+              text-align: center;
+              font-weight: bold;
+              font-size: 30px;
+              line-height: 37px;
+              letter-spacing: 0px;
+              color: #000000;
+              opacity: 1;
+            }
+
+            .form-text {
+              text-align: justify;
+              font-weight: 600;
+              font-size: 15px;
+              line-height: 19px;
+              letter-spacing: 0.32px;
+              color: #FFFFFF;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
 }

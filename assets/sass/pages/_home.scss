@@ -20,10 +20,6 @@ main.homepage {
           >div:nth-child(1) {
             flex: 0 0 46%;
           }
-
-          // >div:nth-child(2) {
-          //   flex: 0 0 50%;
-          // }
         }
 
         .text1 {
@@ -220,6 +216,49 @@ main.homepage {
           letter-spacing: 0px;
           color: #FFFD38;
           opacity: 1;
+          margin-bottom: 152px;
+        }
+
+        .grid {
+          padding: 0 135px;
+          color: #fff;
+          display: inline-grid;
+          grid-template-columns: auto auto auto;
+          column-gap: 128px;
+          row-gap: 80px;
+          margin-bottom: 150px;
+
+          >div:hover {
+            .header {
+              text-align: left;
+              font-weight: 900;
+              font-size: 180px;
+              line-height: 200px;
+              letter-spacing: 0px;
+              color: #FFFF15;
+              opacity: 1;
+              transition: all 0.5s;
+            }
+          }
+
+          .header {
+            text-align: left;
+            font-weight: 900;
+            font-size: 90px;
+            line-height: 123px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+            transition: all 0.5s;
+          }
+
+          .text {
+            text-align: left;
+            font-size: 30px;
+            line-height: 38px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+          }
         }
       }
     }

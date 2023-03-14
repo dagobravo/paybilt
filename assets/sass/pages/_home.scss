@@ -148,6 +148,7 @@ main.homepage {
     .content-wrapper {
       .section-content {
         padding-top: 444px;
+        padding-bottom: 70px;
 
         .text1,
         .text3 {
@@ -298,6 +299,60 @@ main.homepage {
           .paybilt-group-image {
             width: 100%;
             height: auto;
+          }
+        }
+
+        .text8,
+        .text9 {
+          position: relative;
+          text-align: center;
+          font-weight: bold;
+          font-size: 125px;
+          line-height: 149px;
+          letter-spacing: 0px;
+          color: #FFFFFF;
+          opacity: 1;
+          margin: 0 auto 50px;
+        }
+
+        .text8 {
+          width: 740px;
+
+          img {
+            position: absolute;
+            right: 0;
+            top: -20px;
+            width: 110px;
+            height: auto;
+          }
+        }
+
+        .text9 {
+          width: 1030px;
+          margin-top: 70px;
+
+          img {
+            position: absolute;
+            height: auto;
+            width: 115px;
+            bottom: -50px;
+            left: 0;
+          }
+        }
+
+        .grid-container3,
+        .grid-container4 {
+          width: 670px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 150px;
+          margin: 0 auto;
+          color: #fff;
+
+          .logo {
+            height: 84px;
+            margin-bottom: 30px;
           }
         }
       }

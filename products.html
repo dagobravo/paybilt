@@ -48,9 +48,25 @@
             Paybilt focuses on the payment methods that you care about. We re-engineer and build simplified and easy-to-love payment products for today's consumer.
           </div>
 
-          <div class="button-container">
-
+          <div class="buttons-container">
+            <div class="button" onclick="selectProduct(0)">Products</div>
+            <div class="button" onclick="selectProduct(1)">International</div>
+            <div class="button" onclick="selectProduct(2)">Payments (IN)</div>
+            <div class="button" onclick="selectProduct(3)">Payments (OUT)</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="content-wrapper">
+        <div class="section-content">
+
+          <div id="left-column" class="left-column">
+          </div>
+          <div class="product-content">
+          </div>
+
         </div>
       </div>
     </section>
@@ -125,7 +141,19 @@
 
   <script src="assets/data/products-content.js"></script>
   <script type="text/javascript">
-    console.log("test: ", productsContent.parentItems);
+
+    function selectProduct(index) {
+      document.getElementById("left-column").innerHTML = "";
+
+      selectedProduct = productsContent[index];
+      const items = selectedProduct.items;
+      let menuItems = "";
+      for(let i of items) {
+        menuItems += `<div class="test">${i.linkText}</div>`;
+      }
+
+      document.getElementById("left-column").innerHTML = menuItems;
+    }
   </script>
 </body>
 

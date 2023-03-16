@@ -49,10 +49,10 @@
           </div>
 
           <div class="buttons-container">
-            <div class="button" onclick="selectProduct(0)">Products</div>
-            <div class="button" onclick="selectProduct(1)">International</div>
-            <div class="button" onclick="selectProduct(2)">Payments (IN)</div>
-            <div class="button" onclick="selectProduct(3)">Payments (OUT)</div>
+            <div class="button" onclick="selectProduct(0, this)">Products</div>
+            <div class="button" onclick="selectProduct(1, this)">International</div>
+            <div class="button" onclick="selectProduct(2, this)">Payments (IN)</div>
+            <div class="button" onclick="selectProduct(3, this)">Payments (OUT)</div>
           </div>
         </div>
       </div>
@@ -141,18 +141,36 @@
 
   <script src="assets/data/products-content.js"></script>
   <script type="text/javascript">
-
-    function selectProduct(index) {
+    function selectProduct(index, element) {
+      console.log('element: ', element);
       document.getElementById("left-column").innerHTML = "";
 
       selectedProduct = productsContent[index];
       const items = selectedProduct.items;
       let menuItems = "";
-      for(let i of items) {
-        menuItems += `<div class="test">${i.linkText}</div>`;
+
+      if (items && items.length) {
+        for(let i of items) {
+          menuItems += `<div class="test">${i.linkText}</div>`;
+        }
       }
 
       document.getElementById("left-column").innerHTML = menuItems;
+
+      // Toggle class
+      if (!element.classList.contains('active-button')) {
+        clearButtonSelection();
+        element.classList.add('active-button');
+      } else {
+        element.classList.remove('active-button');
+      }
+    }
+
+    function clearButtonSelection() {
+      const buttonsList = document.getElementsByClassName('button');
+      for(const button of buttonsList) {
+        button.classList.remove('active-button');
+      }
     }
   </script>
 </body>

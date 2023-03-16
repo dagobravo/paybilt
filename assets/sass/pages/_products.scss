@@ -58,6 +58,10 @@ main.products {
             background-color: #272727;
             cursor: pointer;
 
+            &.active-button {
+              background-color: #F8F636;
+              color: #141214;
+            }
           }
         }
       }

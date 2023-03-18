@@ -1,3 +1,8 @@
+* {
+  user-select: none;
+  -moz-user-select: none;
+}
+
 .normal {
   font-weight: normal;
 }
@@ -12,6 +17,10 @@
 
 .center {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
 
 body {
@@ -29,4 +38,9 @@ body {
 
 .color-yellow {
   color: #FFFF15;
+}
+
+ul {
+  margin: 0 !important;
+  padding-left: 20px !important;
 }

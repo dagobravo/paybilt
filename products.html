@@ -10,10 +10,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:i">
-
-  <!-- owlcarousel -->
-  <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.theme.default.min.css">
 </head>
 
 <body>
@@ -59,13 +55,27 @@
       </div>
     </section>
 
-    <section class="section2">
+    <section id="section2" class="section2 hidden">
       <div class="content-wrapper">
         <div class="section-content">
 
           <div id="left-column" class="left-column">
+            <div id="left-column-header"></div>
+            <div id="left-column-items"></div>
           </div>
-          <div class="product-content">
+
+          <div class="product-section">
+            <div id="product-header">
+              <div id="product-header-label"></div>
+              <div id="product-header-text"></div>
+            </div>
+            <div id="product-content">
+              <div id="product-content-features">
+                <div id="product-content-features-header">Key Features</div>
+                <div id="product-content-features-items"></div>
+              </div>
+              <div id="product-content-text"></div>
+            </div>
           </div>
 
         </div>
@@ -140,10 +150,12 @@
     </div>
   </footer>
 
-  <script src="assets/data/products-content.js"></script>
+  <script src="assets/data/products.js"></script>
   <script type="text/javascript">
+    var selectedProduct = null;
+
     function selectProduct(index, element) {
-      document.getElementById("left-column").innerHTML = "";
+      document.getElementById("left-column-items").innerHTML = "";
 
       selectedProduct = productsContent[index];
       const items = selectedProduct.items;
@@ -151,19 +163,53 @@
 
       if (items && items.length) {
         for(let i of items) {
-          menuItems += `<div class="test">${i.linkText}</div>`;
+          menuItems += `<div class="item" onclick="selectProductItem(${items.indexOf(i)})">${i.linkText}</div>`;
         }
       }
 
-      document.getElementById("left-column").innerHTML = menuItems;
+      const headerLabel = selectedProduct && selectedProduct.label ? selectedProduct.label : '';
+
+      document.getElementById("left-column-header").innerHTML = headerLabel;
+      document.getElementById("left-column-items").innerHTML = menuItems;
 
       // Toggle class
       if (!element.classList.contains('active-button')) {
         clearButtonSelection();
         element.classList.add('active-button');
+        selectProductItem(0);
+        toggleSection2();
       } else {
         element.classList.remove('active-button');
+        selectedProduct = null;
+        toggleSection2();
       }
+    }
+
+    function selectProductItem(itemIndex) {
+      itemIndicatorUpdate(itemIndex);
+      const selectedItem = selectedProduct.items[itemIndex];
+      console.log('selected item: ', selectedItem);
+      document.getElementById('product-header-label').innerHTML = selectedItem.headerLabel;
+      document.getElementById('product-header-text').innerHTML = selectedItem.headerText;
+
+      let features = selectedItem && selectedItem.features && selectedItem.features.length ? '<ul>' : '';
+      for(let item of selectedItem.features) {
+        features += `<li>${item.featureText}</li>`;
+      }
+
+      if (features !== '') {
+        features += '</ul>'
+      }
+
+      document.getElementById('product-content-features-items').innerHTML = features;
+
+      if (features === '') {
+        document.getElementById('product-content-features').classList.add('hidden');
+      } else {
+        document.getElementById('product-content-features').classList.remove('hidden');
+      }
+
+      document.getElementById('product-content-text').innerHTML = selectedItem.contentText;
     }
 
     function clearButtonSelection() {
@@ -171,6 +217,23 @@
       for(const button of buttonsList) {
         button.classList.remove('active-button');
       }
+    }
+
+    function toggleSection2() {
+      const section2 = document.getElementById('section2');
+      if (selectedProduct !== undefined && selectedProduct !== null) {
+        section2.classList.remove("hidden");
+      } else {
+        section2.classList.add("hidden");
+      }
+    }
+
+    function itemIndicatorUpdate(itemIndex) {
+      const items = document.getElementsByClassName('item');
+      for(let item of items) {
+        item.classList.remove('selected');
+      }
+      items[itemIndex].classList.add('selected');
     }
   </script>
 </body>

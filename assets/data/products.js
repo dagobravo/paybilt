@@ -208,7 +208,62 @@ const productsContent = [
   {
     label: "Payments (OUT)",
     items: [
-
+      {
+        linkText: "Interac e-Transfer®",
+        headerLabel: "Interac e-Transfer®",
+        headerText: "The undisputed champion of lightning-fast disbursement.",
+        contentText: `
+          Instantly gain access to a low-cost payment network boasting over 24 million active monthly users.`,
+        features: [
+          { featureText: "Built-in redundancy." },
+          { featureText: "Extremely popular." },
+          { featureText: "Instant and guaranteed funds." },
+          { featureText: "Same day disbursements." },
+          { featureText: "Weekend and holiday disbursements." }
+        ]
+      },
+      {
+        linkText: "Direct Deposit",
+        headerLabel: "Direct Deposit",
+        headerText: "Easy disbursement using an EFT. It’s so simple, even the Canadian government pays people this way.",
+        contentText: `
+          Send funds directly to the recipient’s bank account, making EFT disbursement perfect for payroll, paying contractors, refunds, and commissions. Mailing physical cheques is time-consuming, expensive, and keeps people waiting. Direct Deposit helps speed up the process by making it digital, through a simple integration with our intelligent API.`,
+        features: [
+          { featureTest: "Familiar to Canadians." },
+          { featureTest: "Simple and easy to use." },
+          { featureTest: "Cheaper than mailing a cheque." },
+          { featureTest: "All Canadian banks supported." }
+        ]
+      },
+      {
+        linkText: "Visa Direct",
+        headerLabel: "Visa Direct",
+        headerText: "A new an exciting way to disburse in Canada.",
+        contentText: `
+          A true contender for replacing paper cheques once and for all, Visa is throwing its hat in the ring with a new product.
+          The applications are almost endless - a company could top up all its drivers gas cards in a single click for example.
+          Another company could give all employees reloadable cards and push their sales bonuses to them. With almost universal support
+          for Canadian debit and credit card holders, this method is sure to see a meteoric rise.`,
+        features: [
+          { featureText: "Works with Visa-branded cards." },
+          { featureText: "Funds sent in real-time." },
+          { featureText: "Available for most industries." },
+          { featureText: "Extremely convenient." }
+        ]
+      },
+      {
+        linkText: "Mastercard Send",
+        headerLabel: "Mastercard Send",
+        headerText: "Disburse in real-time to any Mastercard cardholder.",
+        contentText: `
+          Yet another new disbursement tool makes its way onto the scene in Canada - Mastercard Send. This of course works in much the same way as Visa Direct, with many possible applications. We recommend adding both to your suite for the best coverage.`,
+        features: [
+          { featureText: "Works with Mastercard-branded cards" },
+          { featureText: "Funds sent in real-time" },
+          { featureText: "Available for most industries" },
+          { featureText: "Extremely convenient" }
+        ]
+      },
     ]
   }
 ];

@@ -22,16 +22,31 @@ header {
       }
 
       .login-button {
-        width: 86px;
-        height: 86px;
-        border-radius: 50%;
-        background-color: #000;
+        width: 132px;
+        height: 68px;
+        border-radius: 40px;
+        background-color: #221e1e;
         color: #fff !important;
-        line-height: 86px;
+        line-height: 68px;
         text-align: center;
 
         &:after {
           content: "Login";
+        }
+      }
+
+      .support-button {
+        width: 132px;
+        height: 68px;
+        border-radius: 40px;
+        background-color: #FFFC30;
+        color: #000 !important;
+        line-height: 68px;
+        text-align: center;
+        font-weight: bold;
+
+        &:after {
+          content: "Support";
         }
       }
     }

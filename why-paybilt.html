@@ -95,6 +95,48 @@
 
       </div>
     </section>
+
+    <section class="section3">
+      <div class="content-wrapper">
+        <div class="section-content">
+
+          <div class="container1">
+            <img class="pin-image" src="assets/images/why-paybilt/pin.png" alt="">
+            <div class="text1">
+              Get in touch with us.
+            </div>
+            <div class="text2">
+              Paybilt for you.
+            </div>
+
+            <div class="form">
+              <input type="text" placeholder="Full Name">
+              <input type="text" placeholder="Company Name">
+              <input type="text" placeholder="E-mail">
+              <input type="text" placeholder="Website UTL (optional)">
+
+              <div class="bottom-container">
+                <div class="slider-container">
+                  <div class="slider-text">
+                    <span>
+                      Monthly Transaction Volume
+                    </span>
+                    <span id="slider-amount"></span>
+                  </div>
+                  <div class="slider-control">
+                    <input id="range-input" type="range" min="1000" max="1000000" value="100" onchange="updateSliderValue(this)">
+                  </div>
+                </div>
+                <button class="submit-button">Submit</button>
+              </div>
+            </div>
+
+            <img src="assets/images/footer/paybilt-footer.svg" alt="">
+          </div>
+
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -164,12 +206,24 @@
     </div>
   </footer>
 
-  <script src="assets/js/jquery-3.6.3.min.js"></script>
-  <script src="assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
-    });
+  <script type="text/javascript">
+    function updateSliderValue(element) {
+      const sliderAmount = document.getElementById('slider-amount');
+
+      const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+
+        // These options are needed to round to whole numbers if that's what you want.
+        //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
+        //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+      });
+
+      sliderAmount.innerHTML = formatter.format(element.value);
+    }
+
+    const rangeInput = document.getElementById('range-input');
+    updateSliderValue(rangeInput);
   </script>
 </body>
 

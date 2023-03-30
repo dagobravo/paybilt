@@ -1,0 +1,38 @@
+main.use-cases {
+  section.section1 {
+    background-color: #000;
+
+    .content-wrapper {
+      .section-content {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 66px 126px 66px 105px;
+        color: #fff;
+
+        .side-menu {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          >div {
+            flex: 0 0 85px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 25px;
+
+            text-align: left;
+            font-weight: bold;
+            font-size: 26px;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}

@@ -31,11 +31,14 @@ main.use-cases {
             font-size: 26px;
             letter-spacing: 0px;
             color: #FFFFFF;
+            border-bottom: 1px solid #707070;
+            width: 460px;
 
             img {
               filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
             }
 
+            &.active,
             &:hover {
               color: #ffff00;
 
@@ -45,12 +48,76 @@ main.use-cases {
             }
           }
         }
+
+        .use-case-container {
+          background: linear-gradient(180deg, rgba(39, 40, 42, 1) 30%, rgba(20, 18, 20, 1) 100%);
+          border-radius: 78px;
+          flex: 0 0 1080px;
+
+          .header {
+            border-bottom: 1px solid #707070;
+            padding: 60px 65px;
+
+            >div:first-child {
+              font-weight: bold;
+              font-size: 32px;
+              color: #FFFFFF;
+              margin-bottom: 24px;
+            }
+
+            >div:nth-child(2) {
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 32px;
+              color: #FFFFFF;
+            }
+          }
+
+          .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+
+            .features {
+              padding: 60px 65px;
+              flex: 0 0 calc(50% - 131px);
+
+              >div:nth-child(1) {
+                text-align: left;
+                font-weight: bold;
+                font-size: 32px;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+                margin-bottom: 85px;
+              }
+
+              >div:nth-child(2) {
+                font-size: 18px;
+                line-height: 47px;
+                letter-spacing: 0px;
+                color: #FFFFFF;
+              }
+            }
+
+            .divider {
+              flex: 0 0 1px;
+              border-left: 1px solid #707070;
+            }
+
+            .description {
+              padding: 60px 65px;
+              flex: 0 0 calc(50% - 131px);
+
+              font-size: 18px;
+              line-height: 25px;
+              letter-spacing: 0px;
+              color: #FFFFFF;
+              opacity: 1;
+            }
+          }
+        }
       }
     }
   }
-}
-
-svg {
-  color: #fff;
-  fill: #fff !important;
 }

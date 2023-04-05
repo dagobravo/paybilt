@@ -7,20 +7,26 @@ header {
     padding: 26px 138px;
     color: #333333;
 
-    .logo-link {
+    >a:first-child {
       position: relative;
       width: 212px;
       height: 53px;
 
-      .logo {
+      img {
         width: 100%;
         height: auto;
       }
 
-      .spray-brush {
+      &:after {
+        content: "";
+        background-image: url(/assets/images/header-menu/spray-brush.svg);
+        width: 216px;
+        height: 64px;
         position: absolute;
+        right: -34px;
         bottom: -56px;
-        right: -35px;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
     }
 
@@ -34,8 +40,41 @@ header {
 
       a,
       a:visited {
+        position: relative;
         text-decoration: none;
         color: #333;
+      }
+
+      a {
+        &.active {
+          position: relative;
+
+          &:after {
+            content: "";
+            background-image: url(/assets/images/header-menu/spray-brush.svg);
+            width: 136px;
+            height: 43px;
+            position: absolute;
+            left: calc(50% - 68px);
+            bottom: -40px;
+            background-repeat: no-repeat;
+            background-size: contain;
+          }
+
+          // &.large {
+          //   &:after {
+          //     content: "";
+          //     background-image: url(/assets/images/header-menu/spray-brush.svg);
+          //     width: 236px;
+          //     height: 43px;
+          //     position: absolute;
+          //     left: calc(50% - 68px);
+          //     bottom: -40px;
+          //     background-repeat: no-repeat;
+          //     background-size: contain;
+          //   }
+          // }
+        }
       }
 
       .login-button {

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:i">
+</head>
+
+<body>
+
+  <header>
+    <div class="menu">
+      <a href="/">
+        <img src="/assets/images/header-menu/paybilt-logo.svg" width="122" height="30" alt="">
+      </a>
+      <div class="links">
+        <a href="/">Home</a>
+        <a href="payment-solutions.html">Payment solutions</a>
+        <a href="/use-cases/saas-solution.html">Use cases</a>
+        <a href="why-paybilt.html">Why Paybilt</a>
+        <a href="products.html">Products</a>
+        <a href="">
+          <div class="login-button"></div>
+        </a>
+        <a href="">
+          <div class="support-button"></div>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="products">
+    <section class="section1">
+      <div class="content-wrapper">
+        <div class="section-content">
+
+          <div class="text1">
+            Paybilt is the leading provider of alternative payments in Canada.
+          </div>
+
+          <div class="text2">
+            Paybilt focuses on the payment methods that you care about. We re-engineer and build simplified and easy-to-love payment products for today's consumer.
+          </div>
+
+          <div class="buttons-container">
+            <div class="button" onclick="selectProduct(0, this)">Products</div>
+            <div class="button" onclick="selectProduct(1, this)">International</div>
+            <div class="button" onclick="selectProduct(2, this)">Payments (IN)</div>
+            <div class="button" onclick="selectProduct(3, this)">Payments (OUT)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section2" class="section2 hidden">
+      <div class="content-wrapper">
+        <div class="section-content">
+
+          <div id="left-column" class="left-column">
+            <div id="left-column-header"></div>
+            <div id="left-column-items"></div>
+          </div>
+
+          <div class="product-section">
+            <div id="product-header">
+              <div id="product-header-label"></div>
+              <div id="product-header-text"></div>
+            </div>
+            <div id="product-content">
+              <div id="product-content-features">
+                <div id="product-content-features-header">Key Features</div>
+                <div id="product-content-features-items"></div>
+              </div>
+              <div id="product-content-text"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="section3" class="section3 hidden">
+      <div class="content-wrapper">
+        <div class="section-content">
+
+          <div id="left-column" class="left-column">
+            <div id="left-column-header"></div>
+            <div id="left-column-items"></div>
+          </div>
+
+          <div class="product-section">
+            <div id="product-header">
+              <div id="product-header-label"></div>
+              <div id="product-header-text"></div>
+            </div>
+            <div id="product-content">
+              <div id="product-content-features">
+                <div id="product-content-features-header">Key Features</div>
+                <div id="product-content-features-items"></div>
+              </div>
+              <div id="product-content-text"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="desktop-footer-container">
+      <div class="dark-content">
+        <div class="content-wrapper">
+          <div class="section-content">
+
+            <div class="row1">
+              <div>
+                <img src="/assets/images/footer/paybilt-footer.svg" alt="">
+              </div>
+              <div class="footer-links">
+                <div class="footer-links-container">
+                  <div class="header">Our Payment Suite</div>
+                  <div>Interac e-Transfer®</div>
+                  <div>Interac® Online</div>
+                  <div>Online Banking Payment</div>
+                  <div>eCheque</div>
+                  <div>Direct Deposit</div>
+                  <div>Visa Direct</div>
+                  <div>Mastercard Send</div>
+                </div>
+                <div class="footer-links-container">
+                  <div class="header">Useful Links</div>
+                  <div>Transaction History</div>
+                  <div>Support</div>
+                  <div>Business Inquries</div>
+                </div>
+                <div class="footer-links-container">
+                  <div class="header">Payments</div>
+                  <div>Send</div>
+                  <div>Receive</div>
+                  <div>Pricing</div>
+                </div>
+                <div class="footer-links-container">
+                  <div class="header">Company</div>
+                  <div>About</div>
+                  <div>Careers</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row2">
+              <div>
+                Paybilt | Canada's leading alternative payments provider.
+              </div>
+              <div class="terms-and-policy">
+                <div>
+                  Terms and Conditions
+                </div>
+                <div>
+                  Privacy Policy
+                </div>
+              </div>
+            </div>
+
+            <div class="row3">
+              Visa, Mastercard, and Interac trademarks, trade names, service marks, design marks,
+              corporate logos and emblems appearing on this website are the intellectual property
+              of their respective owners and have been used with permission.
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/data/products.js"></script>
+  <script src="/assets/js/products.js"></script>
+</body>
+
+</html>

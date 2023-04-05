@@ -7,6 +7,23 @@ header {
     padding: 26px 138px;
     color: #333333;
 
+    .logo-link {
+      position: relative;
+      width: 212px;
+      height: 53px;
+
+      .logo {
+        width: 100%;
+        height: auto;
+      }
+
+      .spray-brush {
+        position: absolute;
+        bottom: -56px;
+        right: -35px;
+      }
+    }
+
     .links {
       display: flex;
       flex-direction: row;

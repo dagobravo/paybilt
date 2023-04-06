@@ -11,6 +11,9 @@ main.homepage {
       .section-content {
         padding: 5px 0 0px 123px;
 
+        overflow: clip;
+        overflow-clip-margin: 0px;
+
         .grid {
           display: flex;
           flex-direction: row;
@@ -20,35 +23,67 @@ main.homepage {
           >div:nth-child(1) {
             flex: 0 0 46%;
           }
+
+          >div:nth-child(2) {
+            position: relative;
+
+            .clouds {
+              position: absolute;
+              width: 1920px;
+              height: auto;
+              top: -100px;
+              right: -190px;
+            }
+
+            .particles {
+              position: absolute;
+              top: -100px;
+              right: -90px;
+              z-index: 1;
+            }
+
+            .girl {
+              position: relative;
+              z-index: 2;
+              right: 60px;
+            }
+          }
         }
 
         .text1 {
+          position: relative;
           text-align: left;
-          font-size: 144px;
-          line-height: 130px;
+          font-size: 100px;
+          line-height: 93px;
+          letter-spacing: -4px;
           font-weight: bold;
           letter-spacing: 0px;
           color: #000;
           opacity: 1;
           width: 850px;
+
+          img {
+            width: 795px;
+            height: auto;
+            position: absolute;
+            left: -90px;
+            top: -184px;
+          }
         }
 
         .text2 {
-          width: 731px;
+          width: 529px;
           text-align: left;
           font-size: 30px;
           line-height: 38px;
-          font-weight: normal;
-          letter-spacing: 0px;
-          color: #000;
-          opacity: 1;
-          margin-top: 27px;
-        }
 
-        .text3 {
-          font-size: 30px;
-          line-height: 38px;
-          margin-top: 150px;
+          font-size: 24px;
+          line-height: 31px;
+          letter-spacing: -1.2px;
+          color: #212427;
+
+          opacity: 1;
+          margin-top: 50px;
         }
       }
 
@@ -64,6 +99,9 @@ main.homepage {
   section.section2 {
     .content-wrapper {
       .section-content {
+        position: relative;
+        z-index: 1;
+
         .text1 {
           text-align: center;
           font-size: 36px;

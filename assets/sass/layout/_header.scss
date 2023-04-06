@@ -11,6 +11,7 @@ header {
       position: relative;
       width: 212px;
       height: 53px;
+      z-index: 1;
 
       img {
         width: 100%;
@@ -37,6 +38,7 @@ header {
       align-items: center;
       gap: 75px;
       font-size: 20px;
+      z-index: 1;
 
       a,
       a:visited {
@@ -60,20 +62,6 @@ header {
             background-repeat: no-repeat;
             background-size: contain;
           }
-
-          // &.large {
-          //   &:after {
-          //     content: "";
-          //     background-image: url(/assets/images/header-menu/spray-brush.svg);
-          //     width: 236px;
-          //     height: 43px;
-          //     position: absolute;
-          //     left: calc(50% - 68px);
-          //     bottom: -40px;
-          //     background-repeat: no-repeat;
-          //     background-size: contain;
-          //   }
-          // }
         }
       }
 

@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:i">
 
-  <!-- owlcarousel -->
-  <link rel="stylesheet" href="/assets/plugins/owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="/assets/plugins/owlcarousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -85,6 +84,12 @@
                 <div class="text2">
                   of Partnering with Paybilt
                 </div>
+
+                <!-- slider main container -->
+                <!-- <div class="swiper"> -->
+                  <!-- additional required wrapper -->
+                  <!-- <div class="swiper-wrapper"> -->
+                    <!-- slides -->
                 <div class="slide">
                   <div class="slide-header">
                     Break into markets faster.
@@ -103,6 +108,9 @@
                     </span>
                   </div>
                 </div>
+
+                  <!-- </div> -->
+                <!-- </div> -->
               </div>
             </div>
           </div>
@@ -280,9 +288,25 @@
       </div>
     </section>
 
+    <section class="section8">
+      <div class="content-wrapper">
+        <div class="section-content">
+
+
+
+        </div>
+      </div>
+    </section>
+
     <section class="section9">
       <div class="content-wrapper">
         <div class="section-content">
+
+          <video autoplay loop muted plays-inline class="background-video">
+            <source src="/assets/images/home/dress-video.mp4" type="video/mp4">
+          </video>
+
+          <div class="dark-layer"></div>
 
           <div class="col">
             <div class="text1">
@@ -410,11 +434,27 @@
     </div>
   </footer>
 
-  <script src="/assets/js/jquery-3.6.3.min.js"></script>
-  <script src="/assets/plugins/owlcarousel/owl.carousel.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
+  <script type="text/javascript">
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'vertical',
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
     });
   </script>
 </body>

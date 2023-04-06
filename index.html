@@ -85,11 +85,6 @@
                   of Partnering with Paybilt
                 </div>
 
-                <!-- slider main container -->
-                <!-- <div class="swiper"> -->
-                  <!-- additional required wrapper -->
-                  <!-- <div class="swiper-wrapper"> -->
-                    <!-- slides -->
                 <div class="slide">
                   <div class="slide-header">
                     Break into markets faster.
@@ -109,8 +104,6 @@
                   </div>
                 </div>
 
-                  <!-- </div> -->
-                <!-- </div> -->
               </div>
             </div>
           </div>
@@ -292,7 +285,96 @@
       <div class="content-wrapper">
         <div class="section-content">
 
+          <!-- Slider main container -->
+          <div class="products-swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature1.svg" alt="">
+                  <div>
+                    Omnichannel Enterprise <br>
+                    Payments
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature2.svg" alt="">
+                  <div>
+                    Canada's Superior <br>
+                    Payment Solution
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature3.svg" alt="">
+                  <div>
+                    One-Click Checkout
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature4.svg" alt="">
+                  <div>
+                    The First Automate <br> e-Transfer®
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature5.svg" alt="">
+                  <div>
+                    Our Network = <br> Your new customers
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature6.svg" alt="">
+                  <div>
+                    The Paybilt Advantage
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature7.svg" alt="">
+                  <div>
+                    Easy to Plug-in to Paybilt
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature8.svg" alt="">
+                  <div>
+                    More Payment Intelligence
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature9.svg" alt="">
+                  <div>
+                    We Protect Your <br> Customers Data
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-slide">
+                  <img src="/assets/images/home/feature10.svg" alt="">
+                  <div>
+                    Visa Direct: Smart <br> Disbursement
+                  </div>
+                </div>
+              </div>
 
+            </div>
+          </div>
 
         </div>
       </div>
@@ -435,26 +517,18 @@
   </footer>
 
   <script type="text/javascript">
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'vertical',
+    const swiper = new Swiper('.products-swiper', {
+      speed: 3000,
+      autoplay: {
+        delay: 5,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      },
       loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
+      slidesPerView: 5,
+      watchSlidesProgress: false,
+      spaceBetween: 0,
+      grabCursor: true
     });
   </script>
 </body>

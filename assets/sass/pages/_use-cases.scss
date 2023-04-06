@@ -39,7 +39,14 @@ main.use-cases {
               filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
             }
 
-            &.active,
+            &.active {
+              color: #F50A47;
+
+              img {
+                filter: invert(20%) sepia(85%) saturate(6656%) hue-rotate(338deg) brightness(95%) contrast(101%);
+              }
+            }
+
             &:hover {
               color: #ffff00;
 

@@ -74,10 +74,10 @@
 
           <div class="gradient-container">
             <div class="grid">
-              <div>
+              <div class="image-container">
                 <img src="/assets/images/home/tennis-shoes.png" alt="">
               </div>
-              <div>
+              <div class="text-container">
                 <div class="text1">
                   Perks
                 </div>
@@ -85,23 +85,137 @@
                   of Partnering with Paybilt
                 </div>
 
-                <div class="slide">
-                  <div class="slide-header">
-                    Break into markets faster.
-                  </div>
-                  <div class="slide-content">
-                    Add a variety of payment methods to your checkout with one API.
-                    We offer a robust system, amazing service, and flawless payments online,
-                    in-app, in-store and perfectly optimized for mobile.
-                  </div>
-                  <div class="slide-button">
-                    <span>
-                      Omnichannel
-                    </span>
-                    <span>
-                      <img src="/assets/images/home/right-arrow.svg" alt="">
-                    </span>
-                  </div>
+                <div class="swiper-container">
+                  <div class="perks-swiper">
+                    <!-- required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides: -->
+
+                      <div class="swiper-slide">
+                        <div class="slide">
+                          <div class="slide-header">
+                            Break into markets faster.
+                          </div>
+                          <div class="slide-content">
+                            Add a variety of payment methods to your checkout with one API.
+                            We offer a robust system, amazing service, and flawless payments online,
+                            in-app, in-store and perfectly optimized for mobile.
+                          </div>
+                          <div class="slide-button" onclick="showNext()">
+                            <span>
+                              Omnichannel
+                            </span>
+                            <span>
+                              <img src="/assets/images/home/right-arrow.svg" alt="">
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="slide">
+                          <div class="slide-header">
+                            Save Time.
+                          </div>
+                          <div class="slide-content">
+                            Paybilt’s automated e-Transfer®
+                            covers all your reconciliation and
+                            reporting needs.
+                          </div>
+                          <div class="slide-button" onclick="showNext()">
+                            <span>
+                              Automated
+                            </span>
+                            <span>
+                              <img src="/assets/images/home/right-arrow.svg" alt="">
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="slide">
+                          <div class="slide-header">
+                            Save sales.
+                          </div>
+                          <div class="slide-content">
+                            Did you know 70% of carts
+                            are abandoned?
+                          </div>
+                          <div class="slide-button" onclick="showNext()">
+                            <span>
+                              + Conversions
+                            </span>
+                            <span>
+                              <img src="/assets/images/home/right-arrow.svg" alt="">
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="slide">
+                          <div class="slide-header">
+                            Anticipate the next click.
+                          </div>
+                          <div class="slide-content">
+                            Paybilt uses every piece of information available to
+                            reduce the steps needed to complete a transaction.
+                            Payments are presented according to known preferences
+                            with an option to select something else, instead of having
+                            a customer repeat the same choices over and over.
+                          </div>
+                          <div class="slide-button" onclick="showNext()">
+                            <span>
+                              Improve UI/UX
+                            </span>
+                            <span>
+                              <img src="/assets/images/home/right-arrow.svg" alt="">
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide">
+                        <div class="slide">
+                          <div class="slide-header">
+                            Reduce risk.
+                          </div>
+                          <div class="slide-content">
+                            We know not all payments are built
+                            with your protection in mind. Paybilt
+                            allows you to confidently accept payments
+                             without the chargeback risk.
+                          </div>
+                          <div class="slide-button" onclick="showNext()">
+                            <span>
+                              Guaranteed Payments
+                            </span>
+                            <span>
+                              <img src="/assets/images/home/right-arrow.svg" alt="">
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div> <!-- swiper-wrapper -->
+                  </div><!-- perks-swiper -->
+                  <script>
+                    const perksSwiper = new Swiper('.perks-swiper', {
+                      loop: true,
+                      autoHeight: true,
+                      speed: 1000,
+                      autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true
+                      },
+                    });
+
+                    function showNext() {
+                      perksSwiper.slideNext();
+                    }
+                  </script>
                 </div>
 
               </div>

@@ -515,6 +515,7 @@ main.homepage {
       .section-content {
         position: relative;
         height: 874px;
+        padding-left: 165px;
 
         .grid {
           height: 100%;
@@ -546,6 +547,9 @@ main.homepage {
           }
 
           img {
+            position: absolute;
+            top: 0;
+            right: 0;
             height: 874px;
             width: auto;
           }

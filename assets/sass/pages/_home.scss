@@ -8,8 +8,16 @@ main.homepage {
     .content-wrapper {
       position: relative;
 
+      // .clouds {
+      //   position: absolute;
+      //   width: 1920px;
+      //   height: auto;
+      //   bottom: 0;
+      //   right: 0;
+      // }
+
       .section-content {
-        padding: 5px 0 0px 123px;
+        padding: 0 0 0 123px;
 
         overflow: clip;
         overflow-clip-margin: 0px;
@@ -27,14 +35,6 @@ main.homepage {
           >div:nth-child(2) {
             position: relative;
 
-            .clouds {
-              position: absolute;
-              width: 1920px;
-              height: auto;
-              top: -100px;
-              right: -190px;
-            }
-
             .particles {
               position: absolute;
               top: -100px;
@@ -46,6 +46,8 @@ main.homepage {
               position: relative;
               z-index: 2;
               right: 60px;
+              height: 906px;
+              width: auto;
             }
           }
         }

@@ -703,6 +703,77 @@ main.homepage {
     }
   }
 
+  section.section9 {
+    background-color: #000;
+
+    .content-wrapper {
+      .section-content {
+        color: #fff;
+
+        background-image: url(/assets/images/home/video-background.png);
+        background-repeat: no-repeat;
+        height: 988px;
+        padding: 0 189px 0 232px;
+
+        .col {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+
+          .text1 {
+            font-weight: bold;
+            font-size: 60px;
+            line-height: 66px;
+            letter-spacing: -3px;
+            margin-bottom: 80px;
+          }
+
+          .text2 {
+            font-weight: 600;
+            font-size: 227px;
+            line-height: 79px;
+            letter-spacing: -15.89px;
+            margin-bottom: 80px;
+
+            >div:nth-child(1) {
+              position: relative;
+
+              &:after {
+                content: "";
+                background-image: url(/assets/images/home/asterisc.png);
+                width: 155px;
+                height: 155px;
+                position: absolute;
+                top: -127px;
+                right: -110px;
+                background-repeat: no-repeat;
+                background-size: contain;
+              }
+            }
+          }
+
+          .text3 {
+            max-width: 522px;
+            margin-left: auto;
+            font-size: 26px;
+            line-height: 33px;
+            letter-spacing: -0.78px;
+          }
+
+          .row {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
   section.section10 {
     background-color: #000;
 

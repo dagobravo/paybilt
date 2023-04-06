@@ -743,13 +743,14 @@ main.homepage {
               &:after {
                 content: "";
                 background-image: url(/assets/images/home/asterisc.png);
-                width: 155px;
-                height: 155px;
+                width: 120px;
+                height: 120px;
                 position: absolute;
-                top: -127px;
-                right: -110px;
+                top: -95px;
+                right: -70px;
                 background-repeat: no-repeat;
                 background-size: contain;
+                z-index: 0;
               }
             }
           }
@@ -779,7 +780,7 @@ main.homepage {
 
     .content-wrapper {
       .section-content {
-        padding: 150px 58px 0;
+        padding: 80px 58px 0;
 
         .pin {
           width: 72px;

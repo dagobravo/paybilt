@@ -7,6 +7,10 @@ header {
     padding: 26px 138px;
     color: #333333;
 
+    @media #{$lt-md} {
+      display: none;
+    }
+
     >a:first-child {
       position: relative;
       width: 212px;
@@ -39,6 +43,11 @@ header {
       gap: 75px;
       font-size: 20px;
       z-index: 1;
+
+      @media #{$lt-md} {
+        font-size: 8px;
+        line-height: 9px;
+      }
 
       a,
       a:visited {

@@ -31,14 +31,18 @@ main.homepage {
 
           @media #{$lt-md} {
             flex-direction: column;
-            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            // width: 100%;
           }
 
-          >div:nth-child(1) {
+          .col1 {
             flex: 0 0 46%;
 
             @media #{$lt-md} {
-              flex: 0 0 100%;
+              // flex: 0 0 100vw;
+              flex: unset;
+              flex: unset;
               padding: 35px;
             }
 
@@ -55,9 +59,11 @@ main.homepage {
               width: 850px;
 
               @media #{$lt-md} {
+                text-align: left;
+                padding: 68px 0 0 47px;
                 font-size: 43px;
                 line-height: 40px;
-                width: 100vw;
+                width: calc(100vw - 70px);
               }
 
               img {
@@ -68,10 +74,10 @@ main.homepage {
                 top: -184px;
 
                 @media #{$lt-md} {
-                  position: relative;
-                  width: 100%;
-                  left: unset;
-                  top: unset;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: calc(100vw - 70px);
                 }
               }
             }
@@ -90,15 +96,17 @@ main.homepage {
               opacity: 1;
               margin-top: 50px;
 
-              @media #{$lt-md} {}
+              @media #{$lt-md} {
+
+              }
             }
           }
 
-          >div:nth-child(2) {
+          .col2 {
             position: relative;
 
             @media #{$lt-md} {
-              flex: 0 0 100%;
+              flex: unset;
             }
 
             .particles {
@@ -166,6 +174,7 @@ main.homepage {
 
             @media #{$lt-md} {
               flex-direction: column;
+              padding: unset;
             }
 
             .image-container {
@@ -194,6 +203,11 @@ main.homepage {
                 color: #000000;
                 opacity: 1;
                 margin-top: 118px;
+
+                @media #{$lt-md} {
+                  font-size: unset;
+                  line-height: unset;
+                }
               }
 
               .text2 {
@@ -671,6 +685,12 @@ main.homepage {
           justify-content: space-between;
           align-items: center;
 
+          .coin {
+            @media #{$lt-md} {
+              width: 100%;
+            }
+          }
+
           .text1 {
             text-align: left;
             font-size: 70px;
@@ -954,6 +974,10 @@ main.homepage {
         img {
           width: 600px;
           height: auto;
+
+          @media #{$lt-md} {
+            width: 100%;
+          }
         }
 
         .form {

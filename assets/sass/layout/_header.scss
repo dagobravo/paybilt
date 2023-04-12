@@ -8,7 +8,7 @@ header {
     color: #333333;
 
     @media #{$lt-md} {
-      display: none;
+      padding: 16px 32px 0;
     }
 
     >a:first-child {
@@ -16,6 +16,11 @@ header {
       width: 212px;
       height: 53px;
       z-index: 1;
+
+      @media #{$lt-md} {
+        width: 82px;
+        height: 36px;
+      }
 
       img {
         width: 100%;
@@ -32,6 +37,13 @@ header {
         bottom: -56px;
         background-repeat: no-repeat;
         background-size: contain;
+
+        @media #{$lt-md} {
+          width: 82px;
+          height: 30px;
+          right: -15px;
+          bottom: -12px;
+        }
       }
     }
 
@@ -45,8 +57,7 @@ header {
       z-index: 1;
 
       @media #{$lt-md} {
-        font-size: 8px;
-        line-height: 9px;
+        display: none;
       }
 
       a,

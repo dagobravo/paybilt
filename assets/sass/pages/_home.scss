@@ -97,7 +97,11 @@ main.homepage {
               margin-top: 50px;
 
               @media #{$lt-md} {
-
+                font-size: 11px;
+                line-height: 14px;
+                margin-left: 47px;
+                margin-top: 7px;
+                max-width: 243px;
               }
             }
           }
@@ -107,6 +111,7 @@ main.homepage {
 
             @media #{$lt-md} {
               flex: unset;
+              overflow-y: clip;
             }
 
             .particles {
@@ -116,9 +121,10 @@ main.homepage {
               z-index: 1;
 
               @media #{$lt-md} {
-                width: 100%;
-                top: 0;
-                bottom: 0;
+                height: 385px;
+                width: auto;
+                right: -66px;
+                top: -30px;
               }
             }
 
@@ -132,9 +138,8 @@ main.homepage {
               @media #{$lt-md} {
                 width: 100%;
                 height: auto;
-                // position: absolute;
                 top: 0;
-                right: 0;
+                right: -56px;
               }
             }
           }

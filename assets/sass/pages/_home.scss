@@ -243,9 +243,11 @@ main.homepage {
                 .perks-swiper {
                   width: 620px;
                   overflow: hidden;
+                  margin-bottom: unset;
 
                   @media #{$lt-md} {
                     width: 244px;
+                    margin-bottom: 50px;
                   }
                 }
               }
@@ -352,6 +354,10 @@ main.homepage {
           top: 680px;
           z-index: 0;
 
+          @media #{$lt-md} {
+            min-height: 523px;
+          }
+
           .cloud-up {
             position: relative;
             top: 340px;
@@ -368,11 +374,23 @@ main.homepage {
             .cloud-left {
               left: -180px;
               top: 120px;
+
+              @media #{$lt-md} {
+                width: 200%;
+                top: -340px;
+                left: -400px;
+              }
             }
 
             .cloud-right {
               right: -360;
               top: 20px;
+
+              @media #{$lt-md} {
+                right: -260px;
+                top: -850px;
+                width: 200%;
+              }
             }
           }
         }
@@ -384,10 +402,17 @@ main.homepage {
     background-color: #000;
     position: relative;
     z-index: 1;
+    overflow-x: clip;
 
     .content-wrapper {
       .section-content {
         padding: 210px 0 320px;
+        text-align: unset;
+
+        @media #{$lt-md} {
+          text-align: center;
+          padding: 110px 0 130px;
+        }
 
         .girl-walk {
           position: absolute;
@@ -397,7 +422,9 @@ main.homepage {
           height: auto;
 
           @media #{$lt-md} {
-            width: 100%;
+            width: 124%;
+            left: calc(50% - 62%);
+            top: -536px;
           }
         }
 
@@ -410,6 +437,8 @@ main.homepage {
 
           @media #{$lt-md} {
             width: 100%;
+            top: -65px;
+            left: 0;
           }
         }
 
@@ -420,213 +449,23 @@ main.homepage {
           left: calc(50% - (853px/2));
 
           @media #{$lt-md} {
-            width: 100%;
+            width: 338px;
+            position: relative;
+            left: unset;
           }
         }
 
-        .text1,
-        .text3 {
+        .text1 {
           text-align: center;
           font-weight: bold;
           font-size: 72px;
           line-height: 74px;
           letter-spacing: 0px;
           color: #FFFFFF;
-        }
 
-        .text2 {
-          text-align: center;
-          font-weight: 600;
-          font-size: 333px;
-          line-height: 342px;
-          letter-spacing: -6.66px;
-          color: #FFFF15;
-        }
-
-        .text4 {
-          text-align: center;
-          font-weight: 600;
-          font-size: 267px;
-          line-height: 275px;
-          letter-spacing: -5.34px;
-          color: #FFFF00;
-          opacity: 1;
-          margin-bottom: 117px;
-        }
-
-        .text5 {
-          background: #2B2A2B 0% 0% no-repeat padding-box;
-          border-radius: 183px;
-          opacity: 1;
-          width: 1000px;
-          padding: 45px 83px;
-          margin: 0 auto;
-
-          text-align: left;
-          font-size: 30px;
-          line-height: 38px;
-          letter-spacing: 0.63px;
-          color: #FFFFFF;
-          opacity: 1;
-          margin-bottom: 136px;
-        }
-
-        .text6 {
-          margin: 0 auto;
-          text-align: center;
-          font-weight: 500;
-          font-size: 70px;
-          letter-spacing: 0px;
-          color: #FFFFFF;
-          opacity: 1;
-          width: 748px;
-          margin-bottom: 25px;
-        }
-
-        .text7 {
-          text-align: center;
-          font-weight: bold;
-          font-size: 40px;
-          line-height: 60px;
-          letter-spacing: 0px;
-          color: #FFFD38;
-          opacity: 1;
-          margin-bottom: 152px;
-        }
-
-        .grid-container {
-          padding: 0 135px;
-          color: #fff;
-          display: inline-grid;
-          grid-template-columns: auto auto auto;
-          column-gap: 128px;
-          row-gap: 80px;
-          margin-bottom: 170px;
-
-          >div:hover {
-            .header {
-              text-align: left;
-              font-weight: 900;
-              font-size: 180px;
-              line-height: 200px;
-              letter-spacing: 0px;
-              color: #FFFF15;
-              opacity: 1;
-              transition: all 0.5s;
-            }
-          }
-
-          .header {
-            text-align: left;
-            font-weight: 900;
-            font-size: 90px;
-            line-height: 123px;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-            transition: all 0.5s;
-          }
-
-          .text {
-            text-align: left;
-            font-size: 30px;
-            line-height: 38px;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-          }
-        }
-
-        .grid-container2 {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 100px;
-
-          padding: 0 127px;
-          margin: 0 auto;
-
-          >div:first-child {
-            flex: 0 0 1020px;
-            display: flex;
-            flex-direction: column;
-            gap: 50px;
-          }
-
-          .header {
-            text-align: left;
-            font-weight: bold;
-            font-size: 89px;
-            line-height: 100px;
-            letter-spacing: 0px;
-            color: #FFFFFF;
-            opacity: 1;
-          }
-
-          .text {
-            text-align: left;
-            font-size: 30px;
-            line-height: 38px;
-            letter-spacing: 0.24px;
-            color: #FFFFFF;
-          }
-
-          .paybilt-group-image {
-            width: 100%;
-            height: auto;
-          }
-        }
-
-        .text8,
-        .text9 {
-          position: relative;
-          text-align: center;
-          font-weight: bold;
-          font-size: 125px;
-          line-height: 149px;
-          letter-spacing: 0px;
-          color: #FFFFFF;
-          opacity: 1;
-          margin: 0 auto 50px;
-        }
-
-        .text8 {
-          width: 740px;
-
-          img {
-            position: absolute;
-            right: 0;
-            top: -20px;
-            width: 110px;
-            height: auto;
-          }
-        }
-
-        .text9 {
-          width: 1030px;
-          margin-top: 70px;
-
-          img {
-            position: absolute;
-            height: auto;
-            width: 115px;
-            bottom: -50px;
-            left: 0;
-          }
-        }
-
-        .grid-container3,
-        .grid-container4 {
-          width: 670px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          gap: 150px;
-          margin: 0 auto;
-          color: #fff;
-
-          .logo {
-            height: 84px;
-            margin-bottom: 30px;
+          @media #{$lt-md} {
+            font-size: 28px;
+            line-height: 31px;
           }
         }
       }
@@ -661,6 +500,10 @@ main.homepage {
             opacity: 1;
             z-index: 1;
             position: relative;
+
+            @media #{$lt-md} {
+              display: none;
+            }
           }
 
           .text2 {
@@ -673,6 +516,10 @@ main.homepage {
             opacity: 1;
             z-index: 1;
             position: relative;
+
+            @media #{$lt-md} {
+              display: none;
+            }
           }
 
           img {
@@ -681,6 +528,10 @@ main.homepage {
             right: 0;
             height: 874px;
             width: auto;
+
+            @media #{$lt-md} {
+              height: 420px;
+            }
           }
         }
 

@@ -148,8 +148,12 @@ main.products {
                 padding: 30px 0 20px;
               }
 
-              &.selected {
+              &:hover {
                 color: #fffd38;
+              }
+
+              &.selected {
+                color: #FF005F;
               }
             }
           }

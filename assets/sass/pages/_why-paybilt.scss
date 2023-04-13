@@ -20,6 +20,21 @@ main.why-paybilt {
           color: #141214;
           opacity: 1;
           margin-bottom: 65px;
+
+          .paybilt-span {
+            display: inline-block;
+            width: 500px;
+            height: 200px;
+            position: relative;
+
+            .paybilt-image {
+              position: absolute;
+              width: 628px;
+              height: auto;
+              top: 40px;
+              left: -30px;
+            }
+          }
         }
 
         .header {
@@ -108,13 +123,11 @@ main.why-paybilt {
           }
 
           .text2 {
-            font-weight: bold;
-            font-size: 52px;
-            line-height: 67px;
-            letter-spacing: 0px;
-            color: #EB6151;
-            opacity: 1;
-            margin-bottom: 125px;
+            .paybilt-for-you {
+              height: 103px;
+              width: auto;
+              margin-bottom: 74px;
+            }
           }
 
           .form {

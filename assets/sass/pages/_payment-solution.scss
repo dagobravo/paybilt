@@ -63,6 +63,22 @@ main.payment-solution {
             right: 0;
             bottom: 0;
           }
+
+          .ice-cream-image {
+            position: absolute;
+            width: 112px;
+            height: auto;
+            right: 786px;
+            bottom: 89px;
+          }
+
+          .cassette-image {
+            position: absolute;
+            width: 269px;
+            height: auto;
+            right: 112px;
+            bottom: -110px;
+          }
         }
       }
     }
@@ -314,7 +330,7 @@ main.payment-solution {
 
     .content-wrapper {
       .section-content {
-        padding: 132px 138px 50px;
+        padding: 170px 138px 50px;
 
         .container1 {
           color: #FFFFFF;
@@ -339,7 +355,21 @@ main.payment-solution {
               letter-spacing: 0px;
               color: #FFFFFF;
               opacity: 1;
-              max-width: 795px;
+              // max-width: 795px;
+
+              .built-span {
+                position: relative;
+                display: inline-block;
+                width: 400px;
+
+                .built-image {
+                  position: absolute;
+                  top: -168px;
+                  left: -20px;
+                  width: 474px;
+                  height: auto;
+                }
+              }
             }
 
             .text2 {

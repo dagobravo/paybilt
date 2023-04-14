@@ -21,10 +21,10 @@
       </a>
       <div class="links">
         <a href="/">Home</a>
-        <a href="payment-solutions.html">Payment solution</a>
+        <a href="/payment-solutions.html">Payment solution</a>
         <a href="/use-cases/saas-solution.html">Use cases</a>
-        <a href="why-paybilt.html">Why Paybilt</a>
-        <a href="products.html">Products</a>
+        <a href="/why-paybilt.html">Why Paybilt</a>
+        <a href="/products.html" class="active">Products</a>
         <a href="">
           <div class="login-button"></div>
         </a>
@@ -40,71 +40,94 @@
       <div class="content-wrapper">
         <div class="section-content">
 
-          <div class="text1">
-            Paybilt is the leading provider of alternative payments in Canada.
-          </div>
+          <div class="row">
+            <div class="col1">
+              <div class="text1">
+                Paybilt is the
+                <span class="leading-span">
+                  <img class="leading-image" src="/assets/images/products/leading.png" alt="">
+                </span>
+                provider of alternative payments in Canada.
+              </div>
 
-          <div class="text2">
-            Paybilt focuses on the payment methods that you care about. We re-engineer and build simplified and easy-to-love payment products for today's consumer.
+              <div class="text2">
+                Paybilt focuses on the payment methods that you care about. We re-engineer and build simplified and easy-to-love payment products for today's consumer.
+              </div>
+            </div>
+            <div class="col2">
+              <img src="/assets/images/products/pexels.png" alt="">
+            </div>
           </div>
 
           <div class="buttons-container">
-            <div class="button" onclick="selectProduct(0, this)">Products</div>
-            <div class="button" onclick="selectProduct(1, this)">International</div>
-            <div class="button" onclick="selectProduct(2, this)">Payments (IN)</div>
-            <div class="button" onclick="selectProduct(3, this)">Payments (OUT)</div>
+            <div class="button active-button" onclick="window.location.href='/products/prod-point-of-sale.html#description'">Products</div>
+            <div class="button" onclick="window.location.href='/products/int-wechat-pay.html#description'">International</div>
+            <div class="button" onclick="window.location.href='/products/pay-in-interac-e-transfer.html#description'">Payments (IN)</div>
+            <div class="button" onclick="window.location.href='/products/pay-out-interac-e-transfer.html#description'">Payments (OUT)</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="section2" class="section2 hidden">
+    <section id="description" class="section2">
       <div class="content-wrapper">
         <div class="section-content">
 
           <div id="left-column" class="left-column">
-            <div id="left-column-header"></div>
-            <div id="left-column-items"></div>
+            <div id="left-column-header">Products</div>
+            <div id="left-column-items">
+              <div class="item" onclick="window.location.href='/products/prod-point-of-sale.html#description'">Point-of-Sale (POS)</div>
+              <div class="item selected" onclick="window.location.href='/products/prod-express-checkout.html#description'">Express Checkout</div>
+              <div class="item" onclick="window.location.href='/products/prod-bill-payments.html#description'">Bill Payments & Invoicing</div>
+              <div class="item" onclick="window.location.href='/products/prod-qr-code.html#description'">QR code scanning</div>
+            </div>
           </div>
 
           <div class="product-section">
-            <div id="product-header">
-              <div id="product-header-label"></div>
-              <div id="product-header-text"></div>
-            </div>
-            <div id="product-content">
-              <div id="product-content-features">
-                <div id="product-content-features-header">Key Features</div>
-                <div id="product-content-features-items"></div>
+            <div class="image-header">
+              <div>
+                <div class="header-text">
+                  Express Checkout
+                </div>
+                <div class="subheader-text">
+                  Paybilt's express eTransfer® enhances the payment process every step of the way.
+                </div>
               </div>
-              <div id="product-content-text"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="section3" class="section3 hidden">
-      <div class="content-wrapper">
-        <div class="section-content">
-
-          <div id="left-column" class="left-column">
-            <div id="left-column-header"></div>
-            <div id="left-column-items"></div>
-          </div>
-
-          <div class="product-section">
-            <div id="product-header">
-              <div id="product-header-label"></div>
-              <div id="product-header-text"></div>
-            </div>
-            <div id="product-content">
-              <div id="product-content-features">
-                <div id="product-content-features-header">Key Features</div>
-                <div id="product-content-features-items"></div>
+              <div>
+                <img src="/assets/images/products/rocket.png" alt="">
               </div>
-              <div id="product-content-text"></div>
+            </div>
+            <div class="content vertical-content">
+              <div class="features">
+                <div>
+                  Key Features
+                </div>
+                <div>
+                  <ul>
+                    <li>NO CUSTOMER REGISTRATION REQUIRED. Customers conduct payments using their online banking login information.</li>
+                    <li>PURCHASE LARGER TICKET ITEMS. Customers can purchase items which usually require a bank draft or certified cheque.</li>
+                    <li>ONE-CLICK CHECKOUT. Offer your customers the quickest payment experiences possible.</li>
+                    <li>EXPAND YOUR CHECKOUT IN A FLASH. Be up and running in as little as 1 business day.</li>
+                    <li>OPTIONAL INSTANT PROCESSING. Payments made within seconds. This is the digital age - should your payments not reflect that?</li>
+                    <li>EASY CUSTOMIZATION. Match your brand by customizing the logo, font, and colors.</li>
+                    <li>FEWER FIELDS. Get shoppers to the finish line faster. With fewer fields you significantly decrease the purchase time and reduce the possibility of user error.</li>
+                    <li>MOBILE READY. Provide the best checkout experience regardless of the device with checkout optimized for mobile.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="description">
+                <div>
+                  Canada's favourite way to pay has been fully automated by Paybilt, making it the perfect payment method for high-volume online businesses.
+                  Add Paybilt's e-Transfer alongside your current payment options and gain access to more than 24 million active monthly e-Transfer® users.
+                  Overnight. The proof is in the payments.
+                    <ul>
+                      <li>82% of Canadians would like to see businesses accept Interac e-Transfer® as a payment method.</li>
+                      <li>68% of Canadians would rather pay with an Interac e-Transfer® than a credit card.</li>
+                      <li>76% of Canadians would prefer to be refunded with an Interac e-Transfer®. The numbers don't lie. Canadians love it.</li>
+                    </ul>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -180,9 +203,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="/assets/data/products.js"></script>
-  <script src="/assets/js/products.js"></script>
 </body>
 
 </html>

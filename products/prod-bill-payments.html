@@ -21,10 +21,10 @@
       </a>
       <div class="links">
         <a href="/">Home</a>
-        <a href="payment-solutions.html">Payment solution</a>
+        <a href="/payment-solutions.html">Payment solution</a>
         <a href="/use-cases/saas-solution.html">Use cases</a>
-        <a href="why-paybilt.html">Why Paybilt</a>
-        <a href="products.html">Products</a>
+        <a href="/why-paybilt.html">Why Paybilt</a>
+        <a href="/products.html" class="active">Products</a>
         <a href="">
           <div class="login-button"></div>
         </a>
@@ -40,71 +40,113 @@
       <div class="content-wrapper">
         <div class="section-content">
 
-          <div class="text1">
-            Paybilt is the leading provider of alternative payments in Canada.
-          </div>
+          <div class="row">
+            <div class="col1">
+              <div class="text1">
+                Paybilt is the
+                <span class="leading-span">
+                  <img class="leading-image" src="/assets/images/products/leading.png" alt="">
+                </span>
+                provider of alternative payments in Canada.
+              </div>
 
-          <div class="text2">
-            Paybilt focuses on the payment methods that you care about. We re-engineer and build simplified and easy-to-love payment products for today's consumer.
+              <div class="text2">
+                Paybilt focuses on the payment methods that you care about. We re-engineer and build simplified and easy-to-love payment products for today's consumer.
+              </div>
+            </div>
+            <div class="col2">
+              <img src="/assets/images/products/pexels.png" alt="">
+            </div>
           </div>
 
           <div class="buttons-container">
-            <div class="button" onclick="selectProduct(0, this)">Products</div>
-            <div class="button" onclick="selectProduct(1, this)">International</div>
-            <div class="button" onclick="selectProduct(2, this)">Payments (IN)</div>
-            <div class="button" onclick="selectProduct(3, this)">Payments (OUT)</div>
+            <div class="button active-button" onclick="window.location.href='/products/prod-point-of-sale.html'">Products</div>
+            <div class="button" onclick="window.location.href='/products/int-wechat-pay.html'">International</div>
+            <div class="button" onclick="window.location.href='/products/pay-in-interac-e-transfer.html'">Payments (IN)</div>
+            <div class="button" onclick="window.location.href='/products/pay-out-interac-e-transfer.html'">Payments (OUT)</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="section2" class="section2 hidden">
+    <section id="description" class="section2">
       <div class="content-wrapper">
         <div class="section-content">
 
           <div id="left-column" class="left-column">
-            <div id="left-column-header"></div>
-            <div id="left-column-items"></div>
+            <div id="left-column-header">Products</div>
+            <div id="left-column-items">
+              <div class="item" onclick="window.location.href='/products/prod-point-of-sale.html#description'">Point-of-Sale (POS)</div>
+              <div class="item" onclick="window.location.href='/products/prod-express-checkout.html#description'">Express Checkout</div>
+              <div class="item selected" onclick="window.location.href='/products/prod-bill-payments.html#description'">Bill Payments & Invoicing</div>
+              <div class="item" onclick="window.location.href='/products/prod-qr-code.html#description'">QR code scanning</div>
+            </div>
           </div>
 
           <div class="product-section">
-            <div id="product-header">
-              <div id="product-header-label"></div>
-              <div id="product-header-text"></div>
-            </div>
-            <div id="product-content">
-              <div id="product-content-features">
-                <div id="product-content-features-header">Key Features</div>
-                <div id="product-content-features-items"></div>
+            <div class="image-header">
+              <div>
+                <div class="header-text">
+                  The complete payments platform <br> for Enterprise.
+                </div>
+                <div class="subheader-text">
+                  Secure solutions that scale with your business. Paybilt is shaping the future, helping big businesses reach even bigger goals.
+                </div>
               </div>
-              <div id="product-content-text"></div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="section3" class="section3 hidden">
-      <div class="content-wrapper">
-        <div class="section-content">
-
-          <div id="left-column" class="left-column">
-            <div id="left-column-header"></div>
-            <div id="left-column-items"></div>
-          </div>
-
-          <div class="product-section">
-            <div id="product-header">
-              <div id="product-header-label"></div>
-              <div id="product-header-text"></div>
-            </div>
-            <div id="product-content">
-              <div id="product-content-features">
-                <div id="product-content-features-header">Key Features</div>
-                <div id="product-content-features-items"></div>
+              <div>
+                <img src="/assets/images/products/ticket.png" alt="">
               </div>
-              <div id="product-content-text"></div>
+            </div>
+            <div class="content">
+              <div class="features">
+                <div>
+                  Key Features
+                </div>
+                <div>
+                  <ul>
+                    <li>
+                      Low fees.
+                    </li>
+                    <li>
+                      High transaction limits and bulk
+                    </li>
+                    <li>
+                      e-Transfers® available
+                    </li>
+                    <li>
+                      Quick and easy onboarding
+                    </li>
+                    <li>
+                      Perfectly optimized for in-storeonline and in-app purchases
+                    </li>
+                    <li>
+                      Invoicing, recurring payments and subscription billing options
+                    </li>
+                    <li>
+                      Exclusive access to Paybilt's dashboard features
+                    </li>
+                    <li>
+                      Automated reconciliation
+                    </li>
+                    <li>
+                      Advanced risk management and fraud controls
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="description">
+                <div>
+                  Raise your standards and lower your costs by putting payments at the heart of your brand strategy.
+                  Paybilt provides a full set of payment processing methods guaranteed to increase sales for your business.
+                  Conduct online payments, invoicing, mobile and POS payments, custom integrations and more.
+                  <br><br>
+                  Leverage deep data management and intelligent analytics tools - all connected in one platform.
+                  <br><br>
+                  Provide an amazing payment experience to your customers across all sales channels,
+                  save time and increase growth with automatic reconciliation and invoicing that supports large scale operations.
+                </div>
+              </div>
             </div>
           </div>
 
@@ -180,9 +222,6 @@
       </div>
     </div>
   </footer>
-
-  <script src="/assets/data/products.js"></script>
-  <script src="/assets/js/products.js"></script>
 </body>
 
 </html>

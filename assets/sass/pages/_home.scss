@@ -399,7 +399,7 @@ main.homepage {
   }
 
   section.section3 {
-    background-color: #000;
+    background-color: #141214;
     position: relative;
     z-index: 1;
     overflow-x: clip;
@@ -473,7 +473,7 @@ main.homepage {
   }
 
   section.section4 {
-    background-color: #000;
+    background-color: #141214;
 
     .content-wrapper {
       .section-content {
@@ -540,7 +540,7 @@ main.homepage {
   }
 
   section.section5 {
-    background-color: #000;
+    background-color: #141214;
 
     .content-wrapper {
       .section-content {
@@ -568,7 +568,7 @@ main.homepage {
   }
 
   section.section6 {
-    background-color: #000;
+    background-color: #141214;
 
     .content-wrapper {
       .section-content {
@@ -622,7 +622,7 @@ main.homepage {
   }
 
   section.section7 {
-    background-color: #000;
+    background-color: #141214;
 
     .content-wrapper {
       .section-content {
@@ -728,7 +728,7 @@ main.homepage {
   }
 
   section.section9 {
-    background-color: #000;
+    background-color: #141214;
 
     .content-wrapper {
       .section-content {
@@ -829,7 +829,7 @@ main.homepage {
   }
 
   section.section10 {
-    background-color: #000;
+    background-color: #141214;
 
     .content-wrapper {
       .section-content {
@@ -866,7 +866,8 @@ main.homepage {
 
         border-radius: 129px 129px 0px 0px;
         background: rgb(56, 56, 56);
-        background: linear-gradient(180deg, rgba(56, 56, 56, 1) 30%, rgba(0, 0, 0, 1) 100%);
+        // background: linear-gradient(180deg, rgba(56, 56, 56, 1) 30%, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(180deg, #383838 30%, #141214 100%);
 
         @media #{$lt-md} {
           flex-direction: column;

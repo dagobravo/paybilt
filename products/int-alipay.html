@@ -61,35 +61,42 @@
           </div>
 
           <div class="buttons-container">
-            <div class="button" onclick="window.location.href='/products/prod-point-of-sale.html'">Products</div>
-            <div class="button" onclick="window.location.href='/products/int-wechat-pay.html'">International</div>
-            <div class="button" onclick="window.location.href='/products/pay-in-interac-e-transfer.html'">Payments (IN)</div>
-            <div class="button" onclick="window.location.href='/products/pay-out-interac-e-transfer.html'">Payments (OUT)</div>
+            <div class="button" onclick="window.location.href='/products/prod-point-of-sale.html#description'">Products</div>
+            <div class="button active-button" onclick="window.location.href='/products/int-wechat-pay.html#description'">International</div>
+            <div class="button" onclick="window.location.href='/products/pay-in-interac-e-transfer.html#description'">Payments (IN)</div>
+            <div class="button" onclick="window.location.href='/products/pay-out-interac-e-transfer.html#description'">Payments (OUT)</div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="section2" class="section2">
+    <section id="description" class="section2">
       <div class="content-wrapper">
         <div class="section-content">
 
           <div id="left-column" class="left-column">
             <div id="left-column-header">International</div>
             <div id="left-column-items">
-              <div class="item">WeChat Pay</div>
-              <div class="item selected">AliPay</div>
-              <div class="item">Boleto</div>
+              <div class="item" onclick="window.location.href='/products/int-wechat-pay.html#description'">WeChat Pay</div>
+              <div class="item selected" onclick="window.location.href='/products/int-alipay.html#description'">AliPay</div>
+              <div class="item" onclick="window.location.href='/products/int-boleto.html#description'">Boleto</div>
             </div>
           </div>
 
           <div class="product-section">
-            <div class="header">
-              <div>
-                AliPay
-              </div>
-              <div>
-                Paybilt makes it easy to capture sales from people visiting Canada from China.
+            <div class="image-header">
+              <div style="display: flex; flex-direction: row; align-items: center;">
+                <div>
+                  <img src="/assets/images/products/alipay.png" alt="" style="width: 114px; margin-right: 40px">
+                </div>
+                <div>
+                  <div class="header-text">
+                    AliPay
+                  </div>
+                  <div class="subheader-text">
+                    Paybilt makes it easy to capture sales from people visiting Canada from China.
+                  </div>
+                </div>
               </div>
             </div>
             <div class="content">

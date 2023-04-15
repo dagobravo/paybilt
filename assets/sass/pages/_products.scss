@@ -210,6 +210,51 @@ main.products {
             }
           }
 
+          .image-dual-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            // padding: 40px 48px 40px;
+            border-bottom: 1px solid #707070;
+
+            .header1 {
+              flex: 0 0 calc(62% - 96px);
+              padding: 40px 48px 40px;
+              border-right: 1px solid #707070;
+
+              .header-text {
+                font-weight: bold;
+                font-size: 32px;
+                color: #FFFC30;
+                margin-bottom: 25px;
+              }
+
+              .subheader-text {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 32px;
+                color: #FFFFFF;
+              }
+
+              img {
+                width: 311px;
+                height: auto;
+              }
+            }
+
+            .header2 {
+              flex: 0 0 calc(38% - 96px);
+              padding: 40px 48px 40px;
+
+              font-weight: bold;
+              font-size: 36px;
+              line-height: 52px;
+              letter-spacing: 0px;
+              color: #FFFFFF;
+            }
+          }
+
           .content {
             display: flex;
             flex-direction: row;

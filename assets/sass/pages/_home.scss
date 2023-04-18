@@ -126,6 +126,7 @@ main.homepage {
               top: -100px;
               right: -90px;
               z-index: 1;
+              transform: translateX(-100px);
 
               @media #{$lt-md} {
                 height: 385px;
@@ -141,6 +142,7 @@ main.homepage {
               right: 60px;
               height: 906px;
               width: auto;
+              transform: translateX(100px);
 
               @media #{$lt-md} {
                 width: 100%;
@@ -446,6 +448,7 @@ main.homepage {
           left: calc(50% - 477px);
           width: 954px;
           height: auto;
+          transform: scale(0.5);
 
           @media #{$lt-md} {
             width: 100%;
@@ -459,6 +462,7 @@ main.homepage {
           height: auto;
           position: absolute;
           left: calc(50% - (853px/2));
+          transform: scale(0.5);
 
           @media #{$lt-md} {
             width: 338px;

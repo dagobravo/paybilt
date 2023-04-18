@@ -198,24 +198,8 @@
                         </div>
                       </div>
 
-                    </div> <!-- swiper-wrapper -->
-                  </div><!-- perks-swiper -->
-                  <script>
-                    const perksSwiper = new Swiper('.perks-swiper', {
-                      loop: true,
-                      autoHeight: true,
-                      speed: 1000,
-                      autoplay: {
-                        delay: 3000,
-                        disableOnInteraction: false,
-                        pauseOnMouseEnter: true
-                      },
-                    });
-
-                    function showNext() {
-                      perksSwiper.slideNext();
-                    }
-                  </script>
+                    </div>
+                  </div>
                 </div>
 
               </div>
@@ -630,90 +614,10 @@
     </div>
   </footer>
 
-  <!-- objects animations -->
+  <!-- animations -->
   <script src="/assets/js/gsap.min.js"></script>
   <script src="/assets/js/ScrollTrigger.min.js"></script>
-  <script type="text/javascript">
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(".perfecting-image", {
-      scrollTrigger: ".perfecting-image",
-      x: 0,
-      duration: 1
-    });
-    gsap.to(".text1-span", {
-      scrollTrigger: ".text1-span",
-      x: 0,
-      duration: 1
-    });
-    gsap.fromTo(".particles", {x: -100}, {x: 0, duration: 2});
-    gsap.fromTo(".girl", {x: 100}, {x: 0, duration: 2.5});
-
-    gsap.to('.tennis-shoes-image', {
-      x: 0,
-      ease: "expo",
-      scrollTrigger: {
-        trigger: ".tennis-shoes-image",
-        scrub: 1,
-        start: "top 60%",
-        end: "bottom -30%",
-      }
-    });
-
-    gsap.to('#perks-text', {
-      x: 0,
-      ease: "expo",
-      duration: 2,
-      scrollTrigger: {
-        trigger: "#perks-text",
-        scrub: 1,
-        start: "top 60%",
-        end: "bottom -30%"
-      }
-    });
-
-    gsap.to("#skate-image", {
-      opacity: 1,
-      ease: "expo",
-      x: 0,
-      scrollTrigger: {
-        trigger: "#skate-image",
-        scrub: 1,
-        start: "top center"
-      }
-    });
-  </script>
-  <script type="text/javascript">
-    const ltMd = window.matchMedia('only screen and (max-width: 767px)').matches;
-    if (!ltMd) {
-      const swiper = new Swiper('.products-swiper', {
-        speed: 3000,
-        autoplay: {
-          delay: 5,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
-        },
-        loop: true,
-        slidesPerView: 5,
-        watchSlidesProgress: false,
-        spaceBetween: 0,
-        grabCursor: true
-      });
-    } else {
-      const swiper = new Swiper('.products-swiper', {
-        speed: 3000,
-        autoplay: {
-          delay: 5,
-          disableOnInteraction: false,
-          pauseOnMouseEnter: true
-        },
-        loop: true,
-        slidesPerView: 1,
-        watchSlidesProgress: false,
-        spaceBetween: 0,
-        grabCursor: true
-      });
-    }
-  </script>
+  <script src="/assets/js/animation-scripts/index.js"></script>
+  <script src="/assets/js/swipper-settings.js"></script>
 </body>
-
 </html>

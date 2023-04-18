@@ -58,6 +58,11 @@ main.homepage {
               text-align: left;
               width: 850px;
 
+              .text1-span {
+                transform: translateX(-200px);
+                display: inline-block;
+              }
+
               @media #{$lt-md} {
                 text-align: left;
                 padding: 68px 0 0 47px;
@@ -72,6 +77,8 @@ main.homepage {
                 position: absolute;
                 left: -90px;
                 top: -184px;
+
+                transform: translateX(200px);
 
                 @media #{$lt-md} {
                   position: absolute;
@@ -195,6 +202,7 @@ main.homepage {
                 width: 828px;
                 height: auto;
                 margin-bottom: unset;
+                transform: translateX(-200px);
 
                 @media #{$lt-md} {
                   width: 267px;
@@ -217,6 +225,7 @@ main.homepage {
                 color: #000000;
                 opacity: 1;
                 margin-top: 118px;
+                transform: translateX(200px);
 
                 @media #{$lt-md} {
                   display: none;

@@ -71,6 +71,28 @@ gsap.to('#perks-text2', {
   }
 });
 
+gsap.to('.cloud-up', {
+  x: 150,
+  ease: "expo",
+  scrollTrigger: {
+    trigger: ".cloud-up",
+    scrub: 1,
+    start: "top 80%",
+    end: "bottom -50%"
+  }
+});
+
+gsap.to('.cloud-container', {
+  x: 100,
+  ease: "expo",
+  scrollTrigger: {
+    trigger: ".cloud-container",
+    scrub: 1,
+    start: "top 80%",
+    end: "bottom -30%"
+  }
+});
+
 gsap.to('.amount-image', {
   scale: 1,
   ease: "expo",

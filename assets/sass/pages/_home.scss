@@ -375,10 +375,12 @@ main.homepage {
           .cloud-up {
             position: relative;
             top: 340px;
+            transform: translateX(-100px);
           }
 
           .cloud-container {
             position: relative;
+            transform: translateX(-100px);
 
             .cloud-left,
             .cloud-right {

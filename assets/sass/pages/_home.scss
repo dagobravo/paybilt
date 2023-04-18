@@ -537,6 +537,8 @@ main.homepage {
             right: 0;
             height: 874px;
             width: auto;
+            opacity: 0;
+            transform: translateX(200px);
 
             @media #{$lt-md} {
               height: 420px;

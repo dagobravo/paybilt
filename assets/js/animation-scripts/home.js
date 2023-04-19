@@ -153,3 +153,19 @@ const envelopeTimeline = gsap.timeline({
   }
 });
 envelopeTimeline.fromTo("#envelope-image", { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 2 });
+
+const paymentsHeaderTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#payments-header",
+    scrub: true
+  }
+});
+paymentsHeaderTimeline.fromTo("#payments-header", { x: -200 }, { x: 0 });
+
+const disbursementsHeaderTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#disbursements-header",
+    scrub: true
+  }
+});
+disbursementsHeaderTimeline.fromTo("#disbursements-header", { x: 200 }, { x: 0 });

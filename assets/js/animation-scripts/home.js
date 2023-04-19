@@ -125,3 +125,32 @@ gsap.to("#skate-image", {
     start: "top center"
   }
 });
+
+const coinTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".coin",
+    scrub: true
+  }
+});
+coinTimeline.fromTo(".coin", { x: -200, opacity: 0.5 }, { x: 0, opacity: 1, duration: 2 });
+
+const painTextTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".pain-text",
+    scrub: true,
+    start: "top 80%",
+    end: "top 40%",
+    markers: true
+  }
+});
+painTextTimeline.fromTo(".pain-text", { opacity: 0, scale: 0.2 }, { scale: 1, opacity: 1 });
+
+const envelopeTimeline = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#envelope-image",
+    scrub: true,
+    start: "top 80%",
+    end: "top 40%",
+  }
+});
+envelopeTimeline.fromTo("#envelope-image", { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 2 });

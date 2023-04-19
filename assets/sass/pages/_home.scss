@@ -684,9 +684,57 @@ main.homepage {
             flex-direction: row;
             align-items: center;
 
-            img {
+            &.interac,
+            &.online-banking,
+            &.echeque,
+            &.visa,
+            &.master-card {
               width: 70px;
               height: auto;
+              display: inline-block;
+              background-position: center !important;
+              background-size: cover !important;
+              cursor: pointer;
+            }
+
+            &.interac {
+              background: url(/assets/images/home/payments-disbursements/interac-bw.png) no-repeat;
+            }
+
+            &.interac:hover {
+              background: url(/assets/images/home/payments-disbursements/interac.png) no-repeat;
+            }
+
+            &.online-banking {
+              background: url(/assets/images/home/payments-disbursements/online-banking-bw.png) no-repeat;
+            }
+
+            &.online-banking:hover {
+              background: url(/assets/images/home/payments-disbursements/online-banking.png) no-repeat;
+            }
+
+            &.echeque {
+              background: url(/assets/images/home/payments-disbursements/echeque-bw.png) no-repeat;
+            }
+
+            &.echeque:hover {
+              background: url(/assets/images/home/payments-disbursements/echeque.png) no-repeat;
+            }
+
+            &.visa {
+              background: url(/assets/images/home/payments-disbursements/visa-direct-bw.png) no-repeat;
+            }
+
+            &.visa:hover {
+              background: url(/assets/images/home/payments-disbursements/visa-direct.png) no-repeat;
+            }
+
+            &.master-card {
+              background: url(/assets/images/home/payments-disbursements/mastercard-send-bw.png) no-repeat;
+            }
+
+            &.master-card:hover {
+              background: url(/assets/images/home/payments-disbursements/mastercard-send.png) no-repeat;
             }
           }
 

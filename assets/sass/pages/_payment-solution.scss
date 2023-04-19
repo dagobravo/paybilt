@@ -28,6 +28,8 @@ main.payment-solution {
             color: #FFFFFF;
             opacity: 1;
             margin-bottom: 7px;
+
+            transform: translateX(-100px);
           }
 
           .text2,
@@ -44,6 +46,8 @@ main.payment-solution {
             color: #FFFFFF;
             opacity: 1;
             margin-bottom: 16px;
+
+            transform: translateX(-100px);
           }
 
           .text3 {
@@ -70,6 +74,8 @@ main.payment-solution {
             height: auto;
             right: 786px;
             bottom: 89px;
+
+            transform: scale(0);
           }
 
           .cassette-image {
@@ -78,6 +84,8 @@ main.payment-solution {
             height: auto;
             right: 112px;
             bottom: -110px;
+
+            transform: scale(0);
           }
         }
       }
@@ -368,6 +376,7 @@ main.payment-solution {
                   left: -20px;
                   width: 474px;
                   height: auto;
+                  transform: scale(0.5);
                 }
               }
             }

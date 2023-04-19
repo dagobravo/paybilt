@@ -37,7 +37,7 @@ const section5Container1 = gsap.timeline({
 });
 section5Container1.fromTo("#section5-container1", { scale: 0.5, opacity: 0.5 }, { scale: 1, opacity: 1, duration: 2 });
 
-const paperAirplaneImage = gsap.timeline({ scrollTrigger: "#paper-airplane-image" });
+const paperAirplaneImage = gsap.timeline({ scrollTrigger: { trigger: "#paper-airplane-image", scrub: true } });
 paperAirplaneImage.fromTo("#paper-airplane-image", { x: -200, opacity: 0 }, { x: 0, opacity: 1, duration: 2 });
 
 const watchTimeline = gsap.timeline({
@@ -58,3 +58,9 @@ gsap.to(".built-image", {
     end: "bottom -30%"
   }
 });
+
+const iceCreamTimeline = gsap.timeline({ scrollTrigger: { trigger: ".ice-cream-image", scrub: true } });
+iceCreamTimeline.fromTo(".ice-cream-image", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1 });
+
+const cassetteTimeline = gsap.timeline({ scrollTrigger: { trigger: ".cassette-image", scrub: true } });
+cassetteTimeline.fromTo(".cassette-image", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1 });

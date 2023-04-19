@@ -139,8 +139,7 @@ const painTextTimeline = gsap.timeline({
     trigger: ".pain-text",
     scrub: true,
     start: "top 80%",
-    end: "top 40%",
-    markers: true
+    end: "top 40%"
   }
 });
 painTextTimeline.fromTo(".pain-text", { opacity: 0, scale: 0.2 }, { scale: 1, opacity: 1 });

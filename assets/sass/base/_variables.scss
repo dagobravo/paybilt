@@ -54,3 +54,9 @@ ul {
   margin: 0 !important;
   padding-left: 20px !important;
 }
+
+.mobile-only {
+  @media #{$gt-lg} {
+    display: none;
+  }
+}

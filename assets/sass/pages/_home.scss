@@ -418,7 +418,6 @@ main.homepage {
   section.section3 {
     background-color: #141214;
     position: relative;
-    // z-index: 1;
     overflow-x: clip;
 
     .content-wrapper {
@@ -428,7 +427,7 @@ main.homepage {
 
         @media #{$lt-md} {
           text-align: center;
-          padding: 110px 0 130px;
+          padding: 110px 0 40px;
         }
 
         .girl-walk {
@@ -489,6 +488,39 @@ main.homepage {
             line-height: 31px;
           }
         }
+
+        .mobile-only {
+          color: #fff;
+
+          &.text2 {
+            font-size: 14px;
+            line-height: 18px;
+            max-width: 52%;
+            margin: 0 auto;
+          }
+
+          &.text3 {
+            font-size: 11px;
+            line-height: 14px;
+            max-width: 80%;
+            margin: 23px auto 0;
+          }
+
+          &.text4 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 31px;
+            max-width: 74%;
+            margin: 17px auto 0;
+          }
+
+          &.text5 {
+            font-size: 11px;
+            line-height: 14px;
+            max-width: 72%;
+            margin: 23px auto 0;
+          }
+        }
       }
     }
   }
@@ -502,12 +534,27 @@ main.homepage {
         height: 874px;
         padding-left: 165px;
 
+        @media #{$lt-md} {
+          padding-left: unset;
+          height: 420px;
+        }
+
         .grid {
           height: 100%;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+
+          @media #{$lt-md} {
+            flex-direction: column;
+          }
+
+          >div:nth-child(1) {
+            @media #{$lt-md} {
+              display: none;
+            }
+          }
 
           .text1 {
             max-width: 725px;
@@ -570,6 +617,10 @@ main.homepage {
         padding: 27px 0 57px;
         text-align: center;
 
+        @media #{$lt-md} {
+          padding: 66px 0 27px;
+        }
+
         .text1 {
           text-align: center;
           font-weight: bold;
@@ -579,11 +630,22 @@ main.homepage {
           color: #FFFD38;
           max-width: 804px;
           margin: 0 auto 62px;
+
+          @media #{$lt-md} {
+            font-size: 30px;
+            line-height: 30px;
+            max-width: 60%;
+            margin: 0 auto 27px;
+          }
         }
 
         .arrow-down {
           width: 64px;
           height: auto;
+
+          @media #{$lt-md} {
+            width: 20px;
+          }
         }
 
       }
@@ -609,9 +671,15 @@ main.homepage {
           justify-content: space-between;
           align-items: center;
 
+          @media #{$lt-md} {
+            padding: 0;
+            border-radius: 32px 32px 32px 32px;
+            margin: 0 15px;
+          }
+
           .coin {
             @media #{$lt-md} {
-              width: 100%;
+              display: none;
             }
           }
 
@@ -624,10 +692,20 @@ main.homepage {
             max-width: 577px;
             margin-bottom: 60px;
 
+            @media #{$lt-md} {
+              font-size: 30px;
+              line-height: 34px;
+            }
+
             .pain-text {
               position: absolute;
               top: -65px;
               right: -80px;
+
+              @media #{$lt-md} {
+                height: 59px;
+                width: auto;
+              }
             }
           }
 

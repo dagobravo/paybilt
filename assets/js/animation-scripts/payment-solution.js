@@ -59,8 +59,5 @@ gsap.to(".built-image", {
   }
 });
 
-const iceCreamTimeline = gsap.timeline({ scrollTrigger: { trigger: ".ice-cream-image", scrub: true } });
-iceCreamTimeline.fromTo(".ice-cream-image", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1 });
-
 const cassetteTimeline = gsap.timeline({ scrollTrigger: { trigger: ".cassette-image", scrub: true } });
 cassetteTimeline.fromTo(".cassette-image", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1 });

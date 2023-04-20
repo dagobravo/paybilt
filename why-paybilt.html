@@ -49,31 +49,31 @@
                 </span>
               </div>
 
-              <div class="header">
+              <div class="header header1">
                 Full Dashboard.
               </div>
-              <div class="content">
+              <div class="content header1">
                 We know data drives your business - we help augment your existing data through our platform and tools.
                 Perform detailed searches, export transaction data, track trends and more.
               </div>
 
-              <div class="header">
+              <div class="header header2">
                 Security.
               </div>
-              <div class="content">
+              <div class="content header2">
                 Paybilt meets all Canadian compliance requirements and protects its clients with an intelligent system
                 that employs strategies such as velocity and IP controls, transaction scoring, multi factor authentication, transaction limits, fraud alerts, and more.
               </div>
 
-              <div class="header">
+              <div class="header header3">
                 Branding.
               </div>
-              <div class="content">
+              <div class="content header3">
                 Be yourself. With Paybilt, you maintain control over consumer touch points. Your brand is everywhere, not ours.
               </div>
             </div>
             <div class="col">
-              <img src="/assets/images/why-paybilt/guy.png" alt="">
+              <img class="guy-image" src="/assets/images/why-paybilt/guy.png" alt="">
             </div>
           </div>
 
@@ -84,7 +84,7 @@
       <div class="content-wrapper">
 
         <div class="container1">
-          <div class="text1">
+          <div class="text1 pricing-header">
             Enterprise Pricing
           </div>
           <div class="text2 bold">
@@ -208,17 +208,18 @@
     </div>
   </footer>
 
+  <!-- animations -->
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/animation-scripts/why-paybilt.js"></script>
+
   <script type="text/javascript">
     function updateSliderValue(element) {
       const sliderAmount = document.getElementById('slider-amount');
 
       const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
-        currency: 'USD',
-
-        // These options are needed to round to whole numbers if that's what you want.
-        //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
-        //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
+        currency: 'USD'
       });
 
       sliderAmount.innerHTML = formatter.format(element.value);

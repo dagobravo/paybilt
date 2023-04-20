@@ -18,6 +18,9 @@ main.homepage {
         overflow: clip;
         overflow-clip-margin: 0px;
 
+        background: url(/assets/images/home/background.png) no-repeat;
+        background-size: cover;
+
         @media #{$lt-md} {
           padding: 0;
           width: 100vw;

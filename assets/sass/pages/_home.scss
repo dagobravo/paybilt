@@ -694,6 +694,7 @@ main.homepage {
             position: relative;
             max-width: 577px;
             margin-bottom: 60px;
+            font-weight: 900;
 
             @media #{$lt-md} {
               font-size: 30px;
@@ -1043,14 +1044,23 @@ main.homepage {
           flex-direction: column;
           justify-content: start;
           align-items: start;
-          padding: 154px 85px 300px;
+          padding: 150px 277px 168px;
           gap: 24px;
-          width: 542px;
+          width: 100%;
+
+          .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            gap: 150px;
+          }
 
           input {
             border: none;
             background: none;
-            width: 539px;
+            width: 100%;
             height: 54px;
             border-bottom: 1px solid #707070;
 
@@ -1073,12 +1083,13 @@ main.homepage {
             justify-content: space-between;
             align-items: center;
             gap: 77px;
+            width: 100%;
 
             .submit-button {
               background: #FFFD38 0% 0% no-repeat padding-box;
               border-radius: 32px;
               opacity: 1;
-              width: 152px;
+              width: 338px;
               height: 50px;
               cursor: pointer;
 

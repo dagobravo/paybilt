@@ -30,6 +30,23 @@ main.payment-solution {
             margin-bottom: 7px;
 
             transform: translateX(-100px);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .works-span {
+              display: inline-block;
+              width: 374px;
+              height: 195px;
+
+              .works-image {
+                width: 374px;
+                height: auto;
+              }
+            }
           }
 
           .text2,

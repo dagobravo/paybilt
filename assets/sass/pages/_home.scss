@@ -705,7 +705,7 @@ main.homepage {
               margin-bottom: 40px;
             }
 
-            .pain-span  {
+            .pain-span {
               @media #{$lt-md} {
                 display: inline-block;
                 position: relative;
@@ -757,21 +757,40 @@ main.homepage {
         color: #fff;
         padding: 632px 172px 207px;
 
+        @media #{$lt-md} {
+          background-image: url(/assets/images/home/scenario-sm.png);
+          background-size: contain;
+          padding: 255px 0 62px;
+        }
+
         .row {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: flex-start;
 
+          @media #{$lt-md} {
+            align-items: center;
+          }
+
           &.gap {
             gap: 124px;
+
+            @media #{$lt-md} {
+              gap: unset;
+            }
           }
 
           &.container {
             @media #{$lt-md} {
               flex-direction: column;
+              gap: 62px;
             }
           }
+        }
+
+        .row-items {
+          align-self: stretch;
         }
 
         .col {
@@ -780,11 +799,21 @@ main.homepage {
           justify-content: flex-start;
           align-items: center;
 
+          .stretch {
+            @media #{$lt-md} {
+              align-self: stretch;
+            }
+          }
+
           .product-logo {
             flex: 0 0 72px;
             display: flex;
             flex-direction: row;
             align-items: center;
+
+            @media #{$lt-md} {
+              flex: 0 0 36px;
+            }
 
             &.interac,
             &.online-banking,
@@ -797,6 +826,10 @@ main.homepage {
               background-position: center !important;
               background-size: cover !important;
               cursor: pointer;
+
+              @media #{$lt-md} {
+                width: 36px;
+              }
             }
 
             &.interac {
@@ -850,6 +883,20 @@ main.homepage {
           font-size: 70px;
           line-height: 94px;
           letter-spacing: 0px;
+
+          @media #{$lt-md} {
+            font-size: 30px;
+            line-height: unset;
+          }
+
+          img {
+            width: 94px;
+            height: auto;
+
+            @media #{$lt-md} {
+              width: 38px;
+            }
+          }
         }
 
         .product-name {
@@ -858,6 +905,12 @@ main.homepage {
           font-size: 12px;
           line-height: 15px;
           letter-spacing: 0.1px;
+
+          @media #{$lt-md} {
+            font-size: 6px;
+            line-height: 7px;
+            letter-spacing: 0.05px;
+          }
         }
       }
     }

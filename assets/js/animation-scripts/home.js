@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+const isSm = window.matchMedia('only screen and (max-width: 767px)').matches;
+const isMd = window.matchMedia('only screen and (min-width: 768px) and (max-width: 1024px)').matches;
 
 gsap.to(".perfecting-image", {
   scrollTrigger: ".perfecting-image",
@@ -148,7 +150,7 @@ const paymentsHeaderTimeline = gsap.timeline({
     scrub: true
   }
 });
-paymentsHeaderTimeline.fromTo("#payments-header", { x: -200 }, { x: 0 });
+paymentsHeaderTimeline.fromTo("#payments-header", { x: isSm ? -200 : -100 }, { x: 0 });
 
 const disbursementsHeaderTimeline = gsap.timeline({
   scrollTrigger: {
@@ -156,4 +158,4 @@ const disbursementsHeaderTimeline = gsap.timeline({
     scrub: true
   }
 });
-disbursementsHeaderTimeline.fromTo("#disbursements-header", { x: 200 }, { x: 0 });
+disbursementsHeaderTimeline.fromTo("#disbursements-header", { x: isSm ? 200 : 100 }, { x: 0 });

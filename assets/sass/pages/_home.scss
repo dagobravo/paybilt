@@ -760,7 +760,7 @@ main.homepage {
         @media #{$lt-md} {
           background-image: url(/assets/images/home/scenario-sm.png);
           background-size: contain;
-          padding: 255px 0 62px;
+          padding: 255px 62px 62px;
         }
 
         .row {
@@ -799,7 +799,7 @@ main.homepage {
           justify-content: flex-start;
           align-items: center;
 
-          .stretch {
+          &.stretch {
             @media #{$lt-md} {
               align-self: stretch;
             }

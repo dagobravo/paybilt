@@ -9,7 +9,7 @@
     "surge": "surge --project ./ --domain paybilt.surge.sh",
     "surgerm": "surge teardown paybilt.surge.sh",
     "firebase": "firebase deploy",
-    "commit": "git add * && git commit -m \"Latest changes\" && git push",
+    "commit": "git add --all && git commit -m \"Latest changes\" && git push",
     "update": "npm run commit && npm run firebase"
   },
   "dependencies": {

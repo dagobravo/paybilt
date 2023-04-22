@@ -12,18 +12,6 @@ gsap.to(".text1-span", {
   duration: 1
 });
 
-// gsap.fromTo(".particles", { x: -100 }, { x: 0, duration: 2 });
-// gsap.to(".particles", {
-//   x: 0,
-//   duration: 2,
-//   scrollTrigger: {
-//     trigger: ".particles",
-//     scrub: 1,
-//     start: "top center",
-//     end: "bottom -30%"
-//   }
-// });
-
 gsap.fromTo(".girl", { x: 100 }, { x: 0, duration: 2.5 });
 gsap.to(".girl", {
   x: -150,

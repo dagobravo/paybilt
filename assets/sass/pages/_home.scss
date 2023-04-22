@@ -295,6 +295,7 @@ main.homepage {
                   @media #{$lt-md} {
                     font-size: 9px;
                     line-height: 11px;
+                    margin-top: 5px;
                     margin-bottom: 38px;
                   }
                 }
@@ -604,6 +605,8 @@ main.homepage {
 
             @media #{$lt-md} {
               height: 420px;
+              opacity: 0.5;
+              transform: translateX(100px);
             }
           }
         }
@@ -675,7 +678,7 @@ main.homepage {
           align-items: center;
 
           @media #{$lt-md} {
-            padding: 0;
+            padding: 50px 75px;
             border-radius: 32px 32px 32px 32px;
             margin: 0 15px;
           }
@@ -699,16 +702,28 @@ main.homepage {
             @media #{$lt-md} {
               font-size: 30px;
               line-height: 34px;
+              margin-bottom: 40px;
             }
 
-            .pain-text {
-              position: absolute;
-              top: -65px;
-              right: -80px;
-
+            .pain-span  {
               @media #{$lt-md} {
-                height: 59px;
-                width: auto;
+                display: inline-block;
+                position: relative;
+                width: 20px;
+                height: 60px;
+              }
+
+              .pain-text {
+                position: absolute;
+                top: -65px;
+                right: -80px;
+
+                @media #{$lt-md} {
+                  top: 15px;
+                  left: 0;
+                  width: 90px;
+                  height: auto;
+                }
               }
             }
           }
@@ -719,6 +734,11 @@ main.homepage {
             line-height: 33px;
             letter-spacing: 0.21px;
             max-width: 698px;
+
+            @media #{$lt-md} {
+              font-size: 11px;
+              line-height: 14px;
+            }
           }
         }
 

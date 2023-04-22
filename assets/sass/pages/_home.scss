@@ -967,6 +967,13 @@ main.homepage {
         height: 1080px;
         padding: 0 189px 0 232px;
 
+        @media #{$lt-md} {
+          padding: 0;
+          height: unset;
+          display: flex;
+          flex-direction: column;
+        }
+
         .background-video {
           position: absolute;
           top: 0;
@@ -976,7 +983,9 @@ main.homepage {
           z-index: 0;
 
           @media #{$lt-md} {
+            position: relative;
             width: 100%;
+            order: 2;
           }
         }
 
@@ -991,6 +1000,8 @@ main.homepage {
           opacity: 0.5;
 
           @media #{$lt-md} {
+            top: 418px;
+            height: 242px;
             width: 100%;
           }
         }
@@ -1002,6 +1013,12 @@ main.homepage {
           justify-content: center;
           align-items: flex-start;
 
+          @media #{$lt-md} {
+            height: 418px;
+            order: 1;
+            padding: 0 38px 0;
+          }
+
           .text1 {
             font-weight: bold;
             font-size: 60px;
@@ -1009,6 +1026,11 @@ main.homepage {
             letter-spacing: -3px;
             margin-bottom: 80px;
             z-index: 2;
+
+            @media #{$lt-md} {
+              font-size: 27px;
+              line-height: 30px;
+            }
           }
 
           .text2 {
@@ -1018,6 +1040,11 @@ main.homepage {
             letter-spacing: -15.89px;
             margin-bottom: 80px;
             z-index: 2;
+
+            @media #{$lt-md} {
+              font-size: 99px;
+              line-height: 34px;
+            }
 
             >div:nth-child(1) {
               position: relative;
@@ -1033,6 +1060,11 @@ main.homepage {
                 background-repeat: no-repeat;
                 background-size: contain;
                 z-index: 0;
+
+                @media #{$lt-md} {
+                  width: 44px;
+                  height: 44px;
+                }
               }
             }
           }
@@ -1044,6 +1076,11 @@ main.homepage {
             line-height: 33px;
             letter-spacing: -0.78px;
             z-index: 2;
+
+            @media #{$lt-md} {
+              font-size: 11px;
+              line-height: 14px;
+            }
           }
 
           .row {
@@ -1052,6 +1089,10 @@ main.homepage {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+
+            @media #{$lt-md} {
+              flex-direction: column;
+            }
           }
         }
       }

@@ -1014,9 +1014,8 @@ main.homepage {
           align-items: flex-start;
 
           @media #{$lt-md} {
-            height: 418px;
             order: 1;
-            padding: 0 38px 0;
+            padding: 80px 38px 60px;
           }
 
           .text1 {
@@ -1030,6 +1029,8 @@ main.homepage {
             @media #{$lt-md} {
               font-size: 27px;
               line-height: 30px;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
             }
           }
 
@@ -1043,7 +1044,15 @@ main.homepage {
 
             @media #{$lt-md} {
               font-size: 99px;
-              line-height: 34px;
+              line-height: 88px;
+              letter-spacing: -2px;
+              margin-bottom: unset;
+            }
+
+            >div:nth-child(2) {
+              @media #{$lt-md} {
+                align-self: flex-end;
+              }
             }
 
             >div:nth-child(1) {
@@ -1064,6 +1073,8 @@ main.homepage {
                 @media #{$lt-md} {
                   width: 44px;
                   height: 44px;
+                  top: -8px;
+                  right: -30px;
                 }
               }
             }
@@ -1080,6 +1091,9 @@ main.homepage {
             @media #{$lt-md} {
               font-size: 11px;
               line-height: 14px;
+              max-width: 221px;
+              margin-top: 20px;
+              margin-left: calc(105px - 38px);
             }
           }
 
@@ -1106,10 +1120,19 @@ main.homepage {
       .section-content {
         padding: 80px 58px 0;
 
+        @media #{$lt-md} {
+          padding: 58px 15px 0;
+        }
+
         .pin {
           width: 72px;
           height: auto;
           margin-bottom: 18px;
+
+          @media #{$lt-md} {
+            width: 40px;
+            margin-bottom: 35px;
+          }
         }
 
         .text1 {
@@ -1120,12 +1143,22 @@ main.homepage {
           color: #FFFFFF;
           opacity: 1;
           margin-bottom: 5px;
+
+          @media #{$lt-md} {
+            font-size: 1.75rem;
+            line-height: 2.25rem;
+          }
         }
 
         .paybilt-for-you {
           width: 652px;
           height: auto;
           margin-bottom: 88px;
+
+          @media #{$lt-md} {
+            width: 240px;
+            margin-bottom: 25px;
+          }
         }
       }
 
@@ -1142,6 +1175,7 @@ main.homepage {
 
         @media #{$lt-md} {
           flex-direction: column;
+          border-radius: 32px;
         }
 
         img {
@@ -1162,6 +1196,10 @@ main.homepage {
           gap: 24px;
           width: 100%;
 
+          @media #{$lt-md} {
+            padding: 45px 62px 52px;
+          }
+
           .row {
             display: flex;
             flex-direction: row;
@@ -1169,6 +1207,18 @@ main.homepage {
             align-items: center;
             width: 100%;
             gap: 150px;
+
+            @media #{$lt-md} {
+              flex-direction: column;
+              width: calc(100% - 124px);
+              gap: 30px;
+            }
+
+            input {
+              @media #{$lt-md} {
+                width: 100%;
+              }
+            }
           }
 
           input {
@@ -1186,6 +1236,12 @@ main.homepage {
             color: #FFFFFF;
             opacity: 1;
 
+            @media #{$lt-md} {
+              font-size: 12px;
+              line-height: 15px;
+              width: calc(100% - 124px);
+            }
+
             &::placeholder {
               color: #fff;
             }
@@ -1198,6 +1254,12 @@ main.homepage {
             align-items: center;
             gap: 77px;
             width: 100%;
+
+            @media #{$lt-md} {
+              flex-direction: column;
+              width: calc(100% - 124px);
+              gap: 46px;
+            }
 
             .submit-button {
               background: #FFFD38 0% 0% no-repeat padding-box;
@@ -1214,6 +1276,10 @@ main.homepage {
               letter-spacing: 0px;
               color: #000000;
               opacity: 1;
+
+              @media #{$lt-md} {
+                width: 211px;
+              }
             }
 
             .form-text {

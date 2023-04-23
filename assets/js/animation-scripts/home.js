@@ -36,30 +36,32 @@ gsap.to('.tennis-shoes-image', {
   }
 });
 
-gsap.to('#perks-text', {
-  x: 0,
-  opacity: 1,
-  ease: "expo",
-  duration: 2,
-  scrollTrigger: {
-    trigger: "#perks-text",
-    scrub: 1,
-    start: "top 60%",
-    end: "bottom -30%"
-  }
-});
+if (!isSm) {
+  gsap.to('#perks-text', {
+    x: 0,
+    opacity: 1,
+    ease: "expo",
+    duration: 2,
+    scrollTrigger: {
+      trigger: "#perks-text",
+      scrub: 1,
+      start: "top 60%",
+      end: "bottom -30%"
+    }
+  });
 
-gsap.to('#perks-text2', {
-  x: 0,
-  opacity: 1,
-  ease: "expo",
-  scrollTrigger: {
-    trigger: "#perks-text2",
-    scrub: 1,
-    start: "top 60%",
-    end: "bottom -30%"
-  }
-});
+  gsap.to('#perks-text2', {
+    x: 0,
+    opacity: 1,
+    ease: "expo",
+    scrollTrigger: {
+      trigger: "#perks-text2",
+      scrub: 1,
+      start: "top 60%",
+      end: "bottom -30%"
+    }
+  });
+}
 
 gsap.to('.cloud-up', {
   x: 150,

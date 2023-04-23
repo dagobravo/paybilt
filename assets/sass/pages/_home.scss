@@ -1295,6 +1295,7 @@ main.homepage {
               opacity: 1;
 
               @media #{$lt-md} {
+                font-size: 19px;
                 width: 211px;
               }
             }

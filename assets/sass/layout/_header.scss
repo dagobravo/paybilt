@@ -11,7 +11,11 @@ header {
       padding: 26px 40px;
     }
 
-    @media #{$lt-lg} {
+    @media #{$md} {
+      padding: 16px 32px 15px;
+    }
+
+    @media #{$lt-md} {
       padding: 16px 32px 0;
     }
 
@@ -29,6 +33,10 @@ header {
       img {
         width: 100%;
         height: auto;
+
+        @media #{$md} {
+          width: 150%;
+        }
       }
 
       &:after {
@@ -42,7 +50,14 @@ header {
         background-repeat: no-repeat;
         background-size: contain;
 
-        @media #{$lt-lg} {
+        @media #{$md} {
+          width: 100px;
+          height: 30px;
+          right: -55px;
+          bottom: -12px;
+        }
+
+        @media #{$lt-md} {
           width: 82px;
           height: 30px;
           right: -15px;

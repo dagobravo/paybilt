@@ -5,14 +5,6 @@ main.homepage {
     .content-wrapper {
       position: relative;
 
-      // .clouds {
-      //   position: absolute;
-      //   width: 1920px;
-      //   height: auto;
-      //   bottom: 0;
-      //   right: 0;
-      // }
-
       .section-content {
         padding: 0 0 0 123px;
         overflow: clip;
@@ -21,7 +13,7 @@ main.homepage {
         background: url(/assets/images/home/background.png) no-repeat;
         background-size: cover;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           padding: 0;
           width: 100vw;
         }
@@ -32,26 +24,23 @@ main.homepage {
           justify-content: space-between;
           align-items: center;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             flex-direction: column;
             justify-content: space-between;
             align-items: flex-start;
-            // width: 100%;
           }
 
           .col1 {
             flex: 0 0 46%;
 
-            @media #{$lt-md} {
-              // flex: 0 0 100vw;
-              flex: unset;
+            @media #{$lt-lg} {
               flex: unset;
               padding: 35px;
             }
 
             .text1 {
               color: #000;
-              font-size: 100px;
+              font-size: 101px;
               font-weight: bold;
               letter-spacing: -4px;
               letter-spacing: 0px;
@@ -66,10 +55,16 @@ main.homepage {
                 display: inline-block;
               }
 
+              @media #{$md} {
+                font-size: prop-size(100, 1180);
+                line-height: prop-size(93, 1180);
+                padding: 180px 0 0 80px;
+              }
+
               @media #{$lt-md} {
-                text-align: left;
                 padding: 68px 0 0 47px;
-                font-size: 43px;
+                // font-size: 43px;
+                font-size: prop-size(100, 800);
                 line-height: 40px;
                 width: calc(100vw - 70px);
               }
@@ -83,7 +78,7 @@ main.homepage {
 
                 transform: translateX(200px);
 
-                @media #{$lt-md} {
+                @media #{$lt-lg} {
                   position: absolute;
                   top: 0;
                   left: 0;
@@ -106,6 +101,12 @@ main.homepage {
               opacity: 1;
               margin-top: 50px;
 
+              @media #{$md} {
+                font-size: prop-size(30, 1180);
+                margin-top: 20px;
+                margin-left: 80px;
+              }
+
               @media #{$lt-md} {
                 font-size: 11px;
                 line-height: 14px;
@@ -119,7 +120,7 @@ main.homepage {
           .col2 {
             position: relative;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex: unset;
               overflow-y: clip;
             }
@@ -131,7 +132,7 @@ main.homepage {
               z-index: 1;
               transform: translateX(-100px);
 
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 height: 385px;
                 width: auto;
                 right: -66px;
@@ -147,7 +148,7 @@ main.homepage {
               width: auto;
               transform: translateX(100px);
 
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 width: 100%;
                 height: auto;
                 top: 0;
@@ -194,7 +195,7 @@ main.homepage {
             position: relative;
             z-index: 1;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex-direction: column;
               align-items: center;
               padding: unset;
@@ -207,6 +208,10 @@ main.homepage {
               text-align: left;
               margin: 0 auto;
               font-weight: 800;
+
+              @media #{$gt-sm} {
+                display: none;
+              }
             }
 
             .text2-mobile {
@@ -215,6 +220,10 @@ main.homepage {
               width: 220px;
               text-align: left;
               margin: 0 auto 20px;
+
+              @media #{$gt-sm} {
+                display: none;
+              }
             }
 
             .image-container {
@@ -225,6 +234,10 @@ main.homepage {
                 height: auto;
                 margin-bottom: unset;
                 transform: translateX(-200px);
+
+                @media #{$md} {
+                  width: prop-size(828, 1180);
+                }
 
                 @media #{$lt-md} {
                   width: 267px;
@@ -250,7 +263,7 @@ main.homepage {
                 transform: translateX(200px);
                 opacity: 0;
 
-                @media #{$lt-md} {
+                @media #{$lt-lg} {
                   display: none;
                 }
               }
@@ -265,7 +278,7 @@ main.homepage {
                 transform: translateX(200px);
                 opacity: 0;
 
-                @media #{$lt-md} {
+                @media #{$lt-lg} {
                   display: none;
                 }
               }
@@ -278,6 +291,10 @@ main.homepage {
                   width: 620px;
                   overflow: hidden;
                   margin-bottom: unset;
+
+                  @media #{$md} {
+                    width: prop-size(620, 1180);
+                  }
 
                   @media #{$lt-md} {
                     width: 244px;
@@ -295,6 +312,11 @@ main.homepage {
                   letter-spacing: 0px;
                   color: #332D2D;
 
+                  @media #{$md} {
+                    font-size: prop-size(52, 1180);
+                    line-height: prop-size(67, 1180);
+                  }
+
                   @media #{$lt-md} {
                     font-size: 20px;
                     line-height: 26px;
@@ -308,6 +330,12 @@ main.homepage {
                   letter-spacing: 0.5px;
                   color: #332D2D;
                   margin-bottom: 58px;
+
+                  @media #{$md} {
+                    font-size: prop-size(24, 1180);
+                    line-height: prop-size(31, 1180);
+                  }
+
 
                   @media #{$lt-md} {
                     font-size: 9px;
@@ -338,6 +366,13 @@ main.homepage {
                     display: inline-block;
                     line-height: 84px;
 
+                    @media #{$md} {
+                      font-size: prop-size(36, 1180);
+                      line-height: prop-size(84, 1180);
+                      width: prop-size(285, 1180);
+                      height: prop-size(84, 1180);
+                    }
+
                     @media #{$lt-md} {
                       font-size: 13px;
                       line-height: 34px;
@@ -359,7 +394,7 @@ main.homepage {
                     justify-content: center;
                     align-items: center;
 
-                    @media #{$lt-md} {
+                    @media #{$lt-lg} {
                       width: 34px;
                       height: 34px;
                     }
@@ -368,7 +403,7 @@ main.homepage {
                       width: 43px;
                       height: auto;
 
-                      @media #{$lt-md} {
+                      @media #{$lt-lg} {
                         width: 50%;
                       }
                     }
@@ -390,6 +425,10 @@ main.homepage {
           z-index: 0;
           overflow-y: clip;
 
+          @media #{$md} {
+            min-height: prop-size(985, 1180);
+          }
+
           @media #{$lt-md} {
             min-height: 523px;
           }
@@ -398,6 +437,17 @@ main.homepage {
             position: relative;
             top: 340px;
             transform: translateX(-100px);
+            height: 581px;
+
+            @media #{$md} {
+              top: 240px;
+              height: prop-size(581, 1180);
+            }
+
+            @media #{$lt-md} {
+              top: 240px;
+              height: prop-size(581, 430);
+            }
           }
 
           .cloud-container {
@@ -414,7 +464,7 @@ main.homepage {
               top: 120px;
 
               @media #{$lt-md} {
-                width: 200%;
+                width: 200px;
                 top: -340px;
                 left: -400px;
               }
@@ -446,7 +496,7 @@ main.homepage {
         padding: 210px 0 320px;
         text-align: unset;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           text-align: center;
           padding: 110px 0 40px;
         }
@@ -458,6 +508,12 @@ main.homepage {
           width: 944px;
           height: auto;
           z-index: 1;
+
+          @media #{$md} {
+            width: prop-size(944, 1180);
+            left: calc(50% - 240px);
+            top: -635px;
+          }
 
           @media #{$lt-md} {
             width: 124%;
@@ -475,6 +531,12 @@ main.homepage {
           transform: scale(0.5);
           z-index: 5;
 
+          @media #{$md} {
+            width: prop-size(954, 1180);
+            top: -160px;
+            left: calc(50% - 293px);
+          }
+
           @media #{$lt-md} {
             width: 100%;
             top: -65px;
@@ -482,12 +544,20 @@ main.homepage {
           }
         }
 
+        // PENDING
+
         .overnight {
           width: 853px;
           height: auto;
           position: absolute;
           left: calc(50% - (853px/2));
           transform: scale(0.5);
+
+          @media #{$md} {
+            width: prop-size(853, 1180);
+            position: relative;
+            left: unset;
+          }
 
           @media #{$lt-md} {
             width: 338px;
@@ -504,6 +574,11 @@ main.homepage {
           letter-spacing: 0px;
           color: #FFFFFF;
 
+          @media #{$md} {
+            font-size: prop-size(72, 1180);
+            line-height: prop-size(74, 1180);
+          }
+
           @media #{$lt-md} {
             font-size: 28px;
             line-height: 31px;
@@ -518,6 +593,11 @@ main.homepage {
             line-height: 18px;
             max-width: 52%;
             margin: 0 auto;
+
+            @media #{$md} {
+              font-size: calc(14 * 2.74px);
+              line-height: calc(18 * 2.74px);
+            }
           }
 
           &.text3 {
@@ -525,6 +605,11 @@ main.homepage {
             line-height: 14px;
             max-width: 80%;
             margin: 23px auto 0;
+
+            @media #{$md} {
+              font-size: calc(11 * 2.74px);
+              line-height: calc(14 * 2.74px);
+            }
           }
 
           &.text4 {
@@ -533,6 +618,11 @@ main.homepage {
             line-height: 31px;
             max-width: 74%;
             margin: 17px auto 0;
+
+            @media #{$md} {
+              font-size: calc(30 * 2.74px);
+              line-height: calc(31 * 2.74px);
+            }
           }
 
           &.text5 {
@@ -555,7 +645,7 @@ main.homepage {
         height: 874px;
         padding-left: 165px;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           padding-left: unset;
           height: 420px;
         }
@@ -567,12 +657,12 @@ main.homepage {
           justify-content: space-between;
           align-items: center;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             flex-direction: column;
           }
 
           >div:nth-child(1) {
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               display: none;
             }
           }
@@ -590,7 +680,7 @@ main.homepage {
             z-index: 1;
             position: relative;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               display: none;
             }
           }
@@ -606,7 +696,7 @@ main.homepage {
             z-index: 1;
             position: relative;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               display: none;
             }
           }
@@ -620,7 +710,7 @@ main.homepage {
             opacity: 0;
             transform: translateX(200px);
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               height: 420px;
               opacity: 0.5;
               transform: translateX(100px);
@@ -640,7 +730,7 @@ main.homepage {
         padding: 27px 0 57px;
         text-align: center;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           padding: 66px 0 27px;
         }
 
@@ -654,7 +744,7 @@ main.homepage {
           max-width: 804px;
           margin: 0 auto 62px;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             font-size: 30px;
             line-height: 30px;
             max-width: 60%;
@@ -666,7 +756,7 @@ main.homepage {
           width: 64px;
           height: auto;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             width: 20px;
           }
         }
@@ -694,14 +784,14 @@ main.homepage {
           justify-content: space-between;
           align-items: center;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             padding: 50px 75px;
             border-radius: 32px 32px 32px 32px;
             margin: 0 15px;
           }
 
           .coin {
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               display: none;
             }
           }
@@ -716,14 +806,14 @@ main.homepage {
             margin-bottom: 60px;
             font-weight: 900;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               font-size: 30px;
               line-height: 34px;
               margin-bottom: 40px;
             }
 
             .pain-span {
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 display: inline-block;
                 position: relative;
                 width: 20px;
@@ -735,7 +825,7 @@ main.homepage {
                 top: -65px;
                 right: -80px;
 
-                @media #{$lt-md} {
+                @media #{$lt-lg} {
                   top: 15px;
                   left: 0;
                   width: 90px;
@@ -752,7 +842,7 @@ main.homepage {
             letter-spacing: 0.21px;
             max-width: 698px;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               font-size: 11px;
               line-height: 14px;
             }
@@ -774,7 +864,7 @@ main.homepage {
         color: #fff;
         padding: 632px 172px 207px;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           background-image: url(/assets/images/home/scenario-sm.png);
           background-size: contain;
           padding: 255px 62px 62px;
@@ -786,20 +876,20 @@ main.homepage {
           justify-content: space-between;
           align-items: flex-start;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             align-items: center;
           }
 
           &.gap {
             gap: 124px;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               gap: unset;
             }
           }
 
           &.container {
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex-direction: column;
               gap: 62px;
             }
@@ -817,7 +907,7 @@ main.homepage {
           align-items: center;
 
           &.stretch {
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               align-self: stretch;
             }
           }
@@ -828,7 +918,7 @@ main.homepage {
             flex-direction: row;
             align-items: center;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex: 0 0 36px;
             }
 
@@ -844,7 +934,7 @@ main.homepage {
               background-size: cover !important;
               cursor: pointer;
 
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 width: 36px;
               }
             }
@@ -901,7 +991,7 @@ main.homepage {
           line-height: 94px;
           letter-spacing: 0px;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             font-size: 30px;
             line-height: unset;
           }
@@ -910,7 +1000,7 @@ main.homepage {
             width: 94px;
             height: auto;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               width: 38px;
             }
           }
@@ -923,7 +1013,7 @@ main.homepage {
           line-height: 15px;
           letter-spacing: 0.1px;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             font-size: 6px;
             line-height: 7px;
             letter-spacing: 0.05px;
@@ -984,7 +1074,7 @@ main.homepage {
         height: 1080px;
         padding: 0 189px 0 232px;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           padding: 0;
           height: unset;
           display: flex;
@@ -999,7 +1089,7 @@ main.homepage {
           height: auto;
           z-index: 0;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             position: relative;
             width: 100%;
             order: 2;
@@ -1016,7 +1106,7 @@ main.homepage {
           height: 1080px;
           opacity: 0.5;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             top: 418px;
             height: 242px;
             width: 100%;
@@ -1030,7 +1120,7 @@ main.homepage {
           justify-content: center;
           align-items: flex-start;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             order: 1;
             padding: 80px 38px 60px;
           }
@@ -1043,7 +1133,7 @@ main.homepage {
             margin-bottom: 80px;
             z-index: 2;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               font-size: 27px;
               line-height: 30px;
               margin-bottom: 10px;
@@ -1059,7 +1149,7 @@ main.homepage {
             margin-bottom: 80px;
             z-index: 2;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               font-size: 99px;
               line-height: 88px;
               letter-spacing: -2px;
@@ -1067,7 +1157,7 @@ main.homepage {
             }
 
             >div:nth-child(2) {
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 align-self: flex-end;
               }
             }
@@ -1087,7 +1177,7 @@ main.homepage {
                 background-size: contain;
                 z-index: 0;
 
-                @media #{$lt-md} {
+                @media #{$lt-lg} {
                   width: 44px;
                   height: 44px;
                   top: -8px;
@@ -1105,7 +1195,7 @@ main.homepage {
             letter-spacing: -0.78px;
             z-index: 2;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               font-size: 11px;
               line-height: 14px;
               max-width: 221px;
@@ -1121,7 +1211,7 @@ main.homepage {
             justify-content: space-between;
             align-items: center;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex-direction: column;
             }
           }
@@ -1137,7 +1227,7 @@ main.homepage {
       .section-content {
         padding: 80px 58px 0;
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           padding: 58px 15px 0;
         }
 
@@ -1146,7 +1236,7 @@ main.homepage {
           height: auto;
           margin-bottom: 18px;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             width: 40px;
             margin-bottom: 35px;
           }
@@ -1161,7 +1251,7 @@ main.homepage {
           opacity: 1;
           margin-bottom: 5px;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             font-size: 1.75rem;
             line-height: 2.25rem;
           }
@@ -1172,7 +1262,7 @@ main.homepage {
           height: auto;
           margin-bottom: 88px;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             width: 240px;
             margin-bottom: 25px;
           }
@@ -1190,7 +1280,7 @@ main.homepage {
         // background: linear-gradient(180deg, rgba(56, 56, 56, 1) 30%, rgba(0, 0, 0, 1) 100%);
         background: linear-gradient(180deg, #383838 30%, #141214 100%);
 
-        @media #{$lt-md} {
+        @media #{$lt-lg} {
           flex-direction: column;
           border-radius: 32px;
         }
@@ -1199,7 +1289,7 @@ main.homepage {
           width: 600px;
           height: auto;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             width: 100%;
           }
         }
@@ -1213,7 +1303,7 @@ main.homepage {
           gap: 24px;
           width: 100%;
 
-          @media #{$lt-md} {
+          @media #{$lt-lg} {
             padding: 45px 62px 52px;
           }
 
@@ -1225,14 +1315,14 @@ main.homepage {
             width: 100%;
             gap: 150px;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex-direction: column;
               width: calc(100% - 124px);
               gap: 30px;
             }
 
             input {
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 width: 100%;
               }
             }
@@ -1253,7 +1343,7 @@ main.homepage {
             color: #FFFFFF;
             opacity: 1;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               font-size: 12px;
               line-height: 15px;
               width: calc(100% - 124px);
@@ -1272,7 +1362,7 @@ main.homepage {
             gap: 77px;
             width: 100%;
 
-            @media #{$lt-md} {
+            @media #{$lt-lg} {
               flex-direction: column;
               width: calc(100% - 124px);
               gap: 46px;
@@ -1294,7 +1384,7 @@ main.homepage {
               color: #000000;
               opacity: 1;
 
-              @media #{$lt-md} {
+              @media #{$lt-lg} {
                 font-size: 19px;
                 width: 211px;
               }

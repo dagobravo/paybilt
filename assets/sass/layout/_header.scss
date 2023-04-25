@@ -7,6 +7,10 @@ header {
     padding: 26px 138px;
     color: #333333;
 
+    @media #{$lt-xxl} {
+      padding: 26px 40px;
+    }
+
     @media #{$lt-lg} {
       padding: 16px 32px 0;
     }
@@ -56,7 +60,7 @@ header {
       font-size: 20px;
       z-index: 1;
 
-      @media #{$lt-lg} {
+      @media #{$lt-xl} {
         display: none;
       }
 

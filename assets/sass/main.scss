@@ -4,8 +4,12 @@ Author: Dago Bravo
 Author URI: http://github.com/dagomx
 */
 
+
 @import './base/breakpoints';
+@import './base/globals';
 @import './base/variables';
+
+@import './utilities/functions';
 
 @import './pages/home';
 @import './pages/payment-solution';

@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+// Calculates the proportional size of $current-size for the device-width
+@function prop-size($current-size, $mobile-device-width) {
+  $res: ($current-size * $mobile-device-width) / $max-width;
+  @return $res * 1px;
+}

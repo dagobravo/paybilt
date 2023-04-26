@@ -63,7 +63,6 @@ main.homepage {
 
               @media #{$lt-md} {
                 padding: 68px 0 0 47px;
-                // font-size: 43px;
                 font-size: prop-size(100, 800);
                 line-height: 40px;
                 width: calc(100vw - 70px);
@@ -1286,7 +1285,11 @@ main.homepage {
       .section-content {
         padding: 80px 58px 0;
 
-        @media #{$lt-lg} {
+        @media #{$md} {
+          padding: 35px 15px 0;
+        }
+
+        @media #{$lt-md} {
           padding: 58px 15px 0;
         }
 

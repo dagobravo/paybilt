@@ -281,10 +281,6 @@ main.homepage {
             .text-container {
               flex: 0 0 40%;
 
-              @media #{$lt-lg} {
-                display: none;
-              }
-
               .text1 {
                 text-align: left;
                 font-weight: bold;
@@ -298,7 +294,8 @@ main.homepage {
                 opacity: 0;
 
                 @media #{$lt-xl} {
-                  margin-top: 20px;
+                  // margin-top: 20px;
+                  display: none;
                 }
               }
 
@@ -312,7 +309,7 @@ main.homepage {
                 transform: translateX(200px);
                 opacity: 0;
 
-                @media #{$lt-md} {
+                @media #{$lt-xl} {
                   display: none;
                 }
               }

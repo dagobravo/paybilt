@@ -182,6 +182,10 @@ main.homepage {
           padding: 60px 0 0;
           position: relative;
 
+          @media #{$md} {
+            margin-top: 58px;
+          }
+
           @media #{$lt-md} {
             margin: 0;
             border-radius: 0;
@@ -263,7 +267,11 @@ main.homepage {
                 transform: translateX(200px);
                 opacity: 0;
 
-                @media #{$lt-lg} {
+                @media #{$md} {
+                  margin-top: 20px;
+                }
+
+                @media #{$lt-md} {
                   display: none;
                 }
               }
@@ -278,7 +286,7 @@ main.homepage {
                 transform: translateX(200px);
                 opacity: 0;
 
-                @media #{$lt-lg} {
+                @media #{$lt-md} {
                   display: none;
                 }
               }
@@ -806,7 +814,14 @@ main.homepage {
             margin-bottom: 60px;
             font-weight: 900;
 
-            @media #{$lt-lg} {
+            @media #{$md} {
+              margin: 0 auto;
+              font-size: prop-size(70, 1180);
+              line-height: prop-size(83, 1180);
+              margin-bottom: prop-size(60, 1180);
+            }
+
+            @media #{$lt-md} {
               font-size: 30px;
               line-height: 34px;
               margin-bottom: 40px;
@@ -842,7 +857,14 @@ main.homepage {
             letter-spacing: 0.21px;
             max-width: 698px;
 
-            @media #{$lt-lg} {
+            @media #{$md} {
+              font-size: prop-size(26, 1180);
+              line-height: prop-size(33, 1180);
+              max-width: 577px;
+              margin: 0 auto;
+            }
+
+            @media #{$lt-md} {
               font-size: 11px;
               line-height: 14px;
             }
@@ -864,7 +886,12 @@ main.homepage {
         color: #fff;
         padding: 632px 172px 207px;
 
-        @media #{$lt-lg} {
+        @media #{$md} {
+          background-size: contain;
+          padding: 420px 172px 207px;
+        }
+
+        @media #{$lt-md} {
           background-image: url(/assets/images/home/scenario-sm.png);
           background-size: contain;
           padding: 255px 62px 62px;
@@ -1089,7 +1116,11 @@ main.homepage {
           height: auto;
           z-index: 0;
 
-          @media #{$lt-lg} {
+          @media #{$md} {
+            width: 100%;
+          }
+
+          @media #{$lt-md} {
             position: relative;
             width: 100%;
             order: 2;
@@ -1106,7 +1137,11 @@ main.homepage {
           height: 1080px;
           opacity: 0.5;
 
-          @media #{$lt-lg} {
+          @media #{$md} {
+            height: 462px;
+          }
+
+          @media #{$lt-md} {
             top: 418px;
             height: 242px;
             width: 100%;
@@ -1120,7 +1155,11 @@ main.homepage {
           justify-content: center;
           align-items: flex-start;
 
-          @media #{$lt-lg} {
+          @media #{$md} {
+            padding: 35px 38px 35px;
+          }
+
+          @media #{$lt-md} {
             order: 1;
             padding: 80px 38px 60px;
           }
@@ -1133,7 +1172,14 @@ main.homepage {
             margin-bottom: 80px;
             z-index: 2;
 
-            @media #{$lt-lg} {
+            @media #{$md} {
+              font-size: prop-size(60, 1180);
+              line-height: prop-size(66, 1180);
+              margin-bottom: 50px;
+              letter-spacing: 1px;
+            }
+
+            @media #{$lt-md} {
               font-size: 27px;
               line-height: 30px;
               margin-bottom: 10px;
@@ -1149,7 +1195,14 @@ main.homepage {
             margin-bottom: 80px;
             z-index: 2;
 
-            @media #{$lt-lg} {
+            @media #{$md} {
+              font-size: prop-size(227, 1180);
+              line-height: prop-size(88, 1180);
+              letter-spacing: -2px;
+              gap: 50px;
+            }
+
+            @media #{$lt-md} {
               font-size: 99px;
               line-height: 88px;
               letter-spacing: -2px;
@@ -1195,7 +1248,13 @@ main.homepage {
             letter-spacing: -0.78px;
             z-index: 2;
 
-            @media #{$lt-lg} {
+            @media #{$md} {
+              font-size: prop-size(26, 1180);
+              line-height: prop-size(33, 1180);
+              max-width: prop-size(522, 1180);
+            }
+
+            @media #{$lt-md} {
               font-size: 11px;
               line-height: 14px;
               max-width: 221px;

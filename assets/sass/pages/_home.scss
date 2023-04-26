@@ -235,7 +235,7 @@ main.homepage {
               margin: 0 auto;
               font-weight: 800;
 
-              @media #{$gt-sm} {
+              @media #{$gt-md} {
                 display: none;
               }
             }
@@ -247,7 +247,7 @@ main.homepage {
               text-align: left;
               margin: 0 auto 20px;
 
-              @media #{$gt-sm} {
+              @media #{$gt-md} {
                 display: none;
               }
             }
@@ -281,6 +281,10 @@ main.homepage {
             .text-container {
               flex: 0 0 40%;
 
+              @media #{$lt-lg} {
+                display: none;
+              }
+
               .text1 {
                 text-align: left;
                 font-weight: bold;
@@ -295,10 +299,6 @@ main.homepage {
 
                 @media #{$lt-xl} {
                   margin-top: 20px;
-                }
-
-                @media #{$lt-md} {
-                  display: none;
                 }
               }
 
@@ -1175,7 +1175,7 @@ main.homepage {
           @media #{$lt-md} {
             position: relative;
             width: auto;
-            height: 462px;
+            height: 242px;
             order: 2;
           }
         }
@@ -1258,8 +1258,12 @@ main.homepage {
               font-size: prop-size(227, 1180);
               line-height: 120px;
               letter-spacing: -2px;
-              margin-bottom: 60px !important;
+              margin-bottom: 60px;
               gap: 50px;
+            }
+
+            @media #{$md} {
+              margin-bottom: 10px;
             }
 
             @media #{$lt-md} {

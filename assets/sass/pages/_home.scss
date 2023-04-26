@@ -24,6 +24,10 @@ main.homepage {
           justify-content: space-between;
           align-items: center;
 
+          @media #{$lg} {
+            flex-direction: column;
+          }
+
           @media #{$lt-lg} {
             flex-direction: column;
             justify-content: space-between;
@@ -32,6 +36,11 @@ main.homepage {
 
           .col1 {
             flex: 0 0 46%;
+
+            @media #{$lg} {
+              flex: unset;
+              padding: 180px 0 20px;
+            }
 
             @media #{$lt-lg} {
               flex: unset;
@@ -53,6 +62,12 @@ main.homepage {
               .text1-span {
                 transform: translateX(-200px);
                 display: inline-block;
+              }
+
+              @media #{$lg} {
+                font-size: prop-size(100, 1180);
+                line-height: prop-size(93, 1180);
+                padding: 40px 0 20px 0;
               }
 
               @media #{$md} {
@@ -99,6 +114,10 @@ main.homepage {
 
               opacity: 1;
               margin-top: 50px;
+
+              @media #{$lg} {
+                margin-top: 0;
+              }
 
               @media #{$md} {
                 font-size: prop-size(30, 1180);
@@ -181,6 +200,10 @@ main.homepage {
           padding: 60px 0 0;
           position: relative;
 
+          @media #{$lg} {
+            margin-top: 40px;
+          }
+
           @media #{$md} {
             margin-top: 58px;
           }
@@ -198,7 +221,7 @@ main.homepage {
             position: relative;
             z-index: 1;
 
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               flex-direction: column;
               align-items: center;
               padding: unset;
@@ -238,6 +261,10 @@ main.homepage {
                 margin-bottom: unset;
                 transform: translateX(-200px);
 
+                @media #{$lg} {
+                  width: prop-size(828, 1280);
+                }
+
                 @media #{$md} {
                   width: prop-size(828, 1180);
                 }
@@ -266,7 +293,7 @@ main.homepage {
                 transform: translateX(200px);
                 opacity: 0;
 
-                @media #{$md} {
+                @media #{$lt-xl} {
                   margin-top: 20px;
                 }
 
@@ -432,6 +459,10 @@ main.homepage {
           z-index: 0;
           overflow-y: clip;
 
+          @media #{$lg} {
+            min-height: prop-size(985, 1280);
+          }
+
           @media #{$md} {
             min-height: prop-size(985, 1180);
           }
@@ -503,7 +534,7 @@ main.homepage {
         padding: 210px 0 320px;
         text-align: unset;
 
-        @media #{$lt-lg} {
+        @media #{$lt-xl} {
           text-align: center;
           padding: 110px 0 40px;
         }
@@ -516,7 +547,7 @@ main.homepage {
           height: auto;
           z-index: 1;
 
-          @media #{$md} {
+          @media #{$lt-xl} {
             width: prop-size(944, 1180);
             left: calc(50% - 240px);
             top: -635px;
@@ -538,6 +569,12 @@ main.homepage {
           transform: scale(0.5);
           z-index: 5;
 
+          @media #{$lg} {
+            width: prop-size(954, 1280);
+            top: -160px;
+            left: calc(50% - 291px);
+          }
+
           @media #{$md} {
             width: prop-size(954, 1180);
             top: -160px;
@@ -551,8 +588,6 @@ main.homepage {
           }
         }
 
-        // PENDING
-
         .overnight {
           width: 853px;
           height: auto;
@@ -560,7 +595,7 @@ main.homepage {
           left: calc(50% - (853px/2));
           transform: scale(0.5);
 
-          @media #{$md} {
+          @media #{$lt-xl} {
             width: prop-size(853, 1180);
             position: relative;
             left: unset;
@@ -602,8 +637,13 @@ main.homepage {
             margin: 0 auto;
 
             @media #{$md} {
-              font-size: calc(14 * 2.74px);
-              line-height: calc(18 * 2.74px);
+              font-size: calc(14 * 1.5px);
+              line-height: calc(18 * 1.5px);
+            }
+
+            @media #{$lg} {
+              font-size: calc(14 * 1.7px);
+              line-height: calc(18 * 1.7px);
             }
           }
 
@@ -614,8 +654,13 @@ main.homepage {
             margin: 23px auto 0;
 
             @media #{$md} {
-              font-size: calc(11 * 2.74px);
-              line-height: calc(14 * 2.74px);
+              font-size: calc(11 * 1.5px);
+              line-height: calc(14 * 1.5px);
+            }
+
+            @media #{$lg} {
+              font-size: calc(11 * 1.7px);
+              line-height: calc(14 * 1.7px);
             }
           }
 
@@ -627,16 +672,14 @@ main.homepage {
             margin: 17px auto 0;
 
             @media #{$md} {
-              font-size: calc(30 * 2.74px);
-              line-height: calc(31 * 2.74px);
+              font-size: calc(30 * 1.5px);
+              line-height: calc(31 * 1.5px);
             }
-          }
 
-          &.text5 {
-            font-size: 11px;
-            line-height: 14px;
-            max-width: 72%;
-            margin: 23px auto 0;
+            @media #{$lg} {
+              font-size: calc(30 * 1.7px);
+              line-height: calc(31 * 1.7px);
+            }
           }
         }
       }
@@ -798,7 +841,7 @@ main.homepage {
           }
 
           .coin {
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               display: none;
             }
           }
@@ -885,7 +928,7 @@ main.homepage {
         color: #fff;
         padding: 632px 172px 207px;
 
-        @media #{$md} {
+        @media #{$lt-xl} {
           background-size: contain;
           padding: 420px 172px 207px;
         }
@@ -902,20 +945,20 @@ main.homepage {
           justify-content: space-between;
           align-items: flex-start;
 
-          @media #{$lt-lg} {
+          @media #{$lt-xl} {
             align-items: center;
           }
 
           &.gap {
             gap: 124px;
 
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               gap: unset;
             }
           }
 
           &.container {
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               flex-direction: column;
               gap: 62px;
             }
@@ -1100,6 +1143,10 @@ main.homepage {
         height: 1080px;
         padding: 0 189px 0 232px;
 
+        @media #{$lg} {
+          height: 663px;
+        }
+
         @media #{$lt-lg} {
           padding: 0;
           height: unset;
@@ -1115,13 +1162,20 @@ main.homepage {
           height: auto;
           z-index: 0;
 
+          @media #{$lg} {
+            height: 663px;
+            width: auto;
+          }
+
           @media #{$md} {
-            width: 100%;
+            height: 462px;
+            width: auto;
           }
 
           @media #{$lt-md} {
             position: relative;
-            width: 100%;
+            width: auto;
+            height: 462px;
             order: 2;
           }
         }
@@ -1136,8 +1190,14 @@ main.homepage {
           height: 1080px;
           opacity: 0.5;
 
+          @media #{$lg} {
+            height: 663px;
+            width: 100%;
+          }
+
           @media #{$md} {
             height: 462px;
+            width: 100%;
           }
 
           @media #{$lt-md} {
@@ -1171,7 +1231,7 @@ main.homepage {
             margin-bottom: 80px;
             z-index: 2;
 
-            @media #{$md} {
+            @media #{$lt-xl} {
               font-size: prop-size(60, 1180);
               line-height: prop-size(66, 1180);
               margin-bottom: 50px;
@@ -1194,10 +1254,11 @@ main.homepage {
             margin-bottom: 80px;
             z-index: 2;
 
-            @media #{$md} {
+            @media #{$lt-xl} {
               font-size: prop-size(227, 1180);
-              line-height: prop-size(88, 1180);
+              line-height: 120px;
               letter-spacing: -2px;
+              margin-bottom: 60px !important;
               gap: 50px;
             }
 
@@ -1268,9 +1329,11 @@ main.homepage {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            gap: 60px;
 
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               flex-direction: column;
+              gap: unset;
             }
           }
         }
@@ -1342,7 +1405,7 @@ main.homepage {
         // background: linear-gradient(180deg, rgba(56, 56, 56, 1) 30%, rgba(0, 0, 0, 1) 100%);
         background: linear-gradient(180deg, #383838 30%, #141214 100%);
 
-        @media #{$lt-lg} {
+        @media #{$lt-xl} {
           flex-direction: column;
           border-radius: 32px;
         }
@@ -1351,7 +1414,7 @@ main.homepage {
           width: 600px;
           height: auto;
 
-          @media #{$lt-lg} {
+          @media #{$lt-xl} {
             width: 100%;
           }
         }
@@ -1365,7 +1428,7 @@ main.homepage {
           gap: 24px;
           width: 100%;
 
-          @media #{$lt-lg} {
+          @media #{$lt-xl} {
             padding: 45px 62px 52px;
           }
 
@@ -1377,14 +1440,14 @@ main.homepage {
             width: 100%;
             gap: 150px;
 
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               flex-direction: column;
               width: calc(100% - 124px);
               gap: 30px;
             }
 
             input {
-              @media #{$lt-lg} {
+              @media #{$lt-xl} {
                 width: 100%;
               }
             }
@@ -1405,7 +1468,7 @@ main.homepage {
             color: #FFFFFF;
             opacity: 1;
 
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               font-size: 12px;
               line-height: 15px;
               width: calc(100% - 124px);
@@ -1424,7 +1487,7 @@ main.homepage {
             gap: 77px;
             width: 100%;
 
-            @media #{$lt-lg} {
+            @media #{$lt-xl} {
               flex-direction: column;
               width: calc(100% - 124px);
               gap: 46px;
@@ -1446,7 +1509,7 @@ main.homepage {
               color: #000000;
               opacity: 1;
 
-              @media #{$lt-lg} {
+              @media #{$lt-xl} {
                 font-size: 19px;
                 width: 211px;
               }

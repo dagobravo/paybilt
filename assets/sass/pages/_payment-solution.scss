@@ -19,6 +19,14 @@ main.payment-solution {
           justify-content: space-between;
           min-height: calc(989px - 218px);
 
+          @media #{$lt-md} {
+            margin: 19px 14px 0;
+            border-radius: 32px 32px 0 0;
+            padding: 30px 41px 0;
+            flex-direction: column;
+            min-height: 650px;
+          }
+
           .text1 {
             text-align: left;
             font-weight: bold;
@@ -37,14 +45,35 @@ main.payment-solution {
             align-items: center;
             gap: 20px;
 
+            @media #{$lt-md} {
+              font-size: 50px;
+              line-height: 51px;
+              justify-content: flex-start;
+              transform: unset;
+              gap: 10px;
+
+            }
+
             .works-span {
               display: inline-block;
               width: 374px;
               height: 195px;
+              position: relative;
+
+              @media #{$lt-md} {
+                width: 144px;
+                height: 75px;
+              }
 
               .works-image {
                 width: 374px;
                 height: auto;
+
+                @media #{$lt-md} {
+                  width: 143px;
+                  top: 0;
+                  left: 0;
+                }
               }
             }
           }
@@ -65,6 +94,12 @@ main.payment-solution {
             margin-bottom: 16px;
 
             transform: translateX(-100px);
+
+            @media #{$lt-md} {
+              font-size: 20px;
+              line-height: 22px;
+              max-width: 240px;
+            }
           }
 
           .text3 {
@@ -74,8 +109,13 @@ main.payment-solution {
             letter-spacing: 0px;
             color: #FFFFFF;
             opacity: 1;
-          }
 
+            @media #{$lt-md} {
+              font-size: 11px;
+              line-height: 14px;
+              max-width: 275px;
+            }
+          }
 
           img {
             width: 1091px;
@@ -83,6 +123,10 @@ main.payment-solution {
             position: absolute;
             right: 0;
             bottom: 0;
+
+            @media #{$lt-md} {
+              width: 100%;
+            }
           }
 
           .cassette-image {
@@ -91,6 +135,10 @@ main.payment-solution {
             height: auto;
             right: 112px;
             bottom: -110px;
+
+            @media #{$lt-md} {
+              display: none;
+            }
           }
         }
       }
@@ -104,7 +152,14 @@ main.payment-solution {
         height: 140px;
         width: 100%;
 
+        padding: unset;
         padding-left: 200px;
+
+        @media #{$lt-md} {
+          padding: 29px 75px 17px;
+          height: unset;
+          width: calc(100% - 150px);
+        }
 
         .container1 {
           height: 100%;
@@ -117,6 +172,24 @@ main.payment-solution {
           font-size: 24px;
           letter-spacing: 0.19px;
           color: #212427;
+
+          @media #{$lt-md} {
+            font-size: 11px;
+            line-height: 14px;
+
+            .bold {
+              font-size: 12px;
+            }
+          }
+
+          img {
+            width: 79px;
+            height: auto;
+
+            @media #{$lt-md} {
+              width: 50px;
+            }
+          }
         }
       }
     }
@@ -127,11 +200,22 @@ main.payment-solution {
       .section-content {
         padding: 92px 146px 0 259px;
 
+        @media #{$lt-md} {
+          padding: 29px 55px 12px;
+        }
+
         .container1 {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
+          gap: unset;
+
+          @media #{$lt-md} {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 12px;
+          }
 
           .col1 {
             display: flex;
@@ -146,6 +230,12 @@ main.payment-solution {
               color: #212427;
               opacity: 1;
               margin-bottom: 26px;
+
+              @media #{$lt-md} {
+                font-size: 11px;
+                line-height: 14px;
+                width: auto;
+              }
             }
 
             .text2 {
@@ -158,6 +248,12 @@ main.payment-solution {
               color: #212427;
               opacity: 1;
               margin-bottom: 30px;
+
+              @media #{$lt-md} {
+                font-size: 20px;
+                line-height: 20px;
+                width: auto;
+              }
             }
 
             .text3 {
@@ -168,12 +264,23 @@ main.payment-solution {
               letter-spacing: 0px;
               color: #212427;
               opacity: 1;
+
+              @media #{$lt-md} {
+                font-size: 11px;
+                line-height: 14px;
+                width: auto;
+              }
             }
           }
 
           .col2 {
             img {
               width: 100%;
+              height: auto;
+
+              @media #{$lt-md} {
+                width: 279px;
+              }
             }
           }
         }

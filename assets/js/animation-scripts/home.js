@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-const isSm = window.matchMedia('only screen and (max-width: 767px)').matches;
-const isMd = window.matchMedia('only screen and (min-width: 768px) and (max-width: 1024px)').matches;
+isSm = window.matchMedia('only screen and (max-width: 767px)').matches;
+isMd = window.matchMedia('only screen and (min-width: 768px) and (max-width: 1024px)').matches;
 
 gsap.to(".perfecting-image", {
   scrollTrigger: ".perfecting-image",
@@ -136,15 +136,15 @@ const painTextTimeline = gsap.timeline({
 });
 painTextTimeline.fromTo(".pain-text", { opacity: 0, scale: 0.2 }, { scale: 1, opacity: 1 });
 
-const envelopeTimeline = gsap.timeline({
-  scrollTrigger: {
-    trigger: "#envelope-image",
-    scrub: true,
-    start: "top 80%",
-    end: "top 40%",
-  }
-});
-envelopeTimeline.fromTo("#envelope-image", { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 2 });
+// const envelopeTimeline = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: "#envelope-image",
+//     scrub: true,
+//     start: "top 80%",
+//     end: "top 40%",
+//   }
+// });
+// envelopeTimeline.fromTo("#envelope-image", { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 2 });
 
 const paymentsHeaderTimeline = gsap.timeline({
   scrollTrigger: {
@@ -161,3 +161,58 @@ const disbursementsHeaderTimeline = gsap.timeline({
   }
 });
 disbursementsHeaderTimeline.fromTo("#disbursements-header", { x: isSm ? 200 : 100 }, { x: 0 });
+
+// button animation
+// console.clear();
+// document.querySelector(".animated-button").addEventListener("mouseenter", animateButton);
+// document.querySelector(".animated-button").addEventListener("mouseleave", animateButton);
+
+// const tl = gsap.timeline();
+// tl.to(document.querySelector(".animated-button").children[1], 0.4, { attr: { width: 220 }, ease: Power4.easeInOut });
+// tl.to("text", 0.4, { fill: "#000", ease: Linear.easeNone }, 0);
+// tl.to("polyline, line", 0.4, { x: 14, ease: Power4.easeInOut }, 0);
+// tl.to("line", 0.4, { attr: { x2: 3 }, ease: Power4.easeInOut }, 0);
+// tl.reversed(false);
+
+// function animateButton() {
+//   tl.reversed(!tl.reversed());
+// }
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  // const items = gsap.utils.toArray(".animated-button");
+  const buttons = document.querySelectorAll(".animated-button");
+  const mainTimeline = gsap.timeline();
+
+  buttons.forEach((item, index) => {
+    let tl = gsap.timeline();
+
+    console.log('item: ', item);
+
+    tl.to(item.children[1], 0.4, { attr: { width: 220 }, ease: Power4.easeInOut });
+    tl.to(item.children[3], 0.4, { fill: "#000", ease: Linear.easeNone }, 0);
+    tl.to(item.children[4], 0.4, { x: 14, ease: Power4.easeInOut }, 0);
+    tl.to(item.children[5], 0.4, { x: 14, ease: Power4.easeInOut }, 0);
+    tl.to(item.children[4], 0.4, { attr: { x2: 3 }, ease: Power4.easeInOut }, 0);
+    tl.reversed(false);
+
+    item.addEventListener("mouseenter", () => { tl.reversed(!tl.reversed()); });
+    item.addEventListener("mouseleave", () => { tl.reversed(!tl.reversed()); });
+
+    // mainTimeline.add(tl, index * 0.8);
+  });
+
+});
+
+
+
+// const tl = gsap.timeline();
+// tl.to(document.querySelector(".animated-button").children[1], 0.4, { attr: { width: 220 }, ease: Power4.easeInOut });
+// tl.to("text", 0.4, { fill: "#000", ease: Linear.easeNone }, 0);
+// tl.to("polyline, line", 0.4, { x: 14, ease: Power4.easeInOut }, 0);
+// tl.to("line", 0.4, { attr: { x2: 3 }, ease: Power4.easeInOut }, 0);
+// tl.reversed(false);
+
+// function animateButton() {
+//   tl.reversed(!tl.reversed());
+// }

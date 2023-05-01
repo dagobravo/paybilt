@@ -297,13 +297,24 @@ main.payment-solution {
         opacity: 1;
         margin: 100px 63px 0;
 
+        @media #{$lt-md} {
+          border-radius: 32px 32px 0 0;
+          margin: -90px 14px 0;
+        }
+
         .container1 {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: flex-start;
-
           padding: 100px 120px;
+
+          @media #{$lt-md} {
+            flex-direction: column;
+            padding: 130px 20px 20px;
+            align-items: center;
+            gap: 41px;
+          }
 
           .col1,
           .col2,
@@ -315,6 +326,19 @@ main.payment-solution {
             align-items: center;
             text-align: center;
 
+            @media #{$lt-md} {
+              flex: 0 0 auto;
+            }
+
+            img {
+              width: 87px;
+              height: auto;
+
+              @media #{$lt-md} {
+                width: 48px;
+              }
+            }
+
             >div:nth-child(2) {
               font-weight: bold;
               font-size: 40px;
@@ -322,6 +346,12 @@ main.payment-solution {
               letter-spacing: 0px;
               color: #212427;
               margin: 50px 0 37px;
+
+              @media #{$lt-md} {
+                font-size: 20px;
+                line-height: 26px;
+                margin: 23px 0 10px;
+              }
             }
 
             >div:nth-child(3) {
@@ -330,6 +360,13 @@ main.payment-solution {
               letter-spacing: 0.5px;
               color: #212427;
               opacity: 1;
+
+              @media #{$lt-md} {
+                font-size: 11px;
+                line-height: 14px;
+                max-width: 170px;
+                text-align: left;
+              }
             }
           }
         }
@@ -339,8 +376,19 @@ main.payment-solution {
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-
           padding: 0 238px 50px 65px;
+
+          @media #{$lt-md} {
+            flex-direction: column;
+          }
+
+          .col1 {
+            img {
+              @media #{$lt-md} {
+                width: 100vw;
+              }
+            }
+          }
 
           .col2 {
             flex: 0 0 575px;

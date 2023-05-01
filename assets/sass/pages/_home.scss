@@ -1,14 +1,5 @@
 main.homepage {
 
-  .animated-button {
-    cursor: pointer;
-  }
-
-  .animated-button-text {
-    font-size: 36px;
-    font-weight: bold;
-  }
-
   section.section1 {
     border-top: 1px solid #707070;
 
@@ -393,62 +384,19 @@ main.homepage {
                   align-items: center;
                   cursor: pointer;
 
-                  span:nth-child(1) {
-                    text-align: center;
-                    font-weight: bold;
-                    font-size: 36px;
-                    letter-spacing: 0px;
-                    color: #332D2D;
-
-                    background: #FFFF15 0% 0% no-repeat padding-box;
-                    border-radius: 52px;
-                    width: 285px;
-                    height: 84px;
-                    display: inline-block;
-                    line-height: 84px;
-
-                    @media #{$md} {
-                      font-size: prop-size(36, 1180);
-                      line-height: prop-size(84, 1180);
-                      width: prop-size(285, 1180);
-                      height: prop-size(84, 1180);
-                    }
+                  .animated-button {
+                    cursor: pointer;
 
                     @media #{$lt-md} {
-                      font-size: 13px;
-                      line-height: 34px;
-                      padding: 0 10px;
+                      transform: scale(0.75);
+                    }
 
-                      width: auto;
-                      height: 34px;
+                    .animated-button-text {
+                      font-size: 36px;
+                      font-weight: bold;
                     }
                   }
 
-                  span:nth-child(2) {
-                    display: inline-block;
-                    background: #FFFF15 0% 0% no-repeat padding-box;
-                    border-radius: 50%;
-                    height: 82px;
-                    width: 82px;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: center;
-                    align-items: center;
-
-                    @media #{$lt-lg} {
-                      width: 34px;
-                      height: 34px;
-                    }
-
-                    img {
-                      width: 43px;
-                      height: auto;
-
-                      @media #{$lt-lg} {
-                        width: 50%;
-                      }
-                    }
-                  }
                 }
               }
             }

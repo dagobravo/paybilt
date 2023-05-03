@@ -380,6 +380,7 @@ main.payment-solution {
 
           @media #{$lt-md} {
             flex-direction: column;
+            padding: 0;
           }
 
           .col1 {
@@ -392,6 +393,10 @@ main.payment-solution {
 
           .col2 {
             flex: 0 0 575px;
+
+            @media #{$lt-lg} {
+              display: none;
+            }
 
             .text1 {
               text-align: left;
@@ -430,23 +435,55 @@ main.payment-solution {
 
         margin: 100px 63px 90px;
 
+        @media #{$lt-md} {
+          margin: -120px 14px 0;
+          border-radius: 32px 32px 0 0;
+        }
+
         .container1 {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           align-items: flex-start;
-
           padding: 100px 120px;
 
-          .col1,
-          .col2,
-          .col3 {
+          @media #{$lt-md} {
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            padding: 63px 0 0;
+          }
+
+          .col {
             flex: 0 0 358px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
             text-align: center;
+
+            @media #{$lt-md} {
+              flex: unset;
+            }
+
+            .col-header {
+              font-size: 20px;
+              line-height: 29px;
+              width: 222px !important;
+            }
+
+            .col-content {
+              font-size: 11px;
+              line-height: 14px;
+              width: 241px !important;
+            }
+
+            img {
+              @media #{$lt-md} {
+                width: 48px;
+                height: auto;
+              }
+            }
 
             >div:nth-child(2) {
               font-weight: bold;
@@ -455,6 +492,12 @@ main.payment-solution {
               letter-spacing: 0px;
               color: #212427;
               margin: 50px 0 37px;
+
+              @media #{$lt-md} {
+                font-size: 20px;
+                line-height: 26px;
+                margin: 20px 0 16px;
+              }
             }
 
             >div:nth-child(3) {
@@ -463,6 +506,13 @@ main.payment-solution {
               letter-spacing: 0.5px;
               color: #212427;
               opacity: 1;
+
+              @media #{$lt-md} {
+                font-size: 11px;
+                line-height: 14px;
+                width: 140px;
+                text-align: left;
+              }
             }
           }
         }
@@ -487,6 +537,16 @@ main.payment-solution {
             line-height: 64px;
             letter-spacing: 0px;
             color: #333333;
+
+            @media #{$lt-md} {
+              width: 258px;
+              height: 46px;
+
+              font-size: 22px;
+              line-height: 46px;
+
+              margin: 96px 0 93px;
+            }
           }
         }
       }
@@ -500,6 +560,10 @@ main.payment-solution {
       .section-content {
         padding: 170px 138px 50px;
 
+        @media #{$lt-md} {
+          padding: 48px;
+        }
+
         .container1 {
           color: #FFFFFF;
           display: flex;
@@ -507,6 +571,10 @@ main.payment-solution {
           justify-content: space-between;
           align-items: flex-start;
           margin-bottom: 70px;
+
+          @media #{$lt-md} {
+            flex-direction: column;
+          }
 
           .col1 {
             display: flex;
@@ -523,12 +591,20 @@ main.payment-solution {
               letter-spacing: 0px;
               color: #FFFFFF;
               opacity: 1;
-              // max-width: 795px;
+
+              @media #{$lt-md} {
+                font-size: 39px;
+                line-height: 44px;
+              }
 
               .built-span {
                 position: relative;
                 display: inline-block;
                 width: 400px;
+
+                @media #{$lt-md} {
+                  width: 110px;
+                }
 
                 .built-image {
                   position: absolute;
@@ -537,6 +613,12 @@ main.payment-solution {
                   width: 474px;
                   height: auto;
                   transform: scale(0.5);
+
+                  @media #{$lt-md} {
+                    top: -50px;
+                    left: -10px;
+                    width: 141px;
+                  }
                 }
               }
             }
@@ -549,6 +631,11 @@ main.payment-solution {
               letter-spacing: 1.09px;
               color: #FFFFFF;
               max-width: 954px;
+
+              @media #{$lt-md} {
+                font-size: 20px;
+                line-height: 24px;
+              }
             }
 
             .text3 {
@@ -558,13 +645,24 @@ main.payment-solution {
               letter-spacing: 0px;
               color: #FFFFFF;
               max-width: 757px;
+
+              @media #{$lt-md} {
+                font-size: 11px;
+                line-height: 13px;
+              }
             }
           }
 
           .col2 {
             img {
+              height: auto;
               position: relative;
               top: -80px;
+
+              @media #{$lt-md} {
+                width: 100%;
+                top: unset;
+              }
             }
           }
         }

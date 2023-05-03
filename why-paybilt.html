@@ -11,9 +11,29 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:b">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:i">
+  <script src="/assets/js/global.js"></script>
 </head>
 
 <body>
+
+  <!-- Offcanvas Menu -->
+  <div id="off-canvas" class="off-canvas">
+    <div class="offcanvas__menu">
+      <a href="/" class="active">Home</a>
+      <a href="/payment-solutions.html">Payment solution</a>
+      <a href="/use-cases/saas-solution.html">Use cases</a>
+      <a href="/why-paybilt.html">Why Paybilt</a>
+      <a href="products.html">Products</a>
+      <a href="">
+        <div class="login-button"></div>
+      </a>
+      <a href="">
+        <div class="support-button"></div>
+      </a>
+    </div>
+  </div>
+  <div id="off-canvas-overlay" class="off-canvas-overlay" onclick="toggleMenu()"></div>
+  <!-- End of Offcanvas Menu -->
 
   <header>
     <div class="menu">
@@ -21,10 +41,10 @@
         <img src="/assets/images/header-menu/paybilt-logo.svg" alt="">
       </a>
       <div class="links">
-        <a href="/">Home</a>
+        <a href="/" class="active">Home</a>
         <a href="/payment-solutions.html">Payment solution</a>
         <a href="/use-cases/saas-solution.html">Use cases</a>
-        <a href="why-paybilt.html" class="active">Why Paybilt</a>
+        <a href="/why-paybilt.html">Why Paybilt</a>
         <a href="products.html">Products</a>
         <a href="">
           <div class="login-button"></div>
@@ -32,6 +52,13 @@
         <a href="">
           <div class="support-button"></div>
         </a>
+      </div>
+
+      <div id="menu-trigger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
   </header>

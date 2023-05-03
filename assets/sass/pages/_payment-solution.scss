@@ -466,16 +466,30 @@ main.payment-solution {
               flex: unset;
             }
 
+            &.col-mobile {
+              @media #{$gt-sm} {
+                display: none;
+              }
+            }
+
             .col-header {
               font-size: 20px;
               line-height: 29px;
               width: 222px !important;
+
+              @media #{$gt-sm} {
+                display: none;
+              }
             }
 
             .col-content {
               font-size: 11px;
               line-height: 14px;
               width: 241px !important;
+
+              @media #{$gt-sm} {
+                display: none;
+              }
             }
 
             img {

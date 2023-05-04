@@ -25,6 +25,7 @@ main.use-cases {
           @media #{$lt-md} {
             align-items: center;
             width: 100vw;
+            margin-bottom: 80px;
 
             &:not(.mobile) {
               display: none;

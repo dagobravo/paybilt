@@ -6,33 +6,50 @@ main.why-paybilt {
       background: transparent url(/assets/images/why-paybilt/cloud-background.png) 100% 100% no-repeat padding-box;
       padding: 66px 50px 130px 129px;
 
+      @media #{$lt-md} {
+        padding: 20px 50px 0;
+        background: unset;
+      }
+
       .container1 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
 
+        @media #{$lt-md} {
+          flex-direction: column;
+        }
+
         .text1 {
-          text-align: left;
-          font-weight: bold;
-          font-size: 100px;
-          letter-spacing: 0px;
-          color: #141214;
-          opacity: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
           margin-bottom: 65px;
 
-          .paybilt-span {
-            display: inline-block;
-            width: 500px;
-            height: 200px;
-            position: relative;
+          @media #{$lt-md} {
+            margin-bottom: 16px;
+          }
 
-            .paybilt-image {
-              position: absolute;
-              width: 628px;
+          >div:nth-child(1) {
+            text-align: left;
+            font-weight: bold;
+            font-size: 100px;
+            letter-spacing: 0px;
+            color: #141214;
+
+            @media #{$lt-md} {
+              font-size: 11vw;
+            }
+          }
+
+          >div:nth-child(2) {
+            img {
               height: auto;
-              top: 40px;
-              left: -30px;
+
+              @media #{$lt-md} {
+                width: 57vw;
+              }
             }
           }
         }
@@ -47,6 +64,12 @@ main.why-paybilt {
           margin-bottom: 20px;
           max-width: 726px;
           padding-left: 30px;
+
+          @media #{$lt-md} {
+            font-size: 20px;
+            margin-bottom: 10px;
+            padding-left: 0;
+          }
         }
 
         .content {
@@ -59,6 +82,30 @@ main.why-paybilt {
           margin-bottom: 30px;
           max-width: 726px;
           padding-left: 30px;
+
+          @media #{$lt-md} {
+            font-size: 11px;
+            line-height: 14px;
+            margin-bottom: 15px;
+            padding-left: 0;
+          }
+        }
+
+        .guy-image {
+          &.lg {
+            @media #{$lt-lg} {
+              display: none;
+            }
+          }
+
+          &.sm {
+            width: auto;
+            height: 469px;
+
+            @media #{$gt-sm} {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -71,13 +118,25 @@ main.why-paybilt {
         border-radius: 129px 129px 0px 0px;
         padding: 70px 0 118px;
 
+        @media #{$lt-md} {
+          padding: 36px 34px 0;
+          border-radius: 32px 32px 0 0;
+          margin: 24px 14px 0;
+        }
+
         .text1 {
           text-align: center;
           font-weight: bold;
           font-size: 100px;
+          line-height: unset;
           letter-spacing: 0px;
           color: #141214;
           margin-bottom: 36px;
+
+          @media #{$lt-md} {
+            font-size: 50px;
+            line-height: 54px;
+          }
         }
 
         .text2,
@@ -88,6 +147,21 @@ main.why-paybilt {
           letter-spacing: 0px;
           color: #141214;
           margin-bottom: 12px;
+        }
+
+        .text2 {
+          @media #{$lt-md} {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 16px;
+          }
+        }
+
+        .text3 {
+          @media #{$lt-md} {
+            font-size: 11px;
+            line-height: 19px;
+          }
         }
       }
     }
@@ -100,6 +174,10 @@ main.why-paybilt {
       .section-content {
         padding: 100px 305px 0;
 
+        @media #{$lt-md} {
+          padding: 14px 0 0;
+        }
+
         .container1 {
           background: rgb(45,44,45);
           background: linear-gradient(180deg, rgba(45,44,45,1) 30%, rgba(20,18,20,1) 100%);
@@ -107,10 +185,21 @@ main.why-paybilt {
           text-align: center;
           padding: 35px 84px 140px;
 
+          @media #{$lt-md} {
+            border-radius: 32px 32px 0 0;
+            margin: 0 14px;
+            padding: 53px 40px 0;
+          }
+
           .pin-image {
             width: 95px;
             height: auto;
             margin-bottom: 55px;
+
+            @media #{$lt-md} {
+              width: 65px;
+              margin-bottom: 28px;
+            }
           }
 
           .text1 {
@@ -120,6 +209,11 @@ main.why-paybilt {
             letter-spacing: 0px;
             color: #FFFFFF;
             margin-bottom: 22px;
+
+            @media #{$lt-md} {
+              font-size: 35px;
+              line-height: 45px;
+            }
           }
 
           .text2 {
@@ -127,6 +221,10 @@ main.why-paybilt {
               height: 103px;
               width: auto;
               margin-bottom: 74px;
+
+              @media #{$lt-md} {
+                height: 49px;
+              }
             }
           }
 
@@ -134,6 +232,11 @@ main.why-paybilt {
             display: flex;
             flex-direction: column;
             margin-bottom: 120px;
+
+            @media #{$lt-md} {
+              margin-bottom: unset;
+              padding-bottom: 100px;
+            }
 
             input[type=text] {
               background-color: unset;
@@ -150,11 +253,21 @@ main.why-paybilt {
               margin-bottom: 45px;
               border-bottom: 1px solid #747474;
 
+              @media #{$lt-md} {
+                font-size: 11px;
+                line-height: 14px;
+              }
+
               &::placeholder {
                 font-weight: bold;
                 font-size: 24px;
                 line-height: 31px;
                 color: #fff;
+
+                @media #{$lt-md} {
+                  font-size: 11px;
+                  line-height: 14px;
+                }
               }
             }
 
@@ -164,6 +277,11 @@ main.why-paybilt {
               justify-content: space-between;
               align-items: center;
               color: #fff;
+
+              @media #{$lt-md} {
+                flex-direction: column;
+                gap: 94px;
+              }
 
               .slider-container {
                 .slider-text {
@@ -179,12 +297,23 @@ main.why-paybilt {
                   letter-spacing: 0.5px;
                   margin-bottom: 44px;
 
+                  @media #{$lt-md} {
+                    font-size: 14px;
+                    line-height: 17px;
+                    gap: 15px;
+                  }
+
                   #slider-amount {
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 31px;
                     letter-spacing: 0.5px;
                     color: #EB6151;
+
+                    @media #{$lt-md} {
+                      font-size: 14px;
+                      line-height: 17px;
+                    }
                   }
                 }
 
@@ -195,6 +324,10 @@ main.why-paybilt {
                     height: 5px;
                     padding: unset;
                     width: 533px;
+
+                    @media #{$lt-md} {
+                      width: 100%;
+                    }
 
                     &::-webkit-slider-thumb {
                       -webkit-appearance: none;
@@ -230,7 +363,20 @@ main.why-paybilt {
                 line-height: 41px;
                 letter-spacing: 0px;
                 color: #333333;
+
+                @media #{$lt-md} {
+                  width: 258px;
+                  height: 46px;
+                  font-size: 22px;
+                  line-height: 46px;
+                }
               }
+            }
+          }
+
+          .paybilt-footer {
+            @media #{$lt-md} {
+              display: none;
             }
           }
         }

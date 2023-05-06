@@ -275,6 +275,10 @@ main.products {
               align-items: center;
               gap: 30px;
 
+              @media #{$gt-sm} {
+                display: none;
+              }
+
               img {
                 width: 100%;
               }
@@ -293,6 +297,18 @@ main.products {
 
                 .text-indent {
                   text-indent: 12px;
+                }
+
+                .header {
+                  font-size: 18px;
+                  line-height: 40px;
+                  font-weight: bold;
+                }
+
+                .header2 {
+                  font-size: 16px;
+                  line-height: 20px;
+                  font-weight: 400;
                 }
               }
 
@@ -313,6 +329,14 @@ main.products {
                   line-height: 26px;
                   letter-spacing: 0px;
                   color: #FFFFFF;
+
+                  ul {
+                    li {
+                      font-size: 11px;
+                      line-height: 18px;
+                      font-weight: 100;
+                    }
+                  }
                 }
               }
             }

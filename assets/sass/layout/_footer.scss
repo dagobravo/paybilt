@@ -3,6 +3,10 @@ footer {
     .dark-content {
       background-color: #141214;
 
+      @media #{$lt-md} {
+        padding-top: 20px;
+      }
+
       .content-wrapper {
         .section-content {
           color: #fff;

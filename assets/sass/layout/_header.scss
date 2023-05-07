@@ -204,7 +204,7 @@ header {
       transition: 0.5s ease-in-out;
       cursor: pointer;
 
-      @media #{$gt-md} {
+      @media #{$gt-lg} {
         display: none;
       }
 

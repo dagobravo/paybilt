@@ -69,12 +69,8 @@ header {
     padding: 26px 138px;
     color: #333333;
 
-    @media #{$lt-xxl} {
-      padding: 26px 40px;
-    }
-
-    @media #{$md} {
-      padding: 16px 32px 15px;
+    @media #{$md-lg-xl} {
+      padding: 1.35vw 7.19vw;
     }
 
     @media #{$lt-md} {
@@ -87,7 +83,12 @@ header {
       height: 53px;
       z-index: 1;
 
-      @media #{$lt-lg} {
+      @media #{$md-lg-xl} {
+        width: 11.04vw;
+        height: 2.76vw;
+      }
+
+      @media #{$lt-md} {
         width: 82px;
         height: 36px;
       }
@@ -95,10 +96,6 @@ header {
       img {
         width: 100%;
         height: auto;
-
-        @media #{$md} {
-          width: 150%;
-        }
       }
 
       &:after {
@@ -112,11 +109,11 @@ header {
         background-repeat: no-repeat;
         background-size: contain;
 
-        @media #{$md} {
-          width: 100px;
-          height: 30px;
-          right: -55px;
-          bottom: -12px;
+        @media #{$md-lg-xl} {
+          width: 11.25vw;
+          height: 3.33vw;
+          right: -1.77vw;
+          bottom: -2.03vw;
         }
 
         @media #{$lt-md} {
@@ -137,7 +134,12 @@ header {
       font-size: 20px;
       z-index: 1;
 
-      @media #{$lt-xl} {
+      @media #{$md-lg-xl} {
+        gap: 3.91vw;
+        font-size: 1.04vw;
+      }
+
+      @media #{$lt-md} {
         display: none;
       }
 
@@ -162,6 +164,13 @@ header {
             bottom: -28px;
             background-repeat: no-repeat;
             background-size: contain;
+
+            @media #{$md-lg-xl} {
+              width: 7.08vw;
+              height: 2.24vw;
+              left: calc(50% - 3.54vw);
+              bottom: -1.46vw;
+            }
           }
         }
       }
@@ -174,6 +183,13 @@ header {
         color: #fff !important;
         line-height: 68px;
         text-align: center;
+
+        @media #{$md-lg-xl} {
+          width: 6.88vw;
+          height: 3.54vw;
+          border-radius: 2.08vw;
+          line-height: 3.54vw;
+        }
 
         &:after {
           content: "Login";
@@ -190,6 +206,13 @@ header {
         text-align: center;
         font-weight: bold;
 
+        @media #{$md-lg-xl} {
+          width: 7.81vw;
+          height: 3.54vw;
+          border-radius: 2.08vw;
+          line-height: 3.54vw;
+        }
+
         &:after {
           content: "Support";
         }
@@ -204,7 +227,7 @@ header {
       transition: 0.5s ease-in-out;
       cursor: pointer;
 
-      @media #{$gt-lg} {
+      @media #{$gt-sm} {
         display: none;
       }
 

@@ -7,6 +7,10 @@ main.products {
         padding: 116px 0 0 0;
         position: relative;
 
+        @media #{$md-lg-xl} {
+          padding: 6.04vw 0 0 0;
+        }
+
         @media #{$lt-md} {
           padding: 0;
         }
@@ -15,6 +19,10 @@ main.products {
           display: flex;
           flex-direction: row;
           min-height: 685px;
+
+          @media #{$md-lg-xl} {
+            min-height: 35.68vw;
+          }
 
           @media #{$lt-md} {
             flex-direction: column;
@@ -39,6 +47,14 @@ main.products {
               margin-bottom: 35px;
               padding-left: 179px;
 
+              @media #{$md-lg-xl} {
+                font-size: 4.17vw;
+                line-height: 4.43vw;
+                width: 48.44vw;
+                margin-bottom: 1.82vw;
+                padding-left: 9.32vw;
+              }
+
               @media #{$lt-md} {
                 margin: 30px 0 10px;
                 font-size: 6.97vw;
@@ -62,6 +78,11 @@ main.products {
                   width: 454px;
                   height: 75px;
 
+                  @media #{$md-lg-xl} {
+                    width: 23.65vw;
+                    height: 3.91vw;
+                  }
+
                   @media #{$lt-md} {
                     width: 33vw;
                     height: 30px;
@@ -69,14 +90,21 @@ main.products {
 
                   img {
                     position: absolute;
+                    width: 455px;
+                    height: auto;
                     bottom: -35px;
                     left: -40px;
+
+                    @media #{$md-lg-xl} {
+                      width: 23.7vw;
+                      bottom: -1.82vw;
+                      left: -2.08vw;
+                    }
 
                     @media #{$lt-md} {
                       left: -10px;
                       bottom: -8px;
                       width: 33vw;
-                      height: auto;
                     }
                   }
                 }
@@ -93,6 +121,14 @@ main.products {
               width: 668px;
               margin-bottom: 72px;
               padding-left: 179px;
+
+              @media #{$md-lg-xl} {
+                font-size: 1.35vw;
+                line-height: 1.72vw;
+                width: 34.79vw;
+                margin-bottom: 3.75vw;
+                padding-left: 9.32vw;
+              }
 
               @media #{$lt-md} {
                 font-size: 11px;
@@ -113,6 +149,11 @@ main.products {
               top: 0;
               right: 20px;
 
+              @media #{$md-lg-xl} {
+                height: 41.67vw;
+                right: 1.04vw;
+              }
+
               @media #{$lt-md} {
                 height: 357px;
                 width: auto;
@@ -122,8 +163,7 @@ main.products {
               }
 
               &.lg {
-
-                @media #{$lt-lg} {
+                @media #{$lt-md} {
                   display: none;
                 }
               }
@@ -153,6 +193,14 @@ main.products {
           margin: 0 236px;
           padding: 62px 196px;
 
+          @media #{$md-lg-xl} {
+            border-radius: 6.72vw 6.72vw 0px 0px;
+            column-gap: 1.56vw;
+            row-gap: 0.63vw;
+            margin: 0 12.29vw;
+            padding: 3.23vw 10.21vw;
+          }
+
           @media #{$lt-md} {
             padding: 40px 40px 50px;
             margin: 0 14px;
@@ -174,6 +222,13 @@ main.products {
             color: #FFFFFF;
             background-color: #272727;
             cursor: pointer;
+
+            @media #{$md-lg-xl} {
+              border-radius: 3.65vw;
+              font-size: 2.08vw;
+              line-height: 4.69vw;
+              letter-spacing: 0.04vw;
+            }
 
             @media #{$lt-md} {
               font-size: 5.81vw;
@@ -202,6 +257,11 @@ main.products {
         flex-direction: row;
         gap: 100px;
 
+        @media #{$md-lg-xl} {
+          padding: 4.17vw 5.21vw;
+          gap: 5.21vw;
+        }
+
         @media #{$lt-md} {
           padding: 39px 40px;
           flex-direction: column;
@@ -226,6 +286,10 @@ main.products {
             color: #FFFD38;
             opacity: 1;
 
+            @media #{$md-lg-xl} {
+              font-size: 2.19vw;
+            }
+
             @media #{$lt-md} {
               display: none;
             }
@@ -239,6 +303,10 @@ main.products {
             color: #FFFFFF;
             opacity: 1;
 
+            @media #{$md-lg-xl} {
+              font-size: 0.89vw;
+            }
+
             @media #{$lt-md} {
               text-align: center;
             }
@@ -247,8 +315,16 @@ main.products {
               padding: 20px 0;
               border-bottom: 1px solid #707070;
 
+              @media #{$md-lg-xl} {
+                padding: 1.04vw 0;
+              }
+
               &:first-child {
                 padding: 30px 0 20px;
+
+                @media #{$md-lg-xl} {
+                  padding: 1.56vw 0 1.04vw;
+                }
               }
 
               &:hover {
@@ -374,6 +450,10 @@ main.products {
           background: linear-gradient(180deg, rgba(39, 40, 42, 1) 30%, rgba(20, 18, 20, 1) 100%);
           border-radius: 78px;
 
+          @media #{$md-lg-xl} {
+            border-radius: 4.06vw;
+          }
+
           @media #{$lt-md} {
             display: none;
           }
@@ -382,11 +462,20 @@ main.products {
             border-bottom: 1px solid #707070;
             padding: 60px 65px;
 
+            @media #{$md-lg-xl} {
+              padding: 3.13vw 3.39vw;
+            }
+
             >div:first-child {
               font-weight: bold;
               font-size: 32px;
               color: #FFFFFF;
               margin-bottom: 24px;
+
+              @media #{$md-lg-xl} {
+                font-size: 1.67vw;
+                margin-bottom: 1.25vw;
+              }
             }
 
             >div:nth-child(2) {
@@ -394,6 +483,11 @@ main.products {
               font-size: 18px;
               line-height: 32px;
               color: #FFFFFF;
+
+              @media #{$md-lg-xl} {
+                font-size: 0.94vw;
+                line-height: 1.67vw;
+              }
             }
           }
 
@@ -405,11 +499,20 @@ main.products {
             padding: 40px 48px 40px;
             border-bottom: 1px solid #707070;
 
+            @media #{$md-lg-xl} {
+              padding: 2.08vw 2.5vw 2.08vw;
+            }
+
             .header-text {
               font-weight: bold;
               font-size: 32px;
               color: #FFFC30;
               margin-bottom: 25px;
+
+              @media #{$md-lg-xl} {
+                font-size: 1.67vw;
+                margin-bottom: 1.3vw;
+              }
             }
 
             .subheader-text {
@@ -417,11 +520,38 @@ main.products {
               font-size: 18px;
               line-height: 32px;
               color: #FFFFFF;
+
+              @media #{$md-lg-xl} {
+                font-size: 0.94vw;
+                line-height: 1.67vw;
+              }
             }
 
-            img {
+            >img:nth-child(1) {
+              width: 114px;
+              height: auto;
+
+              @media #{$md-lg-xl} {
+                width: 5.94vw;
+              }
+            }
+
+            div>div>img {
+              width: 114px !important;
+              height: auto;
+
+              @media #{$md-lg-xl} {
+                width: 5.94vw !important;
+              }
+            }
+
+            div>img {
               width: 311px;
               height: auto;
+
+              @media #{$md-lg-xl} {
+                width: 16.2vw;
+              }
             }
           }
 
@@ -437,11 +567,21 @@ main.products {
               padding: 40px 48px 40px;
               border-right: 1px solid #707070;
 
+              @media #{$md-lg-xl} {
+                flex: 0 0 calc(62% - 5vw);
+                padding: 2.08vw 2.5vw 2.08vw;
+              }
+
               .header-text {
                 font-weight: bold;
                 font-size: 32px;
                 color: #FFFC30;
                 margin-bottom: 25px;
+
+                @media #{$md-lg-xl} {
+                  font-size: 1.67vw;
+                  margin-bottom: 1.3vw;
+                }
               }
 
               .subheader-text {
@@ -449,11 +589,20 @@ main.products {
                 font-size: 18px;
                 line-height: 32px;
                 color: #FFFFFF;
+
+                @media #{$md-lg-xl} {
+                  font-size: 0.94vw;
+                  line-height: 1.67vw;
+                }
               }
 
               img {
-                width: 311px;
+                width: 114px;
                 height: auto;
+
+                @media #{$md-lg-xl} {
+                  width: 5.94vw !important;
+                }
               }
             }
 
@@ -467,6 +616,13 @@ main.products {
               line-height: 52px;
               letter-spacing: 0px;
               color: #FFFFFF;
+
+              @media #{$md-lg-xl} {
+                flex: 0 0 calc(38% - 5vw);
+                padding: 2.08vw 2.5vw 2.08vw;
+                font-size: 1.88vw;
+                line-height: 2.71vw;
+              }
             }
           }
 
@@ -484,6 +640,11 @@ main.products {
               padding: 60px 65px;
               flex: 0 0 calc(50% - 131px);
 
+              @media #{$md-lg-xl} {
+                padding: 3.13vw 3.39vw;
+                flex: 0 0 calc(50% - 6.82vw);
+              }
+
               >div:nth-child(1) {
                 text-align: left;
                 font-weight: bold;
@@ -491,6 +652,11 @@ main.products {
                 letter-spacing: 0px;
                 color: #F50A47;
                 margin-bottom: 85px;
+
+                @media #{$md-lg-xl} {
+                  font-size: 1.67vw;
+                  margin-bottom: 4.43vw;
+                }
               }
 
               >div:nth-child(2) {
@@ -498,6 +664,11 @@ main.products {
                 line-height: 47px;
                 letter-spacing: 0px;
                 color: #FFFFFF;
+
+                @media #{$md-lg-xl} {
+                  font-size: 0.94vw;
+                  line-height: 2.45vw;
+                }
               }
             }
 
@@ -516,6 +687,14 @@ main.products {
               letter-spacing: 0px;
               color: #FFFFFF;
               opacity: 1;
+
+              @media #{$md-lg-xl} {
+                padding: 3.13vw 3.39vw;
+                flex: 0 0 calc(50% - 6.82vw);
+
+                font-size: 0.94vw;
+                line-height: 1.93vw;
+              }
             }
           }
         }

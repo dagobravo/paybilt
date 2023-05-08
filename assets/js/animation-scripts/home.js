@@ -1,6 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 isSm = window.matchMedia('only screen and (max-width: 767px)').matches;
 isMd = window.matchMedia('only screen and (min-width: 768px) and (max-width: 1024px)').matches;
+isLg = window.matchMedia('only screen and (min-width: 1025px) and (max-width: 1919px)').matches;
 
 gsap.to(".perfecting-image", {
   scrollTrigger: ".perfecting-image",

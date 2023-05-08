@@ -60,7 +60,7 @@ ul {
 }
 
 .mobile-only {
-  @media #{$gt-lg} {
+  @media #{$gt-sm} {
     display: none;
   }
 }

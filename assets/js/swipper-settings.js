@@ -6,7 +6,7 @@ const swiper = new Swiper('.products-swiper', {
     pauseOnMouseEnter: true
   },
   loop: true,
-  slidesPerView: isSm ? 1 : isMd ? 2 : 5,
+  slidesPerView: isSm ? 1 : isMd ? 3 : 5,
   watchSlidesProgress: false,
   spaceBetween: 0,
   grabCursor: true

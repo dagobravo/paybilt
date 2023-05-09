@@ -422,14 +422,15 @@ main.homepage {
                       transform: scale(0.75);
                     }
 
-                    @media #{$lt-md} {
-                      transform: scale(0.75);
-                    }
+                    // @media #{$lt-md} {
+                    //   transform: scale(0.75);
+                    // }
 
-                    .animated-button-text {
-                      font-size: 36px;
-                      font-weight: bold;
-                    }
+                  }
+
+                  .animated-button-text {
+                    font-size: 36px;
+                    font-weight: bold;
                   }
 
                 }

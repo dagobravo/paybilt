@@ -16,11 +16,11 @@ const perksSwiper = new Swiper('.perks-swiper', {
   loop: true,
   autoHeight: true,
   speed: 1000,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-    pauseOnMouseEnter: true
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  //   pauseOnMouseEnter: true
+  // },
 });
 
 function showNext() {

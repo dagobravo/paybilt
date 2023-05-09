@@ -172,4 +172,21 @@ document.addEventListener("DOMContentLoaded", function() {
     item.addEventListener("mouseleave", () => { tl.reversed(!tl.reversed()); });
   });
 
+  const buttons2 = document.querySelectorAll(".animated-button-large");
+  const mainTimeline2 = gsap.timeline();
+
+  buttons2.forEach((item, index) => {
+    let tl = gsap.timeline();
+
+    tl.to(item.children[1], 0.4, { attr: { width: 480 }, ease: Power4.easeInOut });
+    tl.to(item.children[3], 0.4, { fill: "#000", ease: Linear.easeNone }, 0);
+    tl.to(item.children[4], 0.4, { x: 14, ease: Power4.easeInOut }, 0);
+    tl.to(item.children[5], 0.4, { x: 14, ease: Power4.easeInOut }, 0);
+    tl.to(item.children[4], 0.4, { attr: { x2: 3 }, ease: Power4.easeInOut }, 0);
+    tl.reversed(false);
+
+    item.addEventListener("mouseenter", () => { tl.reversed(!tl.reversed()); });
+    item.addEventListener("mouseleave", () => { tl.reversed(!tl.reversed()); });
+  });
+
 });

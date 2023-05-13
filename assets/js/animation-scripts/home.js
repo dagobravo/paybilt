@@ -191,7 +191,7 @@ gsap.to(".perfecting-image", {
   duration: 1
 });
 
-const animationTime = 0.5;
+const animationTime = 0.3;
 gsap.set("#perfecting", { autoAlpha: 1 });
 const tl2 = gsap.timeline({ repeat: false, defaults: { ease: "none" } })
   .to("#pathP", { duration: animationTime, fill: "#E51A5E" })

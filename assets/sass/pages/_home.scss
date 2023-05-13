@@ -23,18 +23,19 @@ main.homepage {
           width: 100vw;
         }
 
+        // perfecting animation
         @-webkit-keyframes dash {
           to {
             stroke-dashoffset: 0;
           }
         }
-    
+
         @keyframes dash {
           to {
             stroke-dashoffset: 0;
           }
         }
-    
+
         #pathP,
         #pathE1,
         #pathE2,
@@ -52,32 +53,33 @@ main.homepage {
           stroke-width: 3;
           stroke-dasharray: 1000;
           stroke-dashoffset: 1000;
-          -webkit-animation: dash 0.5s linear forwards;
-          animation: dash 0.5s linear forwards;
+          -webkit-animation: dash 0.3s linear forwards;
+          animation: dash 0.3s linear forwards;
         }
-    
+
         #pathCT {
           fill: none;
           stroke: #E51A5E;
           stroke-width: 3;
           stroke-dasharray: 1200;
           stroke-dashoffset: 1200;
-          -webkit-animation: dash 0.5s linear forwards;
-          animation: dash 0.5s linear forwards;
+          -webkit-animation: dash 0.3s linear forwards;
+          animation: dash 0.3s linear forwards;
         }
-    
-        #pathE1 { animation-delay: 0.5s; }
-        #pathE2 { animation-delay: 1s; }
-        #pathE3 { animation-delay: 1.5s; }
-        #pathR { animation-delay: 2s; }
-        #pathF { animation-delay: 2.5s; }
-        #pathE21 { animation-delay: 3s; }
-        #pathE22 { animation-delay: 3.5s; }
-        #pathE23 { animation-delay: 4s; }
-        #pathCT { animation-delay: 4.5s; }
-        #pathI { animation-delay: 5s; }
-        #pathN { animation-delay: 5.5s; }
-        #pathG { animation-delay: 6s; }
+
+        #pathE1 { animation-delay: 0.3s; }
+        #pathE2 { animation-delay: 0.6s; }
+        #pathE3 { animation-delay: 0.9s; }
+        #pathR { animation-delay: 1.2s; }
+        #pathF { animation-delay: 1.5s; }
+        #pathE21 { animation-delay: 1.8s; }
+        #pathE22 { animation-delay: 2.1s; }
+        #pathE23 { animation-delay: 2.4s; }
+        #pathCT { animation-delay: 2.7s; }
+        #pathI { animation-delay: 3s; }
+        #pathN { animation-delay: 3.3s; }
+        #pathG { animation-delay: 3.6s; }
+        // perfecting animation end
 
         .grid {
           display: flex;
@@ -121,8 +123,22 @@ main.homepage {
               .perfecting-image {
                 position: absolute;
                 width: 800px;
-                top: -150px;
+                top: -170px;
                 left: -60px;
+                z-index: 1;
+
+                @media #{$md-lg-xl} {
+                  width: 41.67vw;
+                  top: -8.85vw;
+                  left: -3.13vw;
+                }
+
+                @media #{$lt-md} {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: calc(100vw - 70px);
+                }
               }
 
               .text1-span {

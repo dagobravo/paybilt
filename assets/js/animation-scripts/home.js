@@ -3,12 +3,6 @@ isSm = window.matchMedia('only screen and (max-width: 767px)').matches;
 isMd = window.matchMedia('only screen and (min-width: 768px) and (max-width: 1024px)').matches;
 isLg = window.matchMedia('only screen and (min-width: 1025px) and (max-width: 1919px)').matches;
 
-gsap.to(".perfecting-image", {
-  scrollTrigger: ".perfecting-image",
-  x: 0,
-  duration: 1
-});
-
 gsap.to(".text1-span", {
   scrollTrigger: ".text1-span",
   x: 0,
@@ -190,3 +184,26 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 });
+
+gsap.to(".perfecting-image", {
+  scrollTrigger: ".perfecting-image",
+  x: 0,
+  duration: 1
+});
+
+const animationTime = 0.5;
+gsap.set("#perfecting", { autoAlpha: 1 });
+const tl2 = gsap.timeline({ repeat: false, defaults: { ease: "none" } })
+  .to("#pathP", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathE1", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathE2", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathE3", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathR", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathF", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathE21", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathE22", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathE23", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathCT", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathI", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathN", { duration: animationTime, fill: "#E51A5E" })
+  .to("#pathG", { duration: animationTime, fill: "#E51A5E" });

@@ -23,6 +23,62 @@ main.homepage {
           width: 100vw;
         }
 
+        @-webkit-keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+    
+        @keyframes dash {
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+    
+        #pathP,
+        #pathE1,
+        #pathE2,
+        #pathE3,
+        #pathR,
+        #pathF,
+        #pathE21,
+        #pathE22,
+        #pathE23,
+        #pathI,
+        #pathN,
+        #pathG {
+          fill: none;
+          stroke: #E51A5E;
+          stroke-width: 3;
+          stroke-dasharray: 1000;
+          stroke-dashoffset: 1000;
+          -webkit-animation: dash 0.5s linear forwards;
+          animation: dash 0.5s linear forwards;
+        }
+    
+        #pathCT {
+          fill: none;
+          stroke: #E51A5E;
+          stroke-width: 3;
+          stroke-dasharray: 1200;
+          stroke-dashoffset: 1200;
+          -webkit-animation: dash 0.5s linear forwards;
+          animation: dash 0.5s linear forwards;
+        }
+    
+        #pathE1 { animation-delay: 0.5s; }
+        #pathE2 { animation-delay: 1s; }
+        #pathE3 { animation-delay: 1.5s; }
+        #pathR { animation-delay: 2s; }
+        #pathF { animation-delay: 2.5s; }
+        #pathE21 { animation-delay: 3s; }
+        #pathE22 { animation-delay: 3.5s; }
+        #pathE23 { animation-delay: 4s; }
+        #pathCT { animation-delay: 4.5s; }
+        #pathI { animation-delay: 5s; }
+        #pathN { animation-delay: 5.5s; }
+        #pathG { animation-delay: 6s; }
+
         .grid {
           display: flex;
           flex-direction: row;
@@ -60,6 +116,13 @@ main.homepage {
                 letter-spacing: -0.21vw;
                 line-height: 4.84vw;
                 width: 44.27vw;
+              }
+
+              .perfecting-image {
+                position: absolute;
+                width: 800px;
+                top: -190px;
+                left: -80px;
               }
 
               .text1-span {

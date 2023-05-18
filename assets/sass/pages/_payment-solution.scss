@@ -30,7 +30,7 @@ main.payment-solution {
             border-radius: 32px 32px 0 0;
             flex-direction: column;
             margin: 19px 14px 0;
-            min-height: 560px;
+            min-height: 480px;
             padding: 30px 41px 0;
           }
 
@@ -75,7 +75,7 @@ main.payment-solution {
                 height: auto;
 
                 @media #{$md-lg-xl} {
-                  width: 19.48vw;
+                  width: 14.48vw;
                 }
 
                 @media #{$lt-md} {
@@ -149,10 +149,12 @@ main.payment-solution {
 
             @media #{$md-lg-xl} {
               width: 56.82vw;
+              position: relative;
             }
 
             @media #{$lt-md} {
               width: 100%;
+              position: relative;
             }
           }
 

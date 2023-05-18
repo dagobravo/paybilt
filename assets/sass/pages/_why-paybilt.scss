@@ -292,6 +292,9 @@ main.why-paybilt {
           }
 
           .text2 {
+            display: flex;
+            justify-content: center;
+
             .paybilt-for-you {
               height: 103px;
               width: auto;

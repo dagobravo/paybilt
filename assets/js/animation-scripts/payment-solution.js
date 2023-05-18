@@ -25,15 +25,13 @@ const moneyBagTimeline = gsap.timeline({
 });
 moneyBagTimeline.fromTo(".money-bag-image", { x: 200, opacity: 0.5 }, { x: 0, opacity: 1, duration: 2 });
 
-if (!isSm) {
-  const section4Container1 = gsap.timeline({
-    scrollTrigger: {
-      trigger: "#section4-container1",
-      scrub: true
-    }
-  });
-  section4Container1.fromTo("#section4-container1", { scale: 0.5, opacity: 0.5 }, { scale: 1, opacity: 1, duration: 2 });
-}
+const section4Container1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#section4-container1",
+    scrub: true
+  }
+});
+section4Container1.fromTo("#section4-container1", { scale: 0.5, opacity: 0.5 }, { scale: 1, opacity: 1, duration: 2 });
 
 const section5Container1 = gsap.timeline({
   scrollTrigger: {

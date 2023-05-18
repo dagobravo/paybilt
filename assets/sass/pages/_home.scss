@@ -622,7 +622,7 @@ main.homepage {
 
         @media #{$lt-md} {
           text-align: center;
-          padding: 110px 0 40px;
+          padding: 125px 0 40px;
         }
 
         .girl-walk {
@@ -642,7 +642,7 @@ main.homepage {
           @media #{$lt-md} {
             width: 124%;
             left: calc(50% - 62%);
-            top: -536px;
+            top: -590px;
           }
         }
 
@@ -714,6 +714,7 @@ main.homepage {
             line-height: 18px;
             max-width: 52%;
             margin: 0 auto;
+            font-weight: bold;
           }
 
           &.text3 {

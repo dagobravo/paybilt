@@ -23,64 +23,6 @@ main.homepage {
           width: 100vw;
         }
 
-        // perfecting animation
-        @-webkit-keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-
-        @keyframes dash {
-          to {
-            stroke-dashoffset: 0;
-          }
-        }
-
-        #pathP,
-        #pathE1,
-        #pathE2,
-        #pathE3,
-        #pathR,
-        #pathF,
-        #pathE21,
-        #pathE22,
-        #pathE23,
-        #pathI,
-        #pathN,
-        #pathG {
-          fill: none;
-          stroke: #E51A5E;
-          stroke-width: 3;
-          stroke-dasharray: 1000;
-          stroke-dashoffset: 1000;
-          -webkit-animation: dash 0.3s linear forwards;
-          animation: dash 0.3s linear forwards;
-        }
-
-        #pathCT {
-          fill: none;
-          stroke: #E51A5E;
-          stroke-width: 3;
-          stroke-dasharray: 1200;
-          stroke-dashoffset: 1200;
-          -webkit-animation: dash 0.3s linear forwards;
-          animation: dash 0.3s linear forwards;
-        }
-
-        #pathE1 { animation-delay: 0.3s; }
-        #pathE2 { animation-delay: 0.6s; }
-        #pathE3 { animation-delay: 0.9s; }
-        #pathR { animation-delay: 1.2s; }
-        #pathF { animation-delay: 1.5s; }
-        #pathE21 { animation-delay: 1.8s; }
-        #pathE22 { animation-delay: 2.1s; }
-        #pathE23 { animation-delay: 2.4s; }
-        #pathCT { animation-delay: 2.7s; }
-        #pathI { animation-delay: 3s; }
-        #pathN { animation-delay: 3.3s; }
-        #pathG { animation-delay: 3.6s; }
-        // perfecting animation end
-
         .grid {
           display: flex;
           flex-direction: row;
@@ -120,24 +62,35 @@ main.homepage {
                 width: 44.27vw;
               }
 
+              @media #{$lt-md} {
+                padding: 15.81vw 0 0 10.93vw;
+                font-size: 9.69vw;
+                line-height: 9.3vw;
+                width: calc(100vw - 16.28vw);
+              }
+
               .perfecting-image {
                 position: absolute;
-                width: 800px;
-                top: -170px;
-                left: -60px;
+                width: 715px;
+                top: -102px;
+                left: -45px;
                 z-index: 1;
 
                 @media #{$md-lg-xl} {
-                  width: 41.67vw;
-                  top: -8.85vw;
-                  left: -3.13vw;
+                  width: 37.24vw;
+                  top: -5.31vw;
+                  left: -4.04vw;
                 }
 
                 @media #{$lt-md} {
                   position: absolute;
-                  top: 0;
-                  left: 0;
-                  width: calc(100vw - 70px);
+                  top: 3.26vw;
+                  left: -1.86vw;
+                  width: calc(100vw - 18.6vw);
+                }
+
+                svg {
+                  transform: rotate(-3deg);
                 }
               }
 
@@ -148,13 +101,6 @@ main.homepage {
                 @media #{$md-lg-xl} {
                   transform: translateX(-10.42vw);
                 }
-              }
-
-              @media #{$lt-md} {
-                padding: 68px 0 0 47px;
-                font-size: prop-size(100, 800);
-                line-height: 40px;
-                width: calc(100vw - 70px);
               }
 
               img {

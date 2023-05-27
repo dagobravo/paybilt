@@ -30,10 +30,6 @@
       text-transform: capitalize;
       text-decoration: none;
 
-      // &.btn {
-      //   margin-top: 1rem;
-      // }
-
       &:visited {
         text-decoration: none;
         color: #000;
@@ -100,14 +96,15 @@ header {
 
       &:after {
         content: "";
-        background-image: url(/assets/images/header-menu/spray-brush.svg);
-        width: 216px;
-        height: 64px;
+        background-image: url(/assets/images/header-menu/menu-indicator.svg);
+        width: 225px;
+        height: 90px;
         position: absolute;
-        right: -34px;
-        bottom: -39px;
+        right: -92px;
+        bottom: -34px;
         background-repeat: no-repeat;
         background-size: contain;
+        z-index: -1;
 
         @media #{$md-lg-xl} {
           width: 11.25vw;
@@ -156,14 +153,15 @@ header {
 
           &:after {
             content: "";
-            background-image: url(/assets/images/header-menu/spray-brush.svg);
+            background-image: url(/assets/images/header-menu/menu-indicator.svg);
             width: 136px;
             height: 43px;
             position: absolute;
-            left: calc(50% - 68px);
-            bottom: -28px;
+            left: calc(50% - 35px);
+            bottom: -22px;
             background-repeat: no-repeat;
             background-size: contain;
+            z-index: -1;
 
             @media #{$md-lg-xl} {
               width: 7.08vw;

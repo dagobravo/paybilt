@@ -154,20 +154,20 @@ header {
           &:after {
             content: "";
             background-image: url(/assets/images/header-menu/menu-indicator.svg);
-            width: 136px;
+            width: 74px;
             height: 43px;
             position: absolute;
-            left: calc(50% - 35px);
+            right: -6px;
             bottom: -22px;
             background-repeat: no-repeat;
             background-size: contain;
             z-index: -1;
 
             @media #{$md-lg-xl} {
-              width: 7.08vw;
+              width: 3.85vw;
               height: 2.24vw;
-              left: calc(50% - 3.54vw);
-              bottom: -1.46vw;
+              right: -0.31vw;
+              bottom: -1.15vw;
             }
           }
         }

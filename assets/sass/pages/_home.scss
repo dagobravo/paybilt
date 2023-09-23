@@ -11,7 +11,7 @@ main.homepage {
         overflow: clip;
         overflow-clip-margin: 0px;
 
-        // background: url(/assets/images/home/background.png) no-repeat;
+        // background: url(assets/images/home/background.png) no-repeat;
         // background-size: cover;
 
         @media #{$md-lg-xl} {
@@ -977,7 +977,7 @@ main.homepage {
 
     .content-wrapper {
       .section-content {
-        background-image: url(/assets/images/home/scenario.png);
+        background-image: url(assets/images/home/scenario.png);
         background-repeat: no-repeat;
         background-size: contain;
         min-height: calc(968px - 632px - 207px);
@@ -990,7 +990,7 @@ main.homepage {
         }
 
         @media #{$lt-md} {
-          background-image: url(/assets/images/home/scenario-sm.png);
+          background-image: url(assets/images/home/scenario-sm.png);
           background-size: contain;
           padding: 255px 62px 62px;
         }
@@ -1074,43 +1074,43 @@ main.homepage {
             }
 
             &.interac {
-              background: url(/assets/images/home/payments-disbursements/interac-bw.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/interac-bw.png) no-repeat;
             }
 
             &.interac:hover {
-              background: url(/assets/images/home/payments-disbursements/interac.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/interac.png) no-repeat;
             }
 
             &.online-banking {
-              background: url(/assets/images/home/payments-disbursements/online-banking-bw.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/online-banking-bw.png) no-repeat;
             }
 
             &.online-banking:hover {
-              background: url(/assets/images/home/payments-disbursements/online-banking.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/online-banking.png) no-repeat;
             }
 
             &.echeque {
-              background: url(/assets/images/home/payments-disbursements/echeque-bw.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/echeque-bw.png) no-repeat;
             }
 
             &.echeque:hover {
-              background: url(/assets/images/home/payments-disbursements/echeque.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/echeque.png) no-repeat;
             }
 
             &.visa {
-              background: url(/assets/images/home/payments-disbursements/visa-direct-bw.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/visa-direct-bw.png) no-repeat;
             }
 
             &.visa:hover {
-              background: url(/assets/images/home/payments-disbursements/visa-direct.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/visa-direct.png) no-repeat;
             }
 
             &.master-card {
-              background: url(/assets/images/home/payments-disbursements/mastercard-send-bw.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/mastercard-send-bw.png) no-repeat;
             }
 
             &.master-card:hover {
-              background: url(/assets/images/home/payments-disbursements/mastercard-send.png) no-repeat;
+              background: url(assets/images/home/payments-disbursements/mastercard-send.png) no-repeat;
             }
           }
 
@@ -1349,7 +1349,7 @@ main.homepage {
 
               &:after {
                 content: "";
-                background-image: url(/assets/images/home/asterisc.png);
+                background-image: url(assets/images/home/asterisc.png);
                 width: 120px;
                 height: 120px;
                 position: absolute;

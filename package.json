@@ -4,7 +4,7 @@
   "license": "ISC",
   "scripts": {
     "dev": "live-server .",
-    "node-sass": "node-sass ./assets/sass/main.scss ./assets/css/style.css -w --output-style compressed",
+    "node-sass": "node-sass .assets/sass/main.scss .assets/css/style.css -w --output-style compressed",
     "dev:sass": "npm-run-all --parallel node-sass dev",
     "firebase": "firebase deploy",
     "commit": "git add --all && git commit -m \"Latest changes\" && git push",
